@@ -6,6 +6,8 @@ Site for [kimpham54.github.io](http://kimpham54.github.io/)
 ## Usage
 
 public/ moved from kimpham54-hugo
+
+stackedit sync
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MzE4NTM3NF19
+eyJoaXN0b3J5IjpbMTY2MzcwMzc5M119
 -->
