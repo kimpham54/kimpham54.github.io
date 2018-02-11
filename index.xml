@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
+    <link>http://kimpham54.github.io/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 Jun 2017 10:10:05 -0400</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://kimpham54.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>kim pham cv</title>
-      <link>http://example.org/cv/</link>
+      <link>http://kimpham54.github.io/cv/</link>
       <pubDate>Tue, 06 Jun 2017 10:10:05 -0400</pubDate>
       
-      <guid>http://example.org/cv/</guid>
+      <guid>http://kimpham54.github.io/cv/</guid>
       <description>KIM PHAM Last updated: June 6, 2017
 PROFESSIONAL EXPERIENCE Digital Projects and Technologies Librarian, Liaison Librarian (Physics) December 2014-Present University of Toronto Scarborough – Digital Scholarship Unit
  Project manager and collaborator on a number of digital projects, including Learning in Neural Circuits (Dept. of Biological Sciences, Neuroscience), Dragoman Renaissance Research Platform, Scarborough Oral Histories Project, Gunda Gunde (Dept. of Historical and Cultural Studies), MediaCAT (Dept. of Anthropology). Survey existing technologies, test and selection, building system prototypes to present to faculty and stakeholders, coordinating development sprints and designing product roadmaps for projects.</description>
@@ -24,47 +24,47 @@ PROFESSIONAL EXPERIENCE Digital Projects and Technologies Librarian, Liaison Lib
     
     <item>
       <title>kim pham cv</title>
-      <link>http://example.org/cv3/20170606/</link>
+      <link>http://kimpham54.github.io/cv3/20170606/</link>
       <pubDate>Tue, 06 Jun 2017 10:10:05 -0400</pubDate>
       
-      <guid>http://example.org/cv3/20170606/</guid>
+      <guid>http://kimpham54.github.io/cv3/20170606/</guid>
       <description>KIM PHAM PROFESSIONAL EXPERIENCE Digital Projects and Technologies Librarian, Liaison Librarian (Physics) December 2014-Present University of Toronto Scarborough – Digital Scholarship Unit
  Project manager and collaborator on a number of digital projects, including Learning in Neural Circuits (Dept. of Biological Sciences, Neuroscience), Dragoman Renaissance Research Platform, Scarborough Oral Histories Project, Gunda Gunde (Dept. of Historical and Cultural Studies), MediaCAT (Dept. of Anthropology). Survey existing technologies, test and selection, building system prototypes to present to faculty and stakeholders, coordinating development sprints and designing product roadmaps for projects.</description>
     </item>
     
     <item>
       <title>welcome</title>
-      <link>http://example.org/post/welcome/</link>
+      <link>http://kimpham54.github.io/post/welcome/</link>
       <pubDate>Mon, 15 May 2017 18:43:05 -0400</pubDate>
       
-      <guid>http://example.org/post/welcome/</guid>
+      <guid>http://kimpham54.github.io/post/welcome/</guid>
       <description>hey. welcome</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/presentations/2016-c4ln-compscicollab/</link>
+      <link>http://kimpham54.github.io/presentations/2016-c4ln-compscicollab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/presentations/2016-c4ln-compscicollab/</guid>
+      <guid>http://kimpham54.github.io/presentations/2016-c4ln-compscicollab/</guid>
       <description>Collaborating with your Computer Science department  @import url(https://fonts.googleapis.com/css?family=Hind); @import url(https://fonts.googleapis.com/css?family=Merriweather+Sans); @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic); @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic); body { font-family: &#39;Hind&#39;; } h1, h2, h3 { font-family: &#39;Hind&#39;; font-weight: normal; } .remark-code, .remark-inline-code { font-family: &#39;Ubuntu Mono&#39;; } h1, h2, h3 { font-family: &#39;Hind&#39;; font-weight: 400; margin-bottom: 0; } .remark-slide-content h1 { font-size: 2em; font-weight: bold; } .remark-slide-content h2 { font-size: 1.9em; } .remark-slide-content h3 { font-size: 1.6em; } .footnote { position: absolute; bottom: 3em; } li p { line-height: 1.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/presentations/2016-or-maintenance/</link>
+      <link>http://kimpham54.github.io/presentations/2016-or-maintenance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/presentations/2016-or-maintenance/</guid>
+      <guid>http://kimpham54.github.io/presentations/2016-or-maintenance/</guid>
       <description>Collaborating with your Computer Science department  @import url(https://fonts.googleapis.com/css?family=Hind); @import url(https://fonts.googleapis.com/css?family=Merriweather+Sans); @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic); @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic); body { font-family: &#39;Hind&#39;; } h1, h2, h3 { font-family: &#39;Hind&#39;; font-weight: normal; } .remark-code, .remark-inline-code { font-family: &#39;Ubuntu Mono&#39;; } h1, h2, h3 { font-family: &#39;Hind&#39;; font-weight: 400; margin-bottom: 0; } .remark-slide-content h1 { font-size: 2em; font-weight: bold; } .remark-slide-content h2 { font-size: 1.9em; } .remark-slide-content h3 { font-size: 1.6em; } .footnote { position: absolute; bottom: 3em; } li p { line-height: 1.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/presentations/readme/</link>
+      <link>http://kimpham54.github.io/presentations/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/presentations/readme/</guid>
+      <guid>http://kimpham54.github.io/presentations/readme/</guid>
       <description>Presentations by and with Kim Pham 2016 Resources to write better code https://docs.google.com/presentation/d/1ZWuStEgxZRtD1MUi-enkXWwVYjDE4zw5dLkVv6-QtTY/edit?usp=sharing
 2015
 2014</description>

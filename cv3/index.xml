@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cv3s on My New Hugo Site</title>
-    <link>http://example.org/cv3/</link>
+    <link>http://kimpham54.github.io/cv3/</link>
     <description>Recent content in Cv3s on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 Jun 2017 10:10:05 -0400</lastBuildDate>
     
-	<atom:link href="http://example.org/cv3/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://kimpham54.github.io/cv3/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>kim pham cv</title>
-      <link>http://example.org/cv3/20170606/</link>
+      <link>http://kimpham54.github.io/cv3/20170606/</link>
       <pubDate>Tue, 06 Jun 2017 10:10:05 -0400</pubDate>
       
-      <guid>http://example.org/cv3/20170606/</guid>
+      <guid>http://kimpham54.github.io/cv3/20170606/</guid>
       <description>KIM PHAM PROFESSIONAL EXPERIENCE Digital Projects and Technologies Librarian, Liaison Librarian (Physics) December 2014-Present University of Toronto Scarborough – Digital Scholarship Unit
  Project manager and collaborator on a number of digital projects, including Learning in Neural Circuits (Dept. of Biological Sciences, Neuroscience), Dragoman Renaissance Research Platform, Scarborough Oral Histories Project, Gunda Gunde (Dept. of Historical and Cultural Studies), MediaCAT (Dept. of Anthropology). Survey existing technologies, test and selection, building system prototypes to present to faculty and stakeholders, coordinating development sprints and designing product roadmaps for projects.</description>
     </item>
