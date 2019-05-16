@@ -6,10 +6,43 @@
     <description>Recent content on Kim Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Jun 2017 10:10:05 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2019 22:42:28 -0600</lastBuildDate>
     
 	<atom:link href="http://kimpham54.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>flatiron school portfolio project 001 &#43; updating nokogiri</title>
+      <link>http://kimpham54.github.io/post/002/</link>
+      <pubDate>Wed, 15 May 2019 22:42:28 -0600</pubDate>
+      
+      <guid>http://kimpham54.github.io/post/002/</guid>
+      <description>&lt;p&gt;our cohort is is working on our first portfolio project two months into the flatiron school software engineering part time program. we were asked to create a ruby gem that provides a command line interface to interact with the application that uses an external data source (either by API or web scraping). we were able to use any external data source we wanted, so i made the obvious choice for myself and decided to scrape &lt;a href=&#34;https://mountainproject.com&#34;&gt;mountain project&lt;/a&gt;, a site that describes climbing routes and locations in north america.&lt;/p&gt;
+
+&lt;p&gt;i put the &lt;a href=&#34;https://github.com/kimpham54/classic_climbs_cli_gem&#34;&gt;classic climbs code repository&lt;/a&gt; up on github with details on how to install and run the application. it&amp;rsquo;s a little object oriented application that scrapes &lt;a href=&#34;https://www.mountainproject.com/area/classics?type=sport&#34;&gt;classic sport climbs&lt;/a&gt;, prints out a list of those climbs, and the user can then select one of those climbs to get more details about it, scraped from a specific climb&amp;rsquo;s page, such as &lt;a href=&#34;https://www.mountainproject.com/route/106183204/space-boyz&#34;&gt;space boyz&lt;/a&gt; (point of pride note: i climbed this route in march!)&lt;/p&gt;
+
+&lt;p&gt;it was a fun exercise to create this application, and it helps that you get to work on content that you enjoy working with. getting to build an object oriented ruby application hardened some of the concepts for me, and helped me think through some of the ways to optimize the program by thinking hard about separation of concerns, improving performance, and trying to be DRY (don&amp;rsquo;t repeat yourself).&lt;/p&gt;
+
+&lt;p&gt;i wanted to note one thing, which makes me think about what it means to work in tech or to be a software developer.&lt;/p&gt;
+
+&lt;p&gt;the tl;dr: software development is not just about programming and getting your code to work for you, there&amp;rsquo;s many considerations to take into account to say that you have a working application. it&amp;rsquo;s the planning, setting up environment, testing, deployment, security, everything to make your code not only work but continuously operational.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>i&#39;m in the software engineering program at the flatiron school</title>
+      <link>http://kimpham54.github.io/post/001/</link>
+      <pubDate>Wed, 15 May 2019 22:42:25 -0600</pubDate>
+      
+      <guid>http://kimpham54.github.io/post/001/</guid>
+      <description>&lt;p&gt;hello, just introducing myself here on this very website that is my own. i’m currently in the Software Engineering 10-month part-time program &amp;ndash; part-time because i am also working full-time as a librarian! yes I like books, no I do not get to read them for my job. librarians are information professionals, so that means often times our role is to help with the organization and access of information. this can take on many forms, depending on the type of librarian you are. there are subject librarians, such as a science librarian, who might work directly with students and faculty to find the most appropriate resources for their research. there are metadata librarians, who help create, clean, structure, and organize records that are indexed and made searchable in databases. then there are technology librarians (such as myself), who helps to design the software for users to interact with databases/datastores.&lt;/p&gt;
+
+&lt;p&gt;in my role, i primarily do project management and am a product manager for our digital repository, a custom application to search through our collections of digitized or born digital archival materials, such as scanned photos, audio and video clips, archived websites, documents, etc.&lt;/p&gt;
+
+&lt;p&gt;my own tips to myself, the hopeful learner:
+- keep notes. copy and paste sections that are useful, even if you don&amp;rsquo;t ever go back to it (which i actually do), it helps to just go over it again to help with learning the concept. i also keep a list of methods, short code examples that i refer to when i&amp;rsquo;m coding as just a reminder of what&amp;rsquo;s available to use if i can&amp;rsquo;t remember the name or the exact functionality
+- look for other tools to help with learning. i use jupyter notebooks an easier way to manipulate and test code
+- look for other cheatsheets to help with learning. i&amp;rsquo;ve found some good xpath and regex cheatsheets out there that i just do a quick skim of if i have to create a query, cause i find the syntax is really hard to remember offhand&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>kim pham cv</title>

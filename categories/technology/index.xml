@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>technology on Kim Pham</title>
+    <link>http://kimpham54.github.io/categories/technology/</link>
+    <description>Recent content in technology on Kim Pham</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 May 2019 22:42:28 -0600</lastBuildDate>
+    
+	<atom:link href="http://kimpham54.github.io/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>flatiron school portfolio project 001 &#43; updating nokogiri</title>
+      <link>http://kimpham54.github.io/post/002/</link>
+      <pubDate>Wed, 15 May 2019 22:42:28 -0600</pubDate>
+      
+      <guid>http://kimpham54.github.io/post/002/</guid>
+      <description>&lt;p&gt;our cohort is is working on our first portfolio project two months into the flatiron school software engineering part time program. we were asked to create a ruby gem that provides a command line interface to interact with the application that uses an external data source (either by API or web scraping). we were able to use any external data source we wanted, so i made the obvious choice for myself and decided to scrape &lt;a href=&#34;https://mountainproject.com&#34;&gt;mountain project&lt;/a&gt;, a site that describes climbing routes and locations in north america.&lt;/p&gt;
+
+&lt;p&gt;i put the &lt;a href=&#34;https://github.com/kimpham54/classic_climbs_cli_gem&#34;&gt;classic climbs code repository&lt;/a&gt; up on github with details on how to install and run the application. it&amp;rsquo;s a little object oriented application that scrapes &lt;a href=&#34;https://www.mountainproject.com/area/classics?type=sport&#34;&gt;classic sport climbs&lt;/a&gt;, prints out a list of those climbs, and the user can then select one of those climbs to get more details about it, scraped from a specific climb&amp;rsquo;s page, such as &lt;a href=&#34;https://www.mountainproject.com/route/106183204/space-boyz&#34;&gt;space boyz&lt;/a&gt; (point of pride note: i climbed this route in march!)&lt;/p&gt;
+
+&lt;p&gt;it was a fun exercise to create this application, and it helps that you get to work on content that you enjoy working with. getting to build an object oriented ruby application hardened some of the concepts for me, and helped me think through some of the ways to optimize the program by thinking hard about separation of concerns, improving performance, and trying to be DRY (don&amp;rsquo;t repeat yourself).&lt;/p&gt;
+
+&lt;p&gt;i wanted to note one thing, which makes me think about what it means to work in tech or to be a software developer.&lt;/p&gt;
+
+&lt;p&gt;the tl;dr: software development is not just about programming and getting your code to work for you, there&amp;rsquo;s many considerations to take into account to say that you have a working application. it&amp;rsquo;s the planning, setting up environment, testing, deployment, security, everything to make your code not only work but continuously operational.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
