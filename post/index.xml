@@ -18,7 +18,7 @@
       
       <guid>http://kimpham54.github.io/post/003/</guid>
       <description>it was a quick turnaround for me to build our second portfolio project, a Sinatra app that uses a whole new slew of ruby web technologies for me, including Rack, Activerecord, Rake, and bcrypt.
-in brief, my app</description>
+in brief, i built an application that behaves like a content management system in that it lets people have their own account to create a list of items to read in the future. a user can add a reading item and enter in an item&amp;rsquo;s title, url, and notes about the reading item.</description>
     </item>
     
     <item>
