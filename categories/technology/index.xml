@@ -6,10 +6,20 @@
     <description>Recent content in technology on Kim Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 May 2019 22:42:28 -0600</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 -0600</lastBuildDate>
     
 	<atom:link href="http://kimpham54.github.io/categories/technology/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>flatiron school portfolio project 002 making reading lists with sinatra</title>
+      <link>http://kimpham54.github.io/post/003/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 -0600</pubDate>
+      
+      <guid>http://kimpham54.github.io/post/003/</guid>
+      <description>it was a quick turnaround for me to build our second portfolio project, a Sinatra app that uses a whole new slew of ruby web technologies for me, including Rack, Activerecord, Rake, and bcrypt.
+in brief, my app</description>
+    </item>
     
     <item>
       <title>flatiron school portfolio project 001 &#43; updating nokogiri</title>
