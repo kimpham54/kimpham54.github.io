@@ -6,13 +6,22 @@
     <description>Recent content on Kim Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 04 Nov 2019 00:00:00 -0700</lastBuildDate>
     
 	<atom:link href="http://kimpham54.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>flatiron school portfolio project 002 making reading lists with sinatra</title>
+      <title>flatiron school portfolio project 003 &#43; ruby on magic</title>
+      <link>http://kimpham54.github.io/post/004/</link>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 -0700</pubDate>
+      
+      <guid>http://kimpham54.github.io/post/004/</guid>
+      <description>i completed my first ever ruby on rails project - climbing_gear. that, for me, is a pretty big deal! for a long time i&amp;rsquo;ve used programming languages for scripting, adding simple functionality and building some pretty simple applications where i worked on just the frontend/backend/server. i never worked on each level of an application. so making a full stack rails application is something i&amp;rsquo;m pretty glad i got to finally do.</description>
+    </item>
+    
+    <item>
+      <title>flatiron school portfolio project 002 &#43; making reading lists with sinatra</title>
       <link>http://kimpham54.github.io/post/003/</link>
       <pubDate>Wed, 28 Aug 2019 00:00:00 -0600</pubDate>
       
