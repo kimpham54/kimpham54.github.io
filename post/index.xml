@@ -6,15 +6,25 @@
     <description>Recent content in Posts on Kim Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Nov 2019 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jan 2020 00:00:00 -0800</lastBuildDate>
     
 	<atom:link href="http://kimpham54.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>flatiron school portfolio project 004 &#43; church wafer javascript</title>
+      <link>http://kimpham54.github.io/post/005/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 -0800</pubDate>
+      
+      <guid>http://kimpham54.github.io/post/005/</guid>
+      <description>i&amp;rsquo;ve been working on my fourth portfolio project for flatiron while doing a west coast tour of the United States. inspired by my friends, ardent lovers of good food made with care and consideration, i decided to make my application about recipes. i find that the flatiron school has a solid, tight curriculum - everything i&amp;rsquo;ve learned in the program so far has built upon each other.
+in a specific programming language (Ruby) you start by learning about basic programming (basic operators, syntax, loops), then learn about object-oriented programming, then you learn about HTML, CSS, SQL, then you learn a lightweight Ruby framework (Sinatra), then a more powerful Ruby framework (Rails), then using Ruby and Rails with vanilla (meaning basic, or church wafer) Javascript, and finally we&amp;rsquo;ll learn to use a powerful Javascript framework (React).</description>
+    </item>
+    
+    <item>
       <title>flatiron school portfolio project 003 &#43; ruby on magic</title>
       <link>http://kimpham54.github.io/post/004/</link>
-      <pubDate>Mon, 04 Nov 2019 00:00:00 -0700</pubDate>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 -0800</pubDate>
       
       <guid>http://kimpham54.github.io/post/004/</guid>
       <description>i completed my first ever ruby on rails project - climbing_gear. that, for me, is a pretty big deal! for a long time i&amp;rsquo;ve used programming languages for scripting, adding simple functionality and building some pretty simple applications where i worked on just the frontend/backend/server. i never worked on each level of an application. so making a full stack rails application is something i&amp;rsquo;m pretty glad i got to finally do.</description>
@@ -23,7 +33,7 @@
     <item>
       <title>flatiron school portfolio project 002 &#43; making reading lists with sinatra</title>
       <link>http://kimpham54.github.io/post/003/</link>
-      <pubDate>Wed, 28 Aug 2019 00:00:00 -0600</pubDate>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 -0700</pubDate>
       
       <guid>http://kimpham54.github.io/post/003/</guid>
       <description>it was a quick turnaround for me to build our second portfolio project, a Sinatra app that uses a whole new slew of ruby web technologies for me, including Rack, Activerecord, Rake, and bcrypt.
