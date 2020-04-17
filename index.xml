@@ -6,10 +6,33 @@
     <description>Recent content on Kim Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Jan 2020 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 17 Apr 2020 00:00:00 -0600</lastBuildDate>
     
 	<atom:link href="http://kimpham54.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>wrapping up with school</title>
+      <link>http://kimpham54.github.io/post/007/</link>
+      <pubDate>Fri, 17 Apr 2020 00:00:00 -0600</pubDate>
+      
+      <guid>http://kimpham54.github.io/post/007/</guid>
+      <description>and&amp;hellip;that&amp;rsquo;s a wrap. what a year and a bit it&amp;rsquo;s been. finally, i accomplished something that i&amp;rsquo;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work, and did it.</description>
+    </item>
+    
+    <item>
+      <title>flatiron school portfolio project 005 &#43; bringing it all together</title>
+      <link>http://kimpham54.github.io/post/006/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 -0600</pubDate>
+      
+      <guid>http://kimpham54.github.io/post/006/</guid>
+      <description>notes along the way rails new climbing-logbook-backend &amp;ndash;api controllers db config/routes.rb
+npx create-react-app climbing-logbook-frontend Location has_many :climbs :name - string, :coordinates - string
+Route belongs_to :location :location_id, :name - string, :grade - float, :type - string, :notes - string, :climb_date - timestamp
+rails g resource Location rails g resource Route &amp;ndash;no-test-framework
+models add relationships models add validations rake db:migrate rake db:drop, delete schema rake db:seed
+rake db:drop | rake db:migrate | rake db:seed rails c Location.</description>
+    </item>
     
     <item>
       <title>flatiron school portfolio project 004 &#43; church wafer javascript</title>
