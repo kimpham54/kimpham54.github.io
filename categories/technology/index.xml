@@ -12,13 +12,12 @@
     
     
     <item>
-      <title>wrapping up with school</title>
+      <title>State vs Props in ReactJS</title>
       <link>http://kimpham54.github.io/post/007/</link>
       <pubDate>Wed, 29 Apr 2020 00:00:00 -0700</pubDate>
       
       <guid>http://kimpham54.github.io/post/007/</guid>
-      <description>Blog post on State vs props
-In React, components are used to translate raw data into rich HTML. Props and state constitute the raw data that gets transformed into HTML using the render() function of a component.
+      <description>In React, components are used to translate raw data into rich HTML. Props and state constitute the raw data that gets transformed into HTML using the render() function of a component.
 State belongs to a particular component, is stored within the component, and is used only by the component itself. State can be updated within a component, for instance based on an action (such as user event or network response).</description>
     </item>
     

@@ -4,9 +4,8 @@
     <meta name="generator" content="Hugo 0.55.5" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wrapping up with school | Kim Pham</title>
-    <meta name="description" content="Blog post on State vs props
-In React, components are used to translate raw data into rich HTML. Props and state constitute the raw data that gets transformed into HTML using the render() function of a component.
+    <title>State vs Props in ReactJS | Kim Pham</title>
+    <meta name="description" content="In React, components are used to translate raw data into rich HTML. Props and state constitute the raw data that gets transformed into HTML using the render() function of a component.
 State belongs to a particular component, is stored within the component, and is used only by the component itself. State can be updated within a component, for instance based on an action (such as user event or network response).">
     <meta name="keywords" content="flatiron, technology, ">
     
@@ -18,9 +17,8 @@ State belongs to a particular component, is stored within the component, and is 
   <meta name="author" content="">
 
 
-    <meta property="og:title" content="wrapping up with school" />
-<meta property="og:description" content="Blog post on State vs props
-In React, components are used to translate raw data into rich HTML. Props and state constitute the raw data that gets transformed into HTML using the render() function of a component.
+    <meta property="og:title" content="State vs Props in ReactJS" />
+<meta property="og:description" content="In React, components are used to translate raw data into rich HTML. Props and state constitute the raw data that gets transformed into HTML using the render() function of a component.
 State belongs to a particular component, is stored within the component, and is used only by the component itself. State can be updated within a component, for instance based on an action (such as user event or network response)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://kimpham54.github.io/post/007/" />
@@ -171,15 +169,14 @@ article [itemprop="description"] {
     <main>
   <article itemscope itemtype="http://schema.org/BlogPosting">
     
-<meta itemprop="name" content="wrapping up with school">
-<meta itemprop="description" content="Blog post on State vs props
-In React, components are used to translate raw data into rich HTML. Props and state constitute the raw data that gets transformed into HTML using the render() function of a component.
+<meta itemprop="name" content="State vs Props in ReactJS">
+<meta itemprop="description" content="In React, components are used to translate raw data into rich HTML. Props and state constitute the raw data that gets transformed into HTML using the render() function of a component.
 State belongs to a particular component, is stored within the component, and is used only by the component itself. State can be updated within a component, for instance based on an action (such as user event or network response).">
 
 
 <meta itemprop="datePublished" content="2020-04-29T00:00:00-07:00" />
 <meta itemprop="dateModified" content="2020-04-29T00:00:00-07:00" />
-<meta itemprop="wordCount" content="336">
+<meta itemprop="wordCount" content="394">
 
   <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
 
@@ -188,7 +185,7 @@ State belongs to a particular component, is stored within the component, and is 
 <meta itemprop="keywords" content="" />
 
     <header>
-      <h1 itemprop="headline">wrapping up with school</h1>
+      <h1 itemprop="headline">State vs Props in ReactJS</h1>
       <p class="muted">
         <svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
   <circle cx="16" cy="16" r="14" />
@@ -208,7 +205,7 @@ State belongs to a particular component, is stored within the component, and is 
     
 
     <div itemprop="articleBody">
-      <p>Blog post on State vs props</p>
+      
 
 <p>In React, components are used to translate raw data into rich HTML. Props and state constitute the raw data that gets transformed into HTML using the render() function of a component.</p>
 
@@ -234,12 +231,12 @@ State belongs to a particular component, is stored within the component, and is 
     );
   }
 };
-ReactDOM.render(&lt;List /&gt;, document.getElementById(&quot;container&quot;));
+ReactDOM.render(&lt;List /&gt;, document.getElementById(&quot;root&quot;));
 </code></pre>
 
-<p>When the button is clicked once, the state value will change to 1.</p>
+<p>When the button is clicked once, the state value will change to 1 using the setState() method and re-render the component with the updated value.</p>
 
-<p>Props is short for properties and is a plan Javascript object. In a component, props are set in a parent component and can only be changed by a parent component. In other words, a component receives props from its parent and at this point the props cannot change. That child component can continue to pass props down to its own children. The following is an example of where a name prop is added to a Welcome component. Props are accessible from a class component by calling on the class using this.props:</p>
+<p>Props is short for properties and is a plain Javascript object. In a component, props are set in a parent component and can only be changed by a parent component. In other words, a component receives props from its parent and at this point the props cannot change. That child component can continue to pass props down to its own children. The following is an example of where a name prop is called in a child Welcome component. The prop is set in the parent App component. Props are accessible from a class component by calling on the class using this.props:</p>
 
 <pre><code>class Welcome extends React.Component {
   render() {
@@ -275,6 +272,14 @@ function App() {
 }
 </code></pre>
 
+<h2 id="when-do-we-want-to-use-props">When do we want to use props?</h2>
+
+<p>When you want to access data from parent components in a child component, you pass down data using props.</p>
+
+<h2 id="when-do-we-want-to-use-state">When do we want to use state?</h2>
+
+<p>When you want to change data within a component.</p>
+
     </div>
     
     <footer>
@@ -293,7 +298,7 @@ function App() {
     in <span itemprop="articleSection"><a href="/categories/technology/">technology</a></span>
   
   
-  using <span itemprop="wordCount">336</span> words.
+  using <span itemprop="wordCount">394</span> words.
 </p>
 
       
