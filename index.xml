@@ -28,7 +28,7 @@ State belongs to a particular component, is stored within the component, and is 
       
       <guid>http://kimpham54.github.io/post/006/</guid>
       <description>and&amp;hellip;that&amp;rsquo;s a wrap. what a year and a bit it&amp;rsquo;s been. finally, i accomplished something that i&amp;rsquo;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work. i had a hard time juggling everything, but i feel good about finishing the program.
-coding notes along the way rails new climbing-logbook-backend &amp;ndash;api controllers db config/routes.</description>
+coding notes along the way How is the app organized?</description>
     </item>
     
     <item>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flatiron school portfolio project 005 &#43; bringing it all together | Kim Pham</title>
     <meta name="description" content="and&hellip;that&rsquo;s a wrap. what a year and a bit it&rsquo;s been. finally, i accomplished something that i&rsquo;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work. i had a hard time juggling everything, but i feel good about finishing the program.
-coding notes along the way rails new climbing-logbook-backend &ndash;api controllers db config/routes.">
+coding notes along the way How is the app organized?">
     <meta name="keywords" content="flatiron, technology, ">
     
     
@@ -19,7 +19,7 @@ coding notes along the way rails new climbing-logbook-backend &ndash;api control
 
     <meta property="og:title" content="flatiron school portfolio project 005 &#43; bringing it all together" />
 <meta property="og:description" content="and&hellip;that&rsquo;s a wrap. what a year and a bit it&rsquo;s been. finally, i accomplished something that i&rsquo;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work. i had a hard time juggling everything, but i feel good about finishing the program.
-coding notes along the way rails new climbing-logbook-backend &ndash;api controllers db config/routes." />
+coding notes along the way How is the app organized?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://kimpham54.github.io/post/006/" />
 
@@ -171,12 +171,12 @@ article [itemprop="description"] {
     
 <meta itemprop="name" content="flatiron school portfolio project 005 &#43; bringing it all together">
 <meta itemprop="description" content="and&hellip;that&rsquo;s a wrap. what a year and a bit it&rsquo;s been. finally, i accomplished something that i&rsquo;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work. i had a hard time juggling everything, but i feel good about finishing the program.
-coding notes along the way rails new climbing-logbook-backend &ndash;api controllers db config/routes.">
+coding notes along the way How is the app organized?">
 
 
 <meta itemprop="datePublished" content="2020-04-16T00:00:00-07:00" />
 <meta itemprop="dateModified" content="2020-04-16T00:00:00-07:00" />
-<meta itemprop="wordCount" content="205">
+<meta itemprop="wordCount" content="545">
 
   <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
 
@@ -191,7 +191,7 @@ coding notes along the way rails new climbing-logbook-backend &ndash;api control
   <circle cx="16" cy="16" r="14" />
   <path d="M16 8 L16 16 20 20" />
 </svg>
-<span>1 minute read</span>
+<span>3 minute read</span>
 <svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
   <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
 </svg>
@@ -210,6 +210,28 @@ coding notes along the way rails new climbing-logbook-backend &ndash;api control
 <p>and&hellip;that&rsquo;s a wrap. what a year and a bit it&rsquo;s been. finally, i accomplished something that i&rsquo;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work. i had a hard time juggling everything, but i feel good about finishing the program.</p>
 
 <h1 id="coding-notes-along-the-way">coding notes along the way</h1>
+
+<p>How is the app organized? Here is the component hierarchy:</p>
+
+<p>App
+&mdash;LocationsContainer
+&mdash;&mdash;Locations
+&mdash;&mdash;&mdash;Location
+&mdash;&mdash;&mdash;&mdash;RoutesContainer
+&mdash;&mdash;&mdash;&mdash;&mdash;Routes
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;Route</p>
+
+<p>===================================================</p>
+
+<p>What is the redux flow when an action gets initiated, for instance when you want to edit a route?</p>
+
+<ol>
+<li>Route.js - reusing the LocationInput component to handleEdit function, accesses store to the actionCreator using this.props.editRoute (we have access to this.props.editRoute because it is passed down from RoutesContainer down to Routes in the store)</li>
+<li>actions/routes.js - editRoute gets called, data gets passed</li>
+<li>reducers/locationsReducer.js - the EDIT_ROUTE case in the reducer gets called and using the original state from the route finds the location, finds the route in the location, then updates the route values to the new values from the new state (the action.payload)</li>
+</ol>
+
+<p>========================================</p>
 
 <p>rails new climbing-logbook-backend &ndash;api
     controllers
@@ -247,7 +269,7 @@ routes fetch request cors accepts from a server frontend access to db</p>
 Location.destroy_all
 Route.destroy_all</p>
 
-<p>====================</p>
+<p>==================================</p>
 
 <p>rails c
 Location.first.transactions
@@ -270,6 +292,43 @@ npm start</p>
 
 <p>will check serializer before check models to send to frontend</p>
 
+<p>==================================</p>
+
+<p>index.js
+- store createStore
+- Provider store &gt; App store
+- root</p>
+
+<p>App.js
+- App component
+- render div and rest of components</p>
+
+<p>reducers/managerestaurant.js</p>
+
+<p>components/Restaurant.js
+- Component, get props, state updates
+/RestaurantInput.js
+- form events handlers, connect, mapstatetoprops mapdispatchtoprops
+actions/action.js
+- action function switch</p>
+
+<p>We are provided with 4 lifecycle methods to help us handle updates:static getDerivedStateFromProps(), shouldComponentUpdate, getSnapshotBeforeUpdate and componentDidUpdate.</p>
+
+<p>These methods always get called in the same order and the render() method which renders the React component into the DOM will be called just before componentDidUpdate, so the actual order of lifecycle methods being called is:</p>
+
+<p>static getDerivedStateFromProps(props, state)
+shouldComponentUpdate(nextProps, nextState)
+render() (can access props and state via this.props and this.state - previous props are no longer available)
+getSnapshotBeforeUpdate(prevProps, prevState)
+componentDidUpdate(prevProps, prevState, snapshot) (can still access current props and state via this.props and this.state and this is the last time previous props and state will be available).</p>
+
+<p>mounting - constructor, getderivedstatefrompropops, render, reactDOM, componentdidmount
+updating - getderivedstatefrompropops, shouldcomponentupdate, render, getsnapshotbeforeudpdate, reactDOM, componentdidmount
+unmounting - componentwillunmount</p>
+
+<p>props - &ldquo;props&rdquo; (short for &ldquo;properties&rdquo;) is an object of arbitrary inputs a React  component accepts as the first argument. One limit to props is that you&rsquo;re not allowed to change them.
+state - &ldquo;state&rdquo; is data that changes over the lifetime of a specific instance of a React component.</p>
+
     </div>
     
     <footer>
@@ -288,7 +347,7 @@ npm start</p>
     in <span itemprop="articleSection"><a href="/categories/technology/">technology</a></span>
   
   
-  using <span itemprop="wordCount">205</span> words.
+  using <span itemprop="wordCount">545</span> words.
 </p>
 
       
