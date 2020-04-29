@@ -5,12 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flatiron school portfolio project 005 &#43; bringing it all together | Kim Pham</title>
-    <meta name="description" content="notes along the way rails new climbing-logbook-backend &ndash;api controllers db config/routes.rb
-npx create-react-app climbing-logbook-frontend Location has_many :climbs :name - string, :coordinates - string
-Route belongs_to :location :location_id, :name - string, :grade - float, :type - string, :notes - string, :climb_date - timestamp
-rails g resource Location rails g resource Route &ndash;no-test-framework
-models add relationships models add validations rake db:migrate rake db:drop, delete schema rake db:seed
-rake db:drop | rake db:migrate | rake db:seed rails c Location.">
+    <meta name="description" content="and&hellip;that&rsquo;s a wrap. what a year and a bit it&rsquo;s been. finally, i accomplished something that i&rsquo;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work. i had a hard time juggling everything, but i feel good about finishing the program.
+coding notes along the way rails new climbing-logbook-backend &ndash;api controllers db config/routes.">
     <meta name="keywords" content="flatiron, technology, ">
     
     
@@ -22,18 +18,14 @@ rake db:drop | rake db:migrate | rake db:seed rails c Location.">
 
 
     <meta property="og:title" content="flatiron school portfolio project 005 &#43; bringing it all together" />
-<meta property="og:description" content="notes along the way rails new climbing-logbook-backend &ndash;api controllers db config/routes.rb
-npx create-react-app climbing-logbook-frontend Location has_many :climbs :name - string, :coordinates - string
-Route belongs_to :location :location_id, :name - string, :grade - float, :type - string, :notes - string, :climb_date - timestamp
-rails g resource Location rails g resource Route &ndash;no-test-framework
-models add relationships models add validations rake db:migrate rake db:drop, delete schema rake db:seed
-rake db:drop | rake db:migrate | rake db:seed rails c Location." />
+<meta property="og:description" content="and&hellip;that&rsquo;s a wrap. what a year and a bit it&rsquo;s been. finally, i accomplished something that i&rsquo;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work. i had a hard time juggling everything, but i feel good about finishing the program.
+coding notes along the way rails new climbing-logbook-backend &ndash;api controllers db config/routes." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://kimpham54.github.io/post/006/" />
 
 <meta property="og:image" content="https://source.unsplash.com/category/technology/1600x900" />
-<meta property="article:published_time" content="2020-04-16T00:00:00-06:00"/>
-<meta property="article:modified_time" content="2020-04-16T00:00:00-06:00"/>
+<meta property="article:published_time" content="2020-04-16T00:00:00-07:00"/>
+<meta property="article:modified_time" content="2020-04-16T00:00:00-07:00"/>
 
     
 
@@ -178,17 +170,13 @@ article [itemprop="description"] {
   <article itemscope itemtype="http://schema.org/BlogPosting">
     
 <meta itemprop="name" content="flatiron school portfolio project 005 &#43; bringing it all together">
-<meta itemprop="description" content="notes along the way rails new climbing-logbook-backend &ndash;api controllers db config/routes.rb
-npx create-react-app climbing-logbook-frontend Location has_many :climbs :name - string, :coordinates - string
-Route belongs_to :location :location_id, :name - string, :grade - float, :type - string, :notes - string, :climb_date - timestamp
-rails g resource Location rails g resource Route &ndash;no-test-framework
-models add relationships models add validations rake db:migrate rake db:drop, delete schema rake db:seed
-rake db:drop | rake db:migrate | rake db:seed rails c Location.">
+<meta itemprop="description" content="and&hellip;that&rsquo;s a wrap. what a year and a bit it&rsquo;s been. finally, i accomplished something that i&rsquo;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work. i had a hard time juggling everything, but i feel good about finishing the program.
+coding notes along the way rails new climbing-logbook-backend &ndash;api controllers db config/routes.">
 
 
-<meta itemprop="datePublished" content="2020-04-16T00:00:00-06:00" />
-<meta itemprop="dateModified" content="2020-04-16T00:00:00-06:00" />
-<meta itemprop="wordCount" content="141">
+<meta itemprop="datePublished" content="2020-04-16T00:00:00-07:00" />
+<meta itemprop="dateModified" content="2020-04-16T00:00:00-07:00" />
+<meta itemprop="wordCount" content="205">
 
   <meta itemprop="image" content="https://source.unsplash.com/category/technology/1600x900">
 
@@ -208,7 +196,7 @@ rake db:drop | rake db:migrate | rake db:seed rails c Location.">
   <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
 </svg>
 
-  Published: <time datetime="2020-04-16T00:00:00-06:00">16 Apr, 2020</time>
+  Published: <time datetime="2020-04-16T00:00:00-07:00">16 Apr, 2020</time>
 
 
       </p>
@@ -219,7 +207,9 @@ rake db:drop | rake db:migrate | rake db:seed rails c Location.">
     <div itemprop="articleBody">
       
 
-<h1 id="notes-along-the-way">notes along the way</h1>
+<p>and&hellip;that&rsquo;s a wrap. what a year and a bit it&rsquo;s been. finally, i accomplished something that i&rsquo;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work. i had a hard time juggling everything, but i feel good about finishing the program.</p>
+
+<h1 id="coding-notes-along-the-way">coding notes along the way</h1>
 
 <p>rails new climbing-logbook-backend &ndash;api
     controllers
@@ -291,14 +281,14 @@ npm start</p>
       by <span itemprop="author"></span>
     
   
-  <time itemprop="datePublished" datetime="2020-04-16T00:00:00-06:00">
+  <time itemprop="datePublished" datetime="2020-04-16T00:00:00-07:00">
     16 Apr, 2020
   </time>
   
     in <span itemprop="articleSection"><a href="/categories/technology/">technology</a></span>
   
   
-  using <span itemprop="wordCount">141</span> words.
+  using <span itemprop="wordCount">205</span> words.
 </p>
 
       

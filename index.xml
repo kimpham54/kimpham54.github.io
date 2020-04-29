@@ -6,7 +6,7 @@
     <description>Recent content on Kim Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Apr 2020 00:00:00 -0600</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2020 00:00:00 -0700</lastBuildDate>
     
 	<atom:link href="http://kimpham54.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,30 +14,28 @@
     <item>
       <title>wrapping up with school</title>
       <link>http://kimpham54.github.io/post/007/</link>
-      <pubDate>Fri, 17 Apr 2020 00:00:00 -0600</pubDate>
+      <pubDate>Wed, 29 Apr 2020 00:00:00 -0700</pubDate>
       
       <guid>http://kimpham54.github.io/post/007/</guid>
-      <description>and&amp;hellip;that&amp;rsquo;s a wrap. what a year and a bit it&amp;rsquo;s been. finally, i accomplished something that i&amp;rsquo;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work, and did it.</description>
+      <description>Blog post on State vs props
+In React, components are used to translate raw data into rich HTML. Props and state constitute the raw data that gets transformed into HTML using the render() function of a component.
+State belongs to a particular component, is stored within the component, and is used only by the component itself. State can be updated within a component, for instance based on an action (such as user event or network response).</description>
     </item>
     
     <item>
       <title>flatiron school portfolio project 005 &#43; bringing it all together</title>
       <link>http://kimpham54.github.io/post/006/</link>
-      <pubDate>Thu, 16 Apr 2020 00:00:00 -0600</pubDate>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 -0700</pubDate>
       
       <guid>http://kimpham54.github.io/post/006/</guid>
-      <description>notes along the way rails new climbing-logbook-backend &amp;ndash;api controllers db config/routes.rb
-npx create-react-app climbing-logbook-frontend Location has_many :climbs :name - string, :coordinates - string
-Route belongs_to :location :location_id, :name - string, :grade - float, :type - string, :notes - string, :climb_date - timestamp
-rails g resource Location rails g resource Route &amp;ndash;no-test-framework
-models add relationships models add validations rake db:migrate rake db:drop, delete schema rake db:seed
-rake db:drop | rake db:migrate | rake db:seed rails c Location.</description>
+      <description>and&amp;hellip;that&amp;rsquo;s a wrap. what a year and a bit it&amp;rsquo;s been. finally, i accomplished something that i&amp;rsquo;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work. i had a hard time juggling everything, but i feel good about finishing the program.
+coding notes along the way rails new climbing-logbook-backend &amp;ndash;api controllers db config/routes.</description>
     </item>
     
     <item>
       <title>flatiron school portfolio project 004 &#43; church wafer javascript</title>
       <link>http://kimpham54.github.io/post/005/</link>
-      <pubDate>Fri, 03 Jan 2020 00:00:00 -0700</pubDate>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 -0800</pubDate>
       
       <guid>http://kimpham54.github.io/post/005/</guid>
       <description>i&amp;rsquo;ve been working on my fourth portfolio project for flatiron while doing a west coast tour of the United States. inspired by my friends, ardent lovers of good food made with care and consideration, i decided to make my application about recipes. i find that the flatiron school has a solid, tight curriculum - everything i&amp;rsquo;ve learned in the program so far has built upon each other.
@@ -47,7 +45,7 @@ in a specific programming language (Ruby) you start by learning about basic prog
     <item>
       <title>flatiron school portfolio project 003 &#43; ruby on magic</title>
       <link>http://kimpham54.github.io/post/004/</link>
-      <pubDate>Mon, 04 Nov 2019 00:00:00 -0700</pubDate>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 -0800</pubDate>
       
       <guid>http://kimpham54.github.io/post/004/</guid>
       <description>i completed my first ever ruby on rails project - climbing_gear. that, for me, is a pretty big deal! for a long time i&amp;rsquo;ve used programming languages for scripting, adding simple functionality and building some pretty simple applications where i worked on just the frontend/backend/server. i never worked on each level of an application. so making a full stack rails application is something i&amp;rsquo;m pretty glad i got to finally do.</description>
@@ -56,7 +54,7 @@ in a specific programming language (Ruby) you start by learning about basic prog
     <item>
       <title>flatiron school portfolio project 002 &#43; making reading lists with sinatra</title>
       <link>http://kimpham54.github.io/post/003/</link>
-      <pubDate>Wed, 28 Aug 2019 00:00:00 -0600</pubDate>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 -0700</pubDate>
       
       <guid>http://kimpham54.github.io/post/003/</guid>
       <description>it was a quick turnaround for me to build our second portfolio project, a Sinatra app that uses a whole new slew of ruby web technologies for me, including Rack, Activerecord, Rake, and bcrypt.
