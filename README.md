@@ -1,13 +1,3 @@
-# Introduction
+kimpham54.github.io is dead. Long live kimpham54.github.io!
 
-Built from [kimpham54-hugo](https://github.com/kimpham54/kimpham54-hugo)
-Site for [kimpham54.github.io](http://kimpham54.github.io/)
-
-## Usage
-
-public/ moved from kimpham54-hugo
-
-test with dillinger
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjczNTI2NDRdfQ==
--->
+A fresh new look as of August 2022. Using the more frequently updated Archie theme (https://github.com/athul/archie), wanted to keep it simple without netlify, want to use Github Actions to build and load rather than have two repositories for deployment. Migrated all my content over.
