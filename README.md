@@ -4,5 +4,4 @@ A fresh new look as of August 2022. Using the more frequently updated Archie the
 
 2022-08-17 unpublish site and republish github actions
 branches still called master
-untracked content
-another
+untracked content with archie theme git submodule rm craziness
