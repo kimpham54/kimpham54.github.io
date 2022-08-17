@@ -1,4 +1,4 @@
-baseURL = 'blah'
+baseURL = 'https://kimpham54.github.io/'
 languageCode = 'en-us'
 title = 'Kim Pham'
 theme = "archie"

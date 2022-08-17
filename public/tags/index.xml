@@ -2,62 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Kim Pham</title>
-    <link>blah/tags/</link>
+    <link>https://kimpham54.github.io/tags/</link>
     <description>Recent content in Tags on Kim Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="blah/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://kimpham54.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>reactjs</title>
-      <link>blah/tags/reactjs/</link>
+      <link>https://kimpham54.github.io/tags/reactjs/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>blah/tags/reactjs/</guid>
+      <guid>https://kimpham54.github.io/tags/reactjs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>redux</title>
-      <link>blah/tags/redux/</link>
+      <link>https://kimpham54.github.io/tags/redux/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>blah/tags/redux/</guid>
+      <guid>https://kimpham54.github.io/tags/redux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ruby</title>
-      <link>blah/tags/ruby/</link>
+      <link>https://kimpham54.github.io/tags/ruby/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>blah/tags/ruby/</guid>
+      <guid>https://kimpham54.github.io/tags/ruby/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ruby on rails</title>
-      <link>blah/tags/ruby-on-rails/</link>
+      <link>https://kimpham54.github.io/tags/ruby-on-rails/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>blah/tags/ruby-on-rails/</guid>
+      <guid>https://kimpham54.github.io/tags/ruby-on-rails/</guid>
       <description></description>
     </item>
     
     <item>
       <title>javascript</title>
-      <link>blah/tags/javascript/</link>
+      <link>https://kimpham54.github.io/tags/javascript/</link>
       <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>blah/tags/javascript/</guid>
+      <guid>https://kimpham54.github.io/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sinatra</title>
-      <link>blah/tags/sinatra/</link>
+      <link>https://kimpham54.github.io/tags/sinatra/</link>
       <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>blah/tags/sinatra/</guid>
+      <guid>https://kimpham54.github.io/tags/sinatra/</guid>
       <description></description>
     </item>
     

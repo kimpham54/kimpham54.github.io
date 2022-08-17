@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>reactjs on Kim Pham</title>
-    <link>blah/tags/reactjs/</link>
+    <link>https://kimpham54.github.io/tags/reactjs/</link>
     <description>Recent content in reactjs on Kim Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="blah/tags/reactjs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://kimpham54.github.io/tags/reactjs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ruby &#43; rails &#43; react &#43; redux project 005 - climbing logbook </title>
-      <link>blah/post/006/</link>
+      <link>https://kimpham54.github.io/post/006/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>blah/post/006/</guid>
+      <guid>https://kimpham54.github.io/post/006/</guid>
       <description>former title: flatiron school portfolio project 005 + bringing it all together
 and&amp;hellip;that&amp;rsquo;s a wrap. what a year and a bit it&amp;rsquo;s been. finally, i accomplished something that i&amp;rsquo;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work. i had a hard time juggling everything, but i feel good about finishing the program.</description>
     </item>
