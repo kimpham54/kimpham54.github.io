@@ -14,6 +14,6 @@ find me around town
 * [Twitter](https://twitter.com/tolloid)
 * [Linkedin](https://www.linkedin.com/in/kim-pham-a9ba8030/)
 * [Github](https://github.com/kimpham54)
-* [Gitlab](https://gitlab.gwdg.de/kpham) - a lot of my work could not be public
+* [Gitlab](https://gitlab.gwdg.de/kpham) - much of my work here is not public
 
 yup
