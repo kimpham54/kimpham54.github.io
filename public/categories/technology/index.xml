@@ -6,7 +6,16 @@
     <description>Recent content in technology on Kim Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://kimpham54.github.io/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kimpham54.github.io/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>new site</title>
+      <link>https://kimpham54.github.io/post/008/</link>
+      <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kimpham54.github.io/post/008/</guid>
+      <description>why i never</description>
+    </item>
+    
     <item>
       <title>state vs props in react</title>
       <link>https://kimpham54.github.io/post/007/</link>
