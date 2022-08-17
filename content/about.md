@@ -12,7 +12,8 @@ author = "Kim Pham"
 find me around town
 
 * [Twitter](https://twitter.com/tolloid)
-* [Linkedin]
+* [Linkedin](https://www.linkedin.com/in/kim-pham-a9ba8030/)
 * [Github](https://github.com/kimpham54)
+* [Gitlab](https://gitlab.gwdg.de/kpham) - a lot of my work could not be public
 
 yup
