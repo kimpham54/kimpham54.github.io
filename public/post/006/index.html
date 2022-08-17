@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>ruby &#43; rails &#43; react &#43; redux project 005 - climbing logbook  - Kim Pham</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="and...that&#39;s a wrap. what a year and a bit it&#39;s been. finally, i accomplished something that i&#39;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work." />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="ruby &#43; rails &#43; react &#43; redux project 005 - climbing logbook " />
+<meta property="og:description" content="and...that&#39;s a wrap. what a year and a bit it&#39;s been. finally, i accomplished something that i&#39;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kimpham54.github.io/post/006/" /><meta property="og:image" content="https://source.unsplash.com/category/technology/1600x900" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-04-16T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-16T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://source.unsplash.com/category/technology/1600x900"/>
+
+<meta name="twitter:title" content="ruby &#43; rails &#43; react &#43; redux project 005 - climbing logbook "/>
+<meta name="twitter:description" content="and...that&#39;s a wrap. what a year and a bit it&#39;s been. finally, i accomplished something that i&#39;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work."/>
+<script src="https://kimpham54.github.iojs/feather.min.js"></script>
+	
+	
+        <link href="https://kimpham54.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://kimpham54.github.io/css/main.ac08a4c9714baa859217f92f051deb58df2938ec352b506df655005dcaf98cc0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://kimpham54.github.io/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css"  disabled />
+	
+	
+	
+		
+		
+		<link rel="stylesheet" type="text/css" href="https://kimpham54.github.io/css/first.0b72e51a94e2fce6ac1fcb9eebe2506ef4999e30c3cbdb9d35eef6d1205f7024.css">
+		
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://kimpham54.github.io">Kim Pham</a>
+		  <div style="display:flex; margin-top: 0.5rem;"><a class="soc" href="https://github.com/kimpham54" title="GitHub"><i data-feather="github"></i></a>
+    <a class="soc" href="https://twitter.com/tolloid/" title="Twitter"><i data-feather="twitter"></i></a>
+    <a class="soc" href="https://gitlab.com/kimpham54/" title="GitLab"><i data-feather="gitlab"></i></a>
+    <a class="soc" href="https://gitlab.com/kimpham54/" title="Linkedin"><i data-feather="linkedin"></i></a>
+    </div>
+	</div>
+
+	<nav>
+		
+		<a href="/post">All posts</a>
+		
+		<a href="/about">About</a>
+		
+		<a href="/tags">Tags</a>
+		
+		| <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
+		<script src="https://kimpham54.github.iojs/themetoggle.js"></script>
+		
+	</nav>
+
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">ruby &#43; rails &#43; react &#43; redux project 005 - climbing logbook </h1>
+			<div class="meta">Posted on Apr 16, 2020</div>
+		</div>
+		
+
+		<section class="body">
+			<p>former title: flatiron school portfolio project 005 + bringing it all together</p>
+<p>and&hellip;that&rsquo;s a wrap. what a year and a bit it&rsquo;s been. finally, i accomplished something that i&rsquo;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work. i had a hard time juggling everything, but i feel good about finishing the program.</p>
+<h1 id="coding-notes-along-the-way">coding notes along the way</h1>
+<p>How is the app organized? Here is the component hierarchy:</p>
+<p>App
+&mdash;LocationsContainer
+&mdash;&mdash;Locations
+&mdash;&mdash;&mdash;Location
+&mdash;&mdash;&mdash;&mdash;RoutesContainer
+&mdash;&mdash;&mdash;&mdash;&mdash;Routes
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;Route</p>
+<p>===================================================</p>
+<p>What is the redux flow when an action gets initiated, for instance when you want to edit a route?</p>
+<ol>
+<li>Route.js - reusing the LocationInput component to handleEdit function, accesses store to the actionCreator using this.props.editRoute (we have access to this.props.editRoute because it is passed down from RoutesContainer down to Routes in the store)</li>
+<li>actions/routes.js - editRoute gets called, data gets passed</li>
+<li>reducers/locationsReducer.js - the EDIT_ROUTE case in the reducer gets called and using the original state from the route finds the location, finds the route in the location, then updates the route values to the new values from the new state (the action.payload)</li>
+</ol>
+<p>========================================</p>
+<p>rails new climbing-logbook-backend &ndash;api
+controllers
+db
+config/routes.rb</p>
+<p>npx create-react-app climbing-logbook-frontend
+Location has_many :climbs
+:name - string, :coordinates - string</p>
+<p>Route belongs_to :location
+:location_id, :name - string, :grade - float, :type - string, :notes - string, :climb_date - timestamp</p>
+<p>rails g resource Location
+rails g resource Route &ndash;no-test-framework</p>
+<p>models add relationships
+models add validations
+rake db:migrate
+rake db:drop, delete schema
+rake db:seed</p>
+<p>rake db:drop | rake db:migrate | rake db:seed
+rails c
+Location.first, Location.All, Route.first</p>
+<p>controllers /api/v1
+routes.rb namespacing
+controllers namespacing
+rack-cors
+initializers/cors.rb
+routes fetch request cors accepts from a server frontend access to db</p>
+<p>in db
+Location.destroy_all
+Route.destroy_all</p>
+<p>==================================</p>
+<p>rails c
+Location.first.transactions
+Route.first.location</p>
+<p>rails g migration ChangeDefaultValuesToRoutes
+rails g migration ChangeDefaultValuesToLocations</p>
+<p>route = Route.create
+location = Location.first
+location.update_climb_total(route)</p>
+<p>see commits
+rails s
+npm start</p>
+<p>http://localhost:3000/api/v1/locations/2/routes
+http://localhost:3000/api/v1/routes
+http://localhost:3000/api/v1/locations</p>
+<p>will check serializer before check models to send to frontend</p>
+<p>==================================</p>
+<p>index.js</p>
+<ul>
+<li>store createStore</li>
+<li>Provider store &gt; App store</li>
+<li>root</li>
+</ul>
+<p>App.js</p>
+<ul>
+<li>App component</li>
+<li>render div and rest of components</li>
+</ul>
+<p>reducers/managerestaurant.js</p>
+<p>components/Restaurant.js</p>
+<ul>
+<li>Component, get props, state updates
+/RestaurantInput.js</li>
+<li>form events handlers, connect, mapstatetoprops mapdispatchtoprops
+actions/action.js</li>
+<li>action function switch</li>
+</ul>
+<p>We are provided with 4 lifecycle methods to help us handle updates:static getDerivedStateFromProps(), shouldComponentUpdate, getSnapshotBeforeUpdate and componentDidUpdate.</p>
+<p>These methods always get called in the same order and the render() method which renders the React component into the DOM will be called just before componentDidUpdate, so the actual order of lifecycle methods being called is:</p>
+<p>static getDerivedStateFromProps(props, state)
+shouldComponentUpdate(nextProps, nextState)
+render() (can access props and state via this.props and this.state - previous props are no longer available)
+getSnapshotBeforeUpdate(prevProps, prevState)
+componentDidUpdate(prevProps, prevState, snapshot) (can still access current props and state via this.props and this.state and this is the last time previous props and state will be available).</p>
+<p>mounting - constructor, getderivedstatefrompropops, render, reactDOM, componentdidmount
+updating - getderivedstatefrompropops, shouldcomponentupdate, render, getsnapshotbeforeudpdate, reactDOM, componentdidmount
+unmounting - componentwillunmount</p>
+<p>props - &ldquo;props&rdquo; (short for &ldquo;properties&rdquo;) is an object of arbitrary inputs a React  component accepts as the first argument. One limit to props is that you&rsquo;re not allowed to change them.
+state - &ldquo;state&rdquo; is data that changes over the lifetime of a specific instance of a React component.</p>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="/tags/ruby">ruby</a></li>
+					
+					<li><a href="/tags/ruby-on-rails">ruby on rails</a></li>
+					
+					<li><a href="/tags/reactjs">reactjs</a></li>
+					
+					<li><a href="/tags/redux">redux</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+  
+
+
+  <div>Thanks for stopping by</div>
+
+</footer>
+
+
+<script>
+  feather.replace()
+</script></div>
+    </body>
+</html>
