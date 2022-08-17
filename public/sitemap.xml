@@ -2,73 +2,73 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kimpham54.github.io/about/</loc>
+    <loc>blah/about/</loc>
     <lastmod>2022-08-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/cv/</loc>
+    <loc>blah/cv/</loc>
     <lastmod>2022-06-21T01:15:41-04:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/</loc>
+    <loc>blah/</loc>
     <lastmod>2022-06-21T01:15:41-04:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/cv/selected-talks-publications/</loc>
+    <loc>blah/cv/selected-talks-publications/</loc>
     <lastmod>2022-06-21T01:15:41-04:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/categories/</loc>
+    <loc>blah/categories/</loc>
     <lastmod>2020-04-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/post/</loc>
+    <loc>blah/post/</loc>
     <lastmod>2020-04-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/post/007/</loc>
+    <loc>blah/post/007/</loc>
     <lastmod>2020-04-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/categories/technology/</loc>
+    <loc>blah/categories/technology/</loc>
     <lastmod>2020-04-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/tags/reactjs/</loc>
+    <loc>blah/tags/reactjs/</loc>
     <lastmod>2020-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/tags/redux/</loc>
+    <loc>blah/tags/redux/</loc>
     <lastmod>2020-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/tags/ruby/</loc>
+    <loc>blah/tags/ruby/</loc>
     <lastmod>2020-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/post/006/</loc>
+    <loc>blah/post/006/</loc>
     <lastmod>2020-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/tags/ruby-on-rails/</loc>
+    <loc>blah/tags/ruby-on-rails/</loc>
     <lastmod>2020-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/tags/</loc>
+    <loc>blah/tags/</loc>
     <lastmod>2020-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/tags/javascript/</loc>
+    <loc>blah/tags/javascript/</loc>
     <lastmod>2020-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/post/005/</loc>
+    <loc>blah/post/005/</loc>
     <lastmod>2020-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/post/004/</loc>
+    <loc>blah/post/004/</loc>
     <lastmod>2019-11-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/post/003/</loc>
+    <loc>blah/post/003/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/tags/sinatra/</loc>
+    <loc>blah/tags/sinatra/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/post/002/</loc>
+    <loc>blah/post/002/</loc>
     <lastmod>2019-05-15T22:42:28-06:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/categories/flatiron/</loc>
+    <loc>blah/categories/flatiron/</loc>
     <lastmod>2019-05-15T22:42:25-06:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/post/001/</loc>
+    <loc>blah/post/001/</loc>
     <lastmod>2019-05-15T22:42:25-06:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/post/welcome/</loc>
+    <loc>blah/post/welcome/</loc>
     <lastmod>2017-05-15T18:43:05-04:00</lastmod>
   </url>
 </urlset>

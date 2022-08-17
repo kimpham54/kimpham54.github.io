@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sinatra on Kim Pham</title>
-    <link>https://kimpham54.github.io/tags/sinatra/</link>
+    <link>blah/tags/sinatra/</link>
     <description>Recent content in sinatra on Kim Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://kimpham54.github.io/tags/sinatra/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="blah/tags/sinatra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ruby project 002 &#43; making reading lists with sinatra</title>
-      <link>https://kimpham54.github.io/post/003/</link>
+      <link>blah/post/003/</link>
       <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://kimpham54.github.io/post/003/</guid>
+      <guid>blah/post/003/</guid>
       <description>former title: flatiron school portfolio project 002 + making reading lists with sinatra
 it was a quick turnaround for me to build our second portfolio project, a Sinatra app that uses a whole new slew of ruby web technologies for me, including Rack, Activerecord, Rake, and bcrypt.
 in brief, i built an application that behaves like a content management system in that it lets people have their own account to create a list of items to read in the future.</description>

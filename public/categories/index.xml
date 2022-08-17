@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Kim Pham</title>
-    <link>https://kimpham54.github.io/categories/</link>
+    <link>blah/categories/</link>
     <description>Recent content in Categories on Kim Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://kimpham54.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="blah/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>technology</title>
-      <link>https://kimpham54.github.io/categories/technology/</link>
+      <link>blah/categories/technology/</link>
       <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://kimpham54.github.io/categories/technology/</guid>
+      <guid>blah/categories/technology/</guid>
       <description></description>
     </item>
     
     <item>
       <title>flatiron</title>
-      <link>https://kimpham54.github.io/categories/flatiron/</link>
+      <link>blah/categories/flatiron/</link>
       <pubDate>Wed, 15 May 2019 22:42:25 -0600</pubDate>
       
-      <guid>https://kimpham54.github.io/categories/flatiron/</guid>
+      <guid>blah/categories/flatiron/</guid>
       <description></description>
     </item>
     

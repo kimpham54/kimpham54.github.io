@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cvs on Kim Pham</title>
-    <link>https://kimpham54.github.io/cv/</link>
+    <link>blah/cv/</link>
     <description>Recent content in Cvs on Kim Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Jun 2022 01:15:41 -0400</lastBuildDate><atom:link href="https://kimpham54.github.io/cv/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Jun 2022 01:15:41 -0400</lastBuildDate><atom:link href="blah/cv/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Selected Talks and Publications</title>
-      <link>https://kimpham54.github.io/cv/selected-talks-publications/</link>
+      <link>blah/cv/selected-talks-publications/</link>
       <pubDate>Tue, 21 Jun 2022 01:15:41 -0400</pubDate>
       
-      <guid>https://kimpham54.github.io/cv/selected-talks-publications/</guid>
+      <guid>blah/cv/selected-talks-publications/</guid>
       <description>Last updated: June 21, 2022
 SELECTED TALKS AND PUBLICATIONS Selected Publications 2022 - The Network of Early Modern Printers and Its Impact on the Spread of Scientific Knowledge: Automatic Detection of Awareness Relations. (draft accepted) 2022 - Just Because We Can Doesn’t Mean We Should: On Knowing and Protecting Data Produced by the Jewish Consumptives’ Relief Society. http://dx.doi.org/10.5399/uo/hsda/7.1.8 2020 - A Vertical Cooperation Model to Manage Digital Collections and Institutional Resources.</description>
     </item>
