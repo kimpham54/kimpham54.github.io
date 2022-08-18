@@ -15,8 +15,8 @@ paginate=20 # articles per page
 [params]
 	mode="toggle" # color-mode → light,dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
-	subtitle = "a site for me"
 	customcss = ["css/first.css"]
+	subtitle = 'some notes'
 
 # Social Tags
 
@@ -31,11 +31,6 @@ icon = "twitter"
 url = "https://twitter.com/tolloid/"
 
 [[params.social]]
-name = "GitLab"
-icon = "gitlab"
-url = "https://gitlab.com/kimpham54/"
-
-[[params.social]]
 name = "Linkedin"
 icon = "linkedin"
 url = "https://www.linkedin.com/in/kim-pham-a9ba8030/"
@@ -43,16 +38,16 @@ url = "https://www.linkedin.com/in/kim-pham-a9ba8030/"
 # Main menu Items
 
 [[menu.main]]
-name = "All posts"
+name = "About"
+url = "/about"
+weight = 1
+
+[[menu.main]]
+name = "Posts"
 url = "/post"
 weight = 2
 
 [[menu.main]]
-name = "About"
-url = "/about"
-weight = 3
-
-[[menu.main]]
 name = "Tags"
 url = "/tags"
-weight = 4
+weight = 3

@@ -8,23 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kimpham54.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>new site</title>
+      <title>About</title>
+      <link>https://kimpham54.github.io/about/</link>
+      <pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kimpham54.github.io/about/</guid>
+      <description>occasional notes about things i&amp;rsquo;m working on
+find me around town
+CV notes | Codebase for this site
+Twitter Linkedin Github Gitlab - much of my work here is not public you can also find me outside</description>
+    </item>
+    
+    <item>
+      <title>site built with hugo and github actions</title>
       <link>https://kimpham54.github.io/post/008/</link>
       <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://kimpham54.github.io/post/008/</guid>
-      <description>why i never</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://kimpham54.github.io/about/</link>
-      <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/about/</guid>
-      <description>CV notes
-find me around town
-Twitter [Linkedin] Github yup</description>
+      <description>i wanted to rebuild my site, just a little lift to streamline the workflow again. i also was inpsired by https://maxammann.org/ and the open transparent work of https://ashleyblewer.com/. previously my site was built with jekyll, then hugo. then i started to dig into nextjs and gatsby. i want to go with a static site generator so that it&amp;rsquo;s easy to maintain and has a lot of nice features out of the box.</description>
     </item>
     
     <item>
