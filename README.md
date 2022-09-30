@@ -7,6 +7,10 @@ kimpham54.github.io
 4. git add, commit -m 'new thang', push origin master
 5. github actions from .github/workflow/gh-pages.yml should deploy public/ in master automatically to gh-pages
 
+notes:
+- images need to go in static not assets
+- tags and dates need to be properly formatted for pages to build
+
 kimpham54.github.io is dead. Long live kimpham54.github.io!
 
 2022-08-17

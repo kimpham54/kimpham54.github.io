@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sparql on Kim Pham</title>
+    <link>https://kimpham54.github.io/tags/sparql/</link>
+    <description>Recent content in sparql on Kim Pham</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kimpham54.github.io/tags/sparql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ontology coordination with sparql</title>
+      <link>https://kimpham54.github.io/post/011/</link>
+      <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kimpham54.github.io/post/011/</guid>
+      <description>there</description>
+    </item>
+    
+  </channel>
+</rss>
