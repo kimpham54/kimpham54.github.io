@@ -8,6 +8,8 @@ author = "Kim Pham"
 
 occasional notes about things i'm working on
 
+----------------------------------------------------------
+
 find me around town
 
 [CV notes]({{< ref "/cv" >}} "CV")  | [Codebase for this site](https://github.com/kimpham54/kimpham54.github.io)
