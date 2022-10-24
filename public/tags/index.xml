@@ -62,11 +62,11 @@
     </item>
     
     <item>
-      <title>open souce</title>
-      <link>https://kimpham54.github.io/tags/open-souce/</link>
+      <title>machine learning</title>
+      <link>https://kimpham54.github.io/tags/machine-learning/</link>
       <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://kimpham54.github.io/tags/open-souce/</guid>
+      <guid>https://kimpham54.github.io/tags/machine-learning/</guid>
       <description></description>
     </item>
     
@@ -85,6 +85,15 @@
       <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://kimpham54.github.io/tags/climbing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go</title>
+      <link>https://kimpham54.github.io/tags/go/</link>
+      <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kimpham54.github.io/tags/go/</guid>
       <description></description>
     </item>
     
@@ -121,15 +130,6 @@
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://kimpham54.github.io/tags/ruby-on-rails/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sinatra</title>
-      <link>https://kimpham54.github.io/tags/sinatra/</link>
-      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/tags/sinatra/</guid>
       <description></description>
     </item>
     
