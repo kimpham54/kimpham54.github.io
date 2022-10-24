@@ -3,13 +3,14 @@ kimpham54.github.io
 
 1. pull down https://github.com/kimpham54/kimpham54.github.io
 2. cd themes, git clone https://github.com/athul/archie.git
-3. test with `hugo server -D`. add content, tweak away, test and build with `hugo -D`
+3. localhost:1313, test with `hugo server -D`. add content, tweak away, test and build with `hugo -D`
 4. git add, commit -m 'new thang', push origin master
 5. github actions from .github/workflow/gh-pages.yml should deploy public/ in master automatically to gh-pages
 
 notes:
 - images need to go in /static not assets
 - tags and dates need to be properly formatted for pages to build
+- don't touch any content in themes, need to override
 
 kimpham54.github.io is dead. Long live kimpham54.github.io!
 
