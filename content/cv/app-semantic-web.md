@@ -1,5 +1,5 @@
 +++
-title = "Semantic web knowledge graph"
+title = "Software project: Semantic web knowledge graph"
 date = 2022-10-30
 description = ""
 draft = false

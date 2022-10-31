@@ -35,14 +35,20 @@ name = "Linkedin"
 icon = "linkedin"
 url = "https://www.linkedin.com/in/kim-pham-a9ba8030/"
 
+[[params.social]]
+name = "Instagram"
+icon = "instagram"
+url = "https://www.instagram.com/kimpham54/"
+
 # Main menu Items
 
 [[menu.main]]
-name = "About"
-url = "/about"
-weight = 1
+name = "Work"
+url = "/cv"
+weight = 2
 
 [[menu.main]]
 name = "Posts"
 url = "/post"
-weight = 2
+weight = 3
+

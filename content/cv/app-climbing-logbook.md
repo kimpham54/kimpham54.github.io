@@ -1,5 +1,5 @@
 +++
-title = "Climbing logbook"
+title = "Software project: Climbing logbook"
 date = 2022-10-30
 description = ""
 draft = false

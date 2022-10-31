@@ -1,5 +1,5 @@
 +++
-title = "Biomedical oral histories aggregator"
+title = "Software project: Biomedical oral histories aggregator"
 date = 2022-10-30
 description = ""
 draft = false
@@ -12,3 +12,4 @@ A site that scrapes (with author permission) and aggregates oral histories in th
 The code is available in a private repository in Gitlab for the Max Planck Institute for the History of Science.
 
 ![text](../../images/app-oral-histories/gitlab-oralhistories.png "caption")
+![text](../../images/app-oral-histories/home.png "caption")
