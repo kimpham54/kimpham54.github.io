@@ -6,7 +6,50 @@
     <description>Recent content in Cvs on Kim Pham</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Jun 2022 01:15:41 -0400</lastBuildDate><atom:link href="https://kimpham54.github.io/cv/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kimpham54.github.io/cv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Biomedical oral histories aggregator</title>
+      <link>https://kimpham54.github.io/cv/app-oral-histories/</link>
+      <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kimpham54.github.io/cv/app-oral-histories/</guid>
+      <description>Last updated: October 31, 2022
+The code is available in a private repository in Gitlab for the Max Planck Institute for the History of Science.</description>
+    </item>
+    
+    <item>
+      <title>Climbing logbook</title>
+      <link>https://kimpham54.github.io/cv/app-climbing-logbook/</link>
+      <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kimpham54.github.io/cv/app-climbing-logbook/</guid>
+      <description>Last updated: October 31, 2022
+Github: https://github.com/kimpham54/climbing_logbook_react_rails
+Some of my coding notes: https://kimpham54.github.io/post/006/</description>
+    </item>
+    
+    <item>
+      <title>Recipe sharing</title>
+      <link>https://kimpham54.github.io/cv/app-recipe-sharing/</link>
+      <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kimpham54.github.io/cv/app-recipe-sharing/</guid>
+      <description>Last updated: October 31, 2022
+Github: https://github.com/kimpham54/climbing_logbook_react_rails
+Some of my coding notes: https://kimpham54.github.io/post/005/</description>
+    </item>
+    
+    <item>
+      <title>Semantic web knowledge graph</title>
+      <link>https://kimpham54.github.io/cv/app-semantic-web/</link>
+      <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kimpham54.github.io/cv/app-semantic-web/</guid>
+      <description>Last updated: October 31, 2022
+I was the primary designer and developer for this website. We used the open-source platform Researchspace, customizations and templates and visualizations done by me.
+The code is available in a private repository in Gitlab for the Max Planck Institute for the History of Science.</description>
+    </item>
+    
     <item>
       <title>Selected Talks and Publications</title>
       <link>https://kimpham54.github.io/cv/selected-talks-publications/</link>
