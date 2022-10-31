@@ -1,11 +1,11 @@
 +++
 title = "Selected Talks and Publications"
-date = 2022-06-21T01:15:41-04:00
+date = 2022-10-31T01:15:41-04:00
 description = ""
 draft = false
 +++
 
-Last updated: June 21, 2022
+Last updated: October 31, 2022
 
 ## SELECTED TALKS AND PUBLICATIONS
 
