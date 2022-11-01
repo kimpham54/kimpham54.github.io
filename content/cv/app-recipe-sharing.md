@@ -9,6 +9,8 @@ Last updated: October 31, 2022
 
 Github: https://github.com/kimpham54/climbing_logbook_react_rails
 
+An app I built to share recipes with my friends using Ruby, Rails, and plain Javascript. One of my Flatiron School projects.
+
 Some of my coding notes: https://kimpham54.github.io/post/005/
 
 ![text](../../images/app-recipe-sharing/screen1.png "caption")
