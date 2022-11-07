@@ -6,7 +6,9 @@ aliases = ["about-kim","contact"]
 author = "Kim Pham"
 +++
 
-occasional notes about things i'm working on
+oh wow you made it here!
+
+it's a casual page that's casually updated. mostly i'll put occasional notes about things i'm working on
 
 ----------------------------------------------------------
 

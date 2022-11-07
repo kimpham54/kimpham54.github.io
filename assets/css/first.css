@@ -1,10 +1,17 @@
 /* Markdown */
 :root {
-    --maincolor: green;
+    --maincolor: rgb(30, 64, 255);
     --bordercl: #E2532F;
     --callouctcolor: dodgerblue;
-    --hovercolor: beige;
-    --darkMaincolor: #50fa7b;
+    --hovercolor: #e4fb52;
+    /* previously beige */
+    --darkMaincolor: #f1afdd;
+}
+
+
+a:hover {
+    background-color: var(--hovercolor);
+    color: rgb(74, 73, 73);
 }
 
 .tagskim {
