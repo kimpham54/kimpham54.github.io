@@ -1,0 +1,56 @@
+/* Markdown */
+:root {
+    --maincolor: rgb(30, 64, 255);
+    --bordercl: #E2532F;
+    --callouctcolor: dodgerblue;
+    --hovercolor: #e4fb52;
+    /* previously beige */
+    --darkMaincolor: #f1afdd;
+}
+
+
+a:hover {
+    background-color: var(--hovercolor);
+    color: rgb(74, 73, 73);
+}
+
+.tagskim {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* margin-bottom: 4em; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    max-width: 300px;
+    padding: 0ch 0ch 0ch 1ch;
+    word-wrap: break-word;
+    /* display: inline-block; */
+    /* position: absolute; */
+    /* vertical-align: top; */
+    font-size: 0.7rem;
+}
+
+.content {
+    /* display: inline-block; */
+    margin-bottom: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1ch 0 1ch;
+    word-wrap: break-word;
+
+}
+
+.megakim {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: left;
+    /* align-items: flex-start; */
+
+}
+
+.list {
+    padding: 0 1ch 0 7ch;
+    max-width: 600px;
+}
