@@ -24,7 +24,7 @@ SELECTED TALKS AND PUBLICATIONS Selected Publications 2022 - The Network of Earl
       
       <guid>https://kimpham54.github.io/cv/app-oral-histories/</guid>
       <description>Last updated: October 31, 2022
-A site that scrapes (with author permission) and aggregates oral histories in the field of biomedicine, used for historical research. I hired and consulted on the architecture and design on app and work on some parts of the front-end. The frontend uses VueJS set up with MongoDB and Elasticsearch.
+Used in production at the Max Planck Institute for the History of Science, an app that scrapes (with author permission) and aggregates oral histories in the field of biomedicine, used for historical research. I hired and consulted on the architecture and design on app and work on some parts of the front-end. The frontend uses VueJS set up with MongoDB and Elasticsearch.
 The code is available in a private repository in Gitlab for the Max Planck Institute for the History of Science.</description>
     </item>
     
@@ -36,6 +36,7 @@ The code is available in a private repository in Gitlab for the Max Planck Insti
       <guid>https://kimpham54.github.io/cv/app-climbing-logbook/</guid>
       <description>Last updated: October 31, 2022
 Github: https://github.com/kimpham54/climbing_logbook_react_rails
+An experimental React app that I worked on as part of the Flatiron School bootcamp. The focus was on creating complex data routes with Redux and hierarchical data organization. You can create climbs, and within those climbs you can create routes, and tally your routes up per climb.
 Some of my coding notes: https://kimpham54.github.io/post/006/</description>
     </item>
     
@@ -47,6 +48,7 @@ Some of my coding notes: https://kimpham54.github.io/post/006/</description>
       <guid>https://kimpham54.github.io/cv/app-recipe-sharing/</guid>
       <description>Last updated: October 31, 2022
 Github: https://github.com/kimpham54/climbing_logbook_react_rails
+An app I built to share recipes with my friends using Ruby, Rails, and plain Javascript. One of my Flatiron School projects.
 Some of my coding notes: https://kimpham54.github.io/post/005/</description>
     </item>
     
@@ -57,7 +59,7 @@ Some of my coding notes: https://kimpham54.github.io/post/005/</description>
       
       <guid>https://kimpham54.github.io/cv/app-semantic-web/</guid>
       <description>Last updated: October 31, 2022
-I was the primary designer and developer for this website. We used the open-source platform Researchspace, customizations and templates and visualizations done by me.
+I was the primary designer and developer for this app. We used the open-source platform Researchspace where I worked on the additional customizations and templates and visualizations.
 The code is available in a private repository in Gitlab for the Max Planck Institute for the History of Science.</description>
     </item>
     
