@@ -14,6 +14,10 @@ a:hover {
     color: rgb(74, 73, 73);
 }
 
+.facekim {
+    border-radius: 50%;
+}
+
 .tagskim {
     /* display: flex; */
     /* flex-wrap: wrap; */
