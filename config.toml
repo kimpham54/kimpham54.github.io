@@ -16,7 +16,7 @@ paginate=20 # articles per page
 	mode="toggle" # color-mode → light,dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 	customcss = ["css/first.css"]
-	subtitle = 'some notes'
+	subtitle = 'just some notes'
 
 # Social Tags
 
