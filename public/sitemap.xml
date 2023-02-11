@@ -2,13 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kimpham54.github.io/categories/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kimpham54.github.io/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kimpham54.github.io/tags/maplibre/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kimpham54.github.io/tags/maps/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kimpham54.github.io/tags/open-source/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kimpham54.github.io/post/012/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kimpham54.github.io/post/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kimpham54.github.io/tags/rust/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kimpham54.github.io/tags/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kimpham54.github.io/categories/technology/</loc>
+    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://kimpham54.github.io/about/</loc>
     <lastmod>2023-02-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kimpham54.github.io/cv/</loc>
-    <lastmod>2022-10-31T01:15:41-04:00</lastmod>
-  </url><url>
-    <loc>https://kimpham54.github.io/</loc>
     <lastmod>2022-10-31T01:15:41-04:00</lastmod>
   </url><url>
     <loc>https://kimpham54.github.io/cv/talks/</loc>
@@ -26,25 +53,10 @@
     <loc>https://kimpham54.github.io/cv/app-semantic-web/</loc>
     <lastmod>2022-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/categories/</loc>
-    <lastmod>2022-10-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://kimpham54.github.io/tags/javascript/</loc>
     <lastmod>2022-10-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kimpham54.github.io/tags/open-source/</loc>
-    <lastmod>2022-10-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://kimpham54.github.io/post/</loc>
-    <lastmod>2022-10-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://kimpham54.github.io/tags/reactjs/</loc>
-    <lastmod>2022-10-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://kimpham54.github.io/tags/</loc>
-    <lastmod>2022-10-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://kimpham54.github.io/categories/technology/</loc>
     <lastmod>2022-10-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://kimpham54.github.io/post/template/</loc>
