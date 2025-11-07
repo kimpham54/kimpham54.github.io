@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>sparql on Kim Pham</title>
-    <link>https://kimpham54.github.io/tags/sparql/</link>
-    <description>Recent content in sparql on Kim Pham</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Sparql on Kim Pham</title>
+    <link>http://localhost:1313/tags/sparql/</link>
+    <description>Recent content in Sparql on Kim Pham</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kimpham54.github.io/tags/sparql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/sparql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ontology coordination with sparql</title>
-      <link>https://kimpham54.github.io/post/011/</link>
+      <link>http://localhost:1313/post/011/</link>
       <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/011/</guid>
-      <description>isn&amp;rsquo;t it beautiful? it&amp;rsquo;s web3.0! (extensive amounts of CIDOC CRM usage not included in photo)
-my colleagues and i are working on building up the semantic web, that is, web 3.0, or linked data. you may be familiar with its blingy $$$$ counterpart web3, but web3.0 had the catchy name first point O!
-but wait, what&amp;rsquo;s the difference? everything darling, web3.0 and web3 has some inklings of a shared decentralization mission, but the ecosystem is entirely different.</description>
+      <guid>http://localhost:1313/post/011/</guid>
+      <description>&lt;p&gt;isn&amp;rsquo;t it beautiful? it&amp;rsquo;s web3.0!&#xA;&lt;img src=&#34;../../images/2022-10-01-001-sparql.png&#34; alt=&#34;ontology&#34; title=&#34;ontology&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;(extensive amounts of CIDOC CRM usage not included in photo)&lt;/p&gt;&#xA;&lt;p&gt;my colleagues and i are working on building up the semantic web, that is, web 3.0, or linked data. you may be familiar with its blingy $$$$ counterpart web3, but web3.0 had the catchy name first point O!&lt;/p&gt;&#xA;&lt;p&gt;but wait, what&amp;rsquo;s the difference? everything darling, web3.0 and web3 has some inklings of a shared decentralization mission, but the ecosystem is entirely different. the web3 is blockchain based and cares about trust. web3.0 cares about interoperability and wants to operate with an open world assumption. says the w3c:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

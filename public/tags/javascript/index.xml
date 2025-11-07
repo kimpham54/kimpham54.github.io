@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>javascript on Kim Pham</title>
-    <link>https://kimpham54.github.io/tags/javascript/</link>
-    <description>Recent content in javascript on Kim Pham</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Javascript on Kim Pham</title>
+    <link>http://localhost:1313/tags/javascript/</link>
+    <description>Recent content in Javascript on Kim Pham</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kimpham54.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>title</title>
-      <link>https://kimpham54.github.io/post/template/</link>
+      <link>http://localhost:1313/post/template/</link>
       <pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/template/</guid>
-      <description>text</description>
+      <guid>http://localhost:1313/post/template/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../images/2022-10-01-001-sparql.png&#34; alt=&#34;caption&#34; title=&#34;caption&#34;&gt;&#xA;&lt;a href=&#34;https://www.url.com&#34;&gt;text&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ontology coordination with sparql</title>
-      <link>https://kimpham54.github.io/post/011/</link>
+      <link>http://localhost:1313/post/011/</link>
       <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/011/</guid>
-      <description>isn&amp;rsquo;t it beautiful? it&amp;rsquo;s web3.0! (extensive amounts of CIDOC CRM usage not included in photo)
-my colleagues and i are working on building up the semantic web, that is, web 3.0, or linked data. you may be familiar with its blingy $$$$ counterpart web3, but web3.0 had the catchy name first point O!
-but wait, what&amp;rsquo;s the difference? everything darling, web3.0 and web3 has some inklings of a shared decentralization mission, but the ecosystem is entirely different.</description>
+      <guid>http://localhost:1313/post/011/</guid>
+      <description>&lt;p&gt;isn&amp;rsquo;t it beautiful? it&amp;rsquo;s web3.0!&#xA;&lt;img src=&#34;../../images/2022-10-01-001-sparql.png&#34; alt=&#34;ontology&#34; title=&#34;ontology&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;(extensive amounts of CIDOC CRM usage not included in photo)&lt;/p&gt;&#xA;&lt;p&gt;my colleagues and i are working on building up the semantic web, that is, web 3.0, or linked data. you may be familiar with its blingy $$$$ counterpart web3, but web3.0 had the catchy name first point O!&lt;/p&gt;&#xA;&lt;p&gt;but wait, what&amp;rsquo;s the difference? everything darling, web3.0 and web3 has some inklings of a shared decentralization mission, but the ecosystem is entirely different. the web3 is blockchain based and cares about trust. web3.0 cares about interoperability and wants to operate with an open world assumption. says the w3c:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ruby &#43; rails &#43; church wafer javascript project 004 - communal recipes</title>
-      <link>https://kimpham54.github.io/post/005/</link>
+      <link>http://localhost:1313/post/005/</link>
       <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/005/</guid>
-      <description>former title: flatiron school portfolio project 004 + church wafer javascript
-i&amp;rsquo;ve been working on my fourth portfolio project for flatiron while doing a west coast tour of the United States. inspired by my friends, ardent lovers of good food made with care and consideration, i decided to make my application about recipes. i find that the flatiron school has a solid, tight curriculum - everything i&amp;rsquo;ve learned in the program so far has built upon each other.</description>
+      <guid>http://localhost:1313/post/005/</guid>
+      <description>&lt;p&gt;former title: flatiron school portfolio project 004 + church wafer javascript&lt;/p&gt;&#xA;&lt;p&gt;i&amp;rsquo;ve been working on my fourth portfolio project for flatiron while doing a west coast tour of the United States. inspired by my friends, ardent lovers of good food made with care and consideration, i decided to make my application about &lt;a href=&#34;https://github.com/kimpham54/js_portfolio_project_recipes&#34;&gt;recipes&lt;/a&gt;. i find that the flatiron school has a solid, tight curriculum - everything i&amp;rsquo;ve learned in the program so far has built upon each other.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

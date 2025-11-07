@@ -9,7 +9,8 @@ pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-paginate=20 # articles per page
+[pagination]
+pagerSize = 20 # articles per page
 
 
 [params]
@@ -19,6 +20,10 @@ paginate=20 # articles per page
 	subtitle = 'just some notes'
 
 # Social Tags
+[[params.social]]
+name = "Email"
+icon = "mail"
+url = "https://docs.google.com/forms/d/e/1FAIpQLSemLz1deuIX0vN1mFtd0Bh6w_ouyo9bt8k8F4EI1bkf7Ppjnw/viewform"
 
 [[params.social]]
 name = "GitHub"
@@ -48,6 +53,11 @@ url = "/about"
 weight = 1
 
 [[menu.main]]
+name = "Talks"
+url = "/talks"
+weight = 2
+
+[[menu.main]]
 name = "Work"
 url = "/cv"
-weight = 2
+weight = 3

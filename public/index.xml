@@ -2,244 +2,165 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kim Pham</title>
-    <link>https://kimpham54.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Kim Pham</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://kimpham54.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>rustling in the open source maplibre community</title>
-      <link>https://kimpham54.github.io/post/012/</link>
-      <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/012/</guid>
-      <description>starting in september i spent a few months learning rust. i had a few inchoate reasons:
-i&amp;rsquo;ve always wanted to learn systems programming&amp;hellip;i wanted to be exposed to deeper programming concepts. i do appreciate web development and working on web and business logic on the front and backend, but i&amp;rsquo;m also interested in coding that&amp;rsquo;s closer to computer science, or at least working with the ideas of computer science. and to better understand things at a lower level.</description>
-    </item>
-    
+    <lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://kimpham54.github.io/about/</link>
-      <pubDate>Thu, 09 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/about/</guid>
-      <description>oh wow you made it here!
-it&amp;rsquo;s a casual page that&amp;rsquo;s casually updated. mostly i&amp;rsquo;ll put occasional notes about things i&amp;rsquo;m working on
-find me here:
-CV notes | Codebase for this site Twitter Linkedin Github Gitlab - many projects are not public you can also find me outside</description>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;oh wow you made it here!&#xA;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;There are a few ways to reach me:&#xA;&lt;a href=&#34;https://docs.google.com/forms/d/e/1FAIpQLSemLz1deuIX0vN1mFtd0Bh6w_ouyo9bt8k8F4EI1bkf7Ppjnw/viewform?usp=header&#34;&gt;Email&lt;/a&gt; | &lt;a href=&#34;https://twitter.com/tolloid&#34;&gt;Twitter&lt;/a&gt; | &lt;a href=&#34;https://www.linkedin.com/in/kim-pham-a9ba8030/&#34;&gt;Linkedin&lt;/a&gt; | &lt;a href=&#34;https://github.com/kimpham54&#34;&gt;Github&lt;/a&gt; | &lt;a href=&#34;https://gitlab.gwdg.de/kpham&#34;&gt;Gitlab (deprecated)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;you can also find me outside&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>rustling in the open source maplibre community</title>
+      <link>http://localhost:1313/post/012/</link>
+      <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/012/</guid>
+      <description>&lt;p&gt;starting in september i spent a few months learning rust. i had a few inchoate reasons:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;i&amp;rsquo;ve always wanted to learn systems programming&amp;hellip;i wanted to be exposed to deeper programming concepts. i do appreciate web development and working on web and business logic on the front and backend, but i&amp;rsquo;m also interested in coding that&amp;rsquo;s closer to computer science, or at least working with the ideas of computer science. and to better understand things at a lower level. rip off the hood of abstraction&lt;/li&gt;&#xA;&lt;li&gt;people talk about it a lot on hacker news and in the blockchain space, i know you know. but also&lt;/li&gt;&#xA;&lt;li&gt;linux is supporting rust. cool! so i guess it&amp;rsquo;s it&amp;rsquo;s here to stay&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;so then i learned it &lt;a href=&#34;https://github.com/kimpham54/rust-book-homework-kim&#34;&gt;https://github.com/kimpham54/rust-book-homework-kim&lt;/a&gt;. i was pretty motivated because i was trying to get into the january polkadot blockchain academy in buenos aires, and got through most of the rust book. unfotunately i didn&amp;rsquo;t get a chance to take the rust exam&amp;hellip; so now what? well i really enjoyed learning it, so might as well put those amateur skills to use.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Selected Talks and Publications</title>
-      <link>https://kimpham54.github.io/cv/talks/</link>
+      <link>http://localhost:1313/talks/talks/</link>
       <pubDate>Mon, 31 Oct 2022 01:15:41 -0400</pubDate>
-      
-      <guid>https://kimpham54.github.io/cv/talks/</guid>
-      <description>Last updated: October 31, 2022
-SELECTED TALKS AND PUBLICATIONS Selected Publications 2022 - The Network of Early Modern Printers and Its Impact on the Spread of Scientific Knowledge: Automatic Detection of Awareness Relations. (draft accepted) 2022 - Just Because We Can Doesn’t Mean We Should: On Knowing and Protecting Data Produced by the Jewish Consumptives’ Relief Society. http://dx.doi.org/10.5399/uo/hsda/7.1.8 2020 - A Vertical Cooperation Model to Manage Digital Collections and Institutional Resources.</description>
+      <guid>http://localhost:1313/talks/talks/</guid>
+      <description>&lt;p&gt;Last updated: October 31, 2022&lt;/p&gt;&#xA;&lt;h2 id=&#34;selected-talks-and-publications&#34;&gt;SELECTED TALKS AND PUBLICATIONS&lt;/h2&gt;&#xA;&lt;h4 id=&#34;selected-publications&#34;&gt;Selected Publications&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;2022 - The Network of Early Modern Printers and Its Impact on the Spread of Scientific Knowledge: Automatic Detection of Awareness Relations. (draft accepted)&lt;/li&gt;&#xA;&lt;li&gt;2022 - Just Because We Can Doesn’t Mean We Should: On Knowing and Protecting Data Produced by the Jewish Consumptives’ Relief Society. &lt;a href=&#34;http://dx.doi.org/10.5399/uo/hsda/7.1.8&#34;&gt;http://dx.doi.org/10.5399/uo/hsda/7.1.8&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;2020 - A Vertical Cooperation Model to Manage Digital Collections and Institutional Resources. &lt;a href=&#34;https://www.mdpi.com/2304-6775/8/2/23&#34;&gt;https://www.mdpi.com/2304-6775/8/2/23&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;2020 - Building a library search infrastructure with Elasticsearch. code4lib journal. &lt;a href=&#34;https://journal.code4lib.org/articles/15203&#34;&gt;https://journal.code4lib.org/articles/15203&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;2017 - Mapping with Python and Leaflet. Programming Historian. &lt;a href=&#34;https://programminghistorian.org/en/lessons/mapping-with-python-leaflet&#34;&gt;https://programminghistorian.org/en/lessons/mapping-with-python-leaflet&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;2017 -  Annotation-based enrichment of Digital Objects using open-source frameworks.  &lt;a href=&#34;https://journal.code4lib.org/articles/12582&#34;&gt;https://journal.code4lib.org/articles/12582&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;selected-talks&#34;&gt;Selected Talks&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;2022 -  Building a Central Knowledge Graph for Multiple Humanities Research Projects. European Library Automation Group. Riga, Latvia.&lt;/li&gt;&#xA;&lt;li&gt;2022 - Transcribing, Publishing, and Protecting Archival Medical Records as Data: A Case Study from the Jewish Consumptives’ Relief Society. The Network of the National Library of Medicine, online.&lt;/li&gt;&#xA;&lt;li&gt;2022 - Using flowmaps to visualize epistemic networks. Graphs and Networks in the Humanities. Amsterdam, Netherlands.&lt;/li&gt;&#xA;&lt;li&gt;2021 - Developing a Digital Research Infrastructure for the Digital Humanities. ENCODE conference. Leuven, Belgium.&lt;/li&gt;&#xA;&lt;li&gt;2020 - Vertical Collaboration in a Digital Collections Ecosystem. Lighting the Way Forum. Mountain View, USA.&lt;/li&gt;&#xA;&lt;li&gt;2019 -  In a third space: Building a horizontally connected digital collections ecosystem. Open Repositories. Hamburg, Germany.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;awards&#34;&gt;Awards&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;2020 - Mellon Foundation for Collections as Data: Part to Whole&lt;/li&gt;&#xA;&lt;li&gt;2016 - University of Toronto Libraries STAR Award for Innovation&lt;/li&gt;&#xA;&lt;li&gt;2014 - University of Toronto Gordon Cressy Leadership Award&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>Software project: Biomedical oral histories aggregator</title>
-      <link>https://kimpham54.github.io/cv/app-oral-histories/</link>
+      <link>http://localhost:1313/cv/app-oral-histories/</link>
       <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/cv/app-oral-histories/</guid>
-      <description>Last updated: October 31, 2022
-Used in production at the Max Planck Institute for the History of Science, an app that scrapes (with author permission) and aggregates oral histories in the field of biomedicine, used for historical research. I hired and consulted on the architecture and design on app and work on some parts of the front-end. The frontend uses VueJS set up with MongoDB and Elasticsearch.
-The code is available in a private repository in Gitlab for the Max Planck Institute for the History of Science.</description>
+      <guid>http://localhost:1313/cv/app-oral-histories/</guid>
+      <description>&lt;p&gt;Last updated: October 31, 2022&lt;/p&gt;&#xA;&lt;p&gt;Used in production at the Max Planck Institute for the History of Science, an app that scrapes (with author permission) and aggregates oral histories in the field of biomedicine, used for historical research. I hired and consulted on the architecture and design on app and work on some parts of the front-end. The frontend uses VueJS set up with MongoDB and Elasticsearch.&lt;/p&gt;&#xA;&lt;p&gt;The code is available in a private repository in Gitlab for the Max Planck Institute for the History of Science.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Software project: Climbing logbook</title>
-      <link>https://kimpham54.github.io/cv/app-climbing-logbook/</link>
+      <link>http://localhost:1313/cv/app-climbing-logbook/</link>
       <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/cv/app-climbing-logbook/</guid>
-      <description>Last updated: October 31, 2022
-Github: https://github.com/kimpham54/climbing_logbook_react_rails
-An experimental React app that I worked on as part of the Flatiron School bootcamp. The focus was on creating complex data routes with Redux and hierarchical data organization. You can create climbs, and within those climbs you can create routes, and tally your routes up per climb.
-Some of my coding notes: https://kimpham54.github.io/post/006/</description>
+      <guid>http://localhost:1313/cv/app-climbing-logbook/</guid>
+      <description>&lt;p&gt;Last updated: October 31, 2022&lt;/p&gt;&#xA;&lt;p&gt;Github: &lt;a href=&#34;https://github.com/kimpham54/climbing_logbook_react_rails&#34;&gt;https://github.com/kimpham54/climbing_logbook_react_rails&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;An experimental React app that I worked on as part of the Flatiron School bootcamp. The focus was on creating complex data routes with Redux and hierarchical data organization. You can create climbs, and within those climbs you can create routes, and tally your routes up per climb.&lt;/p&gt;&#xA;&lt;p&gt;Some of my coding notes: &lt;a href=&#34;https://kimpham54.github.io/post/006/&#34;&gt;https://kimpham54.github.io/post/006/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../images/app-climbing-logbook/home.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-climbing-logbook/routes.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-climbing-logbook/addroute.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-climbing-logbook/editclimb.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Software project: Recipe sharing</title>
-      <link>https://kimpham54.github.io/cv/app-recipe-sharing/</link>
+      <link>http://localhost:1313/cv/app-recipe-sharing/</link>
       <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/cv/app-recipe-sharing/</guid>
-      <description>Last updated: October 31, 2022
-Github: https://github.com/kimpham54/climbing_logbook_react_rails
-An app I built to share recipes with my friends using Ruby, Rails, and plain Javascript. One of my Flatiron School projects.
-Some of my coding notes: https://kimpham54.github.io/post/005/</description>
+      <guid>http://localhost:1313/cv/app-recipe-sharing/</guid>
+      <description>&lt;p&gt;Last updated: October 31, 2022&lt;/p&gt;&#xA;&lt;p&gt;Github: &lt;a href=&#34;https://github.com/kimpham54/climbing_logbook_react_rails&#34;&gt;https://github.com/kimpham54/climbing_logbook_react_rails&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;An app I built to share recipes with my friends using Ruby, Rails, and plain Javascript. One of my Flatiron School projects.&lt;/p&gt;&#xA;&lt;p&gt;Some of my coding notes: &lt;a href=&#34;https://kimpham54.github.io/post/005/&#34;&gt;https://kimpham54.github.io/post/005/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../images/app-recipe-sharing/screen1.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-recipe-sharing/screen2.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-recipe-sharing/screen3.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-recipe-sharing/screen4.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Software project: Semantic web knowledge graph</title>
-      <link>https://kimpham54.github.io/cv/app-semantic-web/</link>
+      <link>http://localhost:1313/cv/app-semantic-web/</link>
       <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/cv/app-semantic-web/</guid>
-      <description>Last updated: October 31, 2022
-I was the primary designer and developer for this app. We used the open-source platform Researchspace where I worked on the additional customizations and templates and visualizations.
-The code is available in a private repository in Gitlab for the Max Planck Institute for the History of Science.</description>
+      <guid>http://localhost:1313/cv/app-semantic-web/</guid>
+      <description>&lt;p&gt;Last updated: October 31, 2022&lt;/p&gt;&#xA;&lt;p&gt;I was the primary designer and developer for this app. We used the open-source platform Researchspace where I worked on the additional customizations and templates and visualizations.&lt;/p&gt;&#xA;&lt;p&gt;The code is available in a private repository in Gitlab for the Max Planck Institute for the History of Science.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../images/app-semantic-web/gitlab-app.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/home.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/single-author.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/single-dept.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/single-project-ismi.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/single-project-sphere.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/single-team_member.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/single-team.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/usecases.pdf&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/view-books.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/view-projects.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/view-team_members.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/vis-map.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/vis-network.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/vis-timeline.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>title</title>
-      <link>https://kimpham54.github.io/post/template/</link>
+      <link>http://localhost:1313/post/template/</link>
       <pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/template/</guid>
-      <description>text</description>
+      <guid>http://localhost:1313/post/template/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../images/2022-10-01-001-sparql.png&#34; alt=&#34;caption&#34; title=&#34;caption&#34;&gt;&#xA;&lt;a href=&#34;https://www.url.com&#34;&gt;text&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>topics</title>
-      <link>https://kimpham54.github.io/post/drafts/</link>
+      <link>http://localhost:1313/post/drafts/</link>
       <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/drafts/</guid>
-      <description>spiral dynamics eep rust, i can&amp;rsquo;t always work on things that no one understands or cares about. only sometimes, and when i do it&amp;rsquo;s pretty fun! but i also want to learn things that people care about! rust is one of them, and because i heard that it&amp;rsquo;s going to be a supported language in linux, i am now more than ever motivated to learn it! ai continued but hard to get into fartchitecture https://twitter.</description>
+      <guid>http://localhost:1313/post/drafts/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;spiral dynamics eep&lt;/li&gt;&#xA;&lt;li&gt;rust, i can&amp;rsquo;t always work on things that no one understands or cares about. only sometimes, and when i do it&amp;rsquo;s pretty fun! but i also want to learn things that people care about! rust is one of them, and because i heard that it&amp;rsquo;s going to be a supported language in linux, i am now more than ever motivated to learn it!&lt;/li&gt;&#xA;&lt;li&gt;ai continued but hard to get into&lt;/li&gt;&#xA;&lt;li&gt;fartchitecture &lt;a href=&#34;https://twitter.com/JeffTobiasSPAC/status/1579149325451788289&#34;&gt;https://twitter.com/JeffTobiasSPAC/status/1579149325451788289&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;print my notes&lt;/li&gt;&#xA;&lt;li&gt;docker simplicity&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title></title>
-      <link>https://kimpham54.github.io/vapour/flexchart/</link>
+      <link>http://localhost:1313/vapour/flexchart/</link>
       <pubDate>Sun, 02 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/vapour/flexchart/</guid>
-      <description></description>
+      <guid>http://localhost:1313/vapour/flexchart/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../images/flexchart.png&#34; alt=&#34;flex&#34; title=&#34;flex&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ontology coordination with sparql</title>
-      <link>https://kimpham54.github.io/post/011/</link>
+      <link>http://localhost:1313/post/011/</link>
       <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/011/</guid>
-      <description>isn&amp;rsquo;t it beautiful? it&amp;rsquo;s web3.0! (extensive amounts of CIDOC CRM usage not included in photo)
-my colleagues and i are working on building up the semantic web, that is, web 3.0, or linked data. you may be familiar with its blingy $$$$ counterpart web3, but web3.0 had the catchy name first point O!
-but wait, what&amp;rsquo;s the difference? everything darling, web3.0 and web3 has some inklings of a shared decentralization mission, but the ecosystem is entirely different.</description>
+      <guid>http://localhost:1313/post/011/</guid>
+      <description>&lt;p&gt;isn&amp;rsquo;t it beautiful? it&amp;rsquo;s web3.0!&#xA;&lt;img src=&#34;../../images/2022-10-01-001-sparql.png&#34; alt=&#34;ontology&#34; title=&#34;ontology&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;(extensive amounts of CIDOC CRM usage not included in photo)&lt;/p&gt;&#xA;&lt;p&gt;my colleagues and i are working on building up the semantic web, that is, web 3.0, or linked data. you may be familiar with its blingy $$$$ counterpart web3, but web3.0 had the catchy name first point O!&lt;/p&gt;&#xA;&lt;p&gt;but wait, what&amp;rsquo;s the difference? everything darling, web3.0 and web3 has some inklings of a shared decentralization mission, but the ecosystem is entirely different. the web3 is blockchain based and cares about trust. web3.0 cares about interoperability and wants to operate with an open world assumption. says the w3c:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>machine learning &#43; stable diffusion</title>
-      <link>https://kimpham54.github.io/post/010/</link>
+      <link>http://localhost:1313/post/010/</link>
       <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/010/</guid>
-      <description>on a sunday, some sundays ago, i took my quiet night as a cue to nerd up, so i downloaded stable diffusion and played around with it. i read a beautifully written piece about machine learning by jon stokes, setting aside any political views, which was deeply moving and really made me want to play around with it.
-the setup is simple, you (my non-existent reader) can use the colab notebook i pasted below, or to install it on your local, you can follow my already going to be outdated in october 2022 steps that i followed from @levelsio who followed that from someone else:</description>
+      <guid>http://localhost:1313/post/010/</guid>
+      <description>&lt;p&gt;on a sunday, some sundays ago, i took my quiet night as a cue to nerd up, so i downloaded stable diffusion and played around with it. i read &lt;a href=&#34;https://www.jonstokes.com/p/ai-content-generation-part-1-machine&#34;&gt;a beautifully written piece about machine learning by jon stokes&lt;/a&gt;, setting aside any political views, which was deeply moving and really made me want to play around with it.&lt;/p&gt;&#xA;&lt;p&gt;the setup is simple, you (my non-existent reader) can use the colab notebook i pasted below, or to install it on your local, you can follow my already going to be outdated in october 2022 steps that i followed from &lt;a href=&#34;https://twitter.com/levelsio&#34;&gt;@levelsio&lt;/a&gt; who followed that from someone else:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>climbing in the western alps of switzerland</title>
-      <link>https://kimpham54.github.io/post/009/</link>
+      <link>http://localhost:1313/post/009/</link>
       <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/009/</guid>
-      <description>i just came back from a hut and climbing trip in west switzerland. i have a six year relationship with climbing, and we&amp;rsquo;re pretty comfortable with each other, but in many ways we are still figuring things out. it&amp;rsquo;s hard to overcome my fear of a bad fall, but i do love the challenge of managing that fear. i take it easy, i&amp;rsquo;m not in a rush to be the best.</description>
+      <guid>http://localhost:1313/post/009/</guid>
+      <description>&lt;p&gt;i just came back from a hut and climbing trip in west switzerland. i have a six year relationship with climbing, and we&amp;rsquo;re pretty comfortable with each other, but in many ways we are still figuring things out. it&amp;rsquo;s hard to overcome my fear of a bad fall, but i do love the challenge of managing that fear. i take it easy, i&amp;rsquo;m not in a rush to be the best. it&amp;rsquo;s something i want to do for a long time. it was partially my decision and knowing what i want out of climbing, and partially coming to terms with the limits of myself and the time i want to devote to climbing vs other things i care about. and i am satisfied.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>site built with hugo and github actions</title>
-      <link>https://kimpham54.github.io/post/008/</link>
+      <link>http://localhost:1313/post/008/</link>
       <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/008/</guid>
-      <description>i wanted to rebuild my site, just a little lift to streamline the workflow again. i also was inpsired by https://maxammann.org/ and the open transparent work of https://ashleyblewer.com/. previously my site was built with jekyll, then hugo. then i started to dig into nextjs and gatsby. i want to go with a static site generator so that it&amp;rsquo;s easy to maintain and has a lot of nice features out of the box.</description>
+      <guid>http://localhost:1313/post/008/</guid>
+      <description>&lt;p&gt;i wanted to rebuild my site, just a little lift to streamline the workflow again. i also was inpsired by &lt;a href=&#34;https://maxammann.org/&#34;&gt;https://maxammann.org/&lt;/a&gt; and the open transparent work of &lt;a href=&#34;https://ashleyblewer.com/&#34;&gt;https://ashleyblewer.com/&lt;/a&gt;. previously my site was built with jekyll, then hugo. then i started to dig into nextjs and gatsby. i want to go with a static site generator so that it&amp;rsquo;s easy to maintain and has a lot of nice features out of the box.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>state vs props in react</title>
-      <link>https://kimpham54.github.io/post/007/</link>
+      <link>http://localhost:1313/post/007/</link>
       <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/007/</guid>
-      <description>In React, components are used to translate raw data into rich HTML. Props and state constitute the raw data that gets transformed into HTML using the render() function of a component.
-State belongs to a particular component, is stored within the component, and is used only by the component itself. State can be updated within a component, for instance based on an action (such as user event or network response). By default a component will not have state, so to add an initial state to a component, you can add a class constructor to a class component.</description>
+      <guid>http://localhost:1313/post/007/</guid>
+      <description>&lt;p&gt;In React, components are used to translate raw data into rich HTML. Props and state constitute the raw data that gets transformed into HTML using the render() function of a component.&lt;/p&gt;&#xA;&lt;p&gt;State belongs to a particular component, is stored within the component, and is used only by the component itself. State can be updated within a component, for instance based on an action (such as user event or network response). By default a component will not have state, so to add an initial state to a component, you can add a class constructor to a class component. The following is an example of using a List Component and constructor method to set the initial state of a count key to a value of 0:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ruby &#43; rails &#43; react &#43; redux project 005 - climbing logbook </title>
-      <link>https://kimpham54.github.io/post/006/</link>
+      <link>http://localhost:1313/post/006/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/006/</guid>
-      <description>former title: flatiron school portfolio project 005 + bringing it all together
-and&amp;hellip;that&amp;rsquo;s a wrap. what a year and a bit it&amp;rsquo;s been. finally, i accomplished something that i&amp;rsquo;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work. i had a hard time juggling everything, but i feel good about finishing the program.</description>
+      <guid>http://localhost:1313/post/006/</guid>
+      <description>&lt;p&gt;former title: flatiron school portfolio project 005 + bringing it all together&lt;/p&gt;&#xA;&lt;p&gt;and&amp;hellip;that&amp;rsquo;s a wrap. what a year and a bit it&amp;rsquo;s been. finally, i accomplished something that i&amp;rsquo;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work. i had a hard time juggling everything, but i feel good about finishing the program.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ruby &#43; rails &#43; church wafer javascript project 004 - communal recipes</title>
-      <link>https://kimpham54.github.io/post/005/</link>
+      <link>http://localhost:1313/post/005/</link>
       <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/005/</guid>
-      <description>former title: flatiron school portfolio project 004 + church wafer javascript
-i&amp;rsquo;ve been working on my fourth portfolio project for flatiron while doing a west coast tour of the United States. inspired by my friends, ardent lovers of good food made with care and consideration, i decided to make my application about recipes. i find that the flatiron school has a solid, tight curriculum - everything i&amp;rsquo;ve learned in the program so far has built upon each other.</description>
+      <guid>http://localhost:1313/post/005/</guid>
+      <description>&lt;p&gt;former title: flatiron school portfolio project 004 + church wafer javascript&lt;/p&gt;&#xA;&lt;p&gt;i&amp;rsquo;ve been working on my fourth portfolio project for flatiron while doing a west coast tour of the United States. inspired by my friends, ardent lovers of good food made with care and consideration, i decided to make my application about &lt;a href=&#34;https://github.com/kimpham54/js_portfolio_project_recipes&#34;&gt;recipes&lt;/a&gt;. i find that the flatiron school has a solid, tight curriculum - everything i&amp;rsquo;ve learned in the program so far has built upon each other.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ruby &#43; rails project 003</title>
-      <link>https://kimpham54.github.io/post/004/</link>
+      <link>http://localhost:1313/post/004/</link>
       <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/004/</guid>
-      <description>former title: flatiron school portfolio project 003 + ruby on magic
-i completed my first ever ruby on rails project - climbing_gear. that, for me, is a pretty big deal! for a long time i&amp;rsquo;ve used programming languages for scripting, adding simple functionality and building some pretty simple applications where i worked on just the frontend/backend/server. i never worked on each level of an application. so making a full stack rails application is something i&amp;rsquo;m pretty glad i got to finally do.</description>
+      <guid>http://localhost:1313/post/004/</guid>
+      <description>&lt;p&gt;former title: flatiron school portfolio project 003 + ruby on magic&lt;/p&gt;&#xA;&lt;p&gt;i completed my first ever ruby on rails project - &lt;a href=&#34;https://github.com/kimpham54/climbing_gear&#34;&gt;climbing_gear&lt;/a&gt;. that, for me, is a pretty big deal! for a long time i&amp;rsquo;ve used programming languages for scripting, adding simple functionality and building some pretty simple applications where i worked on just the frontend/backend/server. i never worked on each level of an application. so making a full stack rails application is something i&amp;rsquo;m pretty glad i got to finally do.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ruby project 002 &#43; making reading lists with sinatra</title>
-      <link>https://kimpham54.github.io/post/003/</link>
+      <link>http://localhost:1313/post/003/</link>
       <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/003/</guid>
-      <description>former title: flatiron school portfolio project 002 + making reading lists with sinatra
-it was a quick turnaround for me to build our second portfolio project, a Sinatra app that uses a whole new slew of ruby web technologies for me, including Rack, Activerecord, Rake, and bcrypt.
-in brief, i built an application that behaves like a content management system in that it lets people have their own account to create a list of items to read in the future.</description>
+      <guid>http://localhost:1313/post/003/</guid>
+      <description>&lt;p&gt;former title: flatiron school portfolio project 002 + making reading lists with sinatra&lt;/p&gt;&#xA;&lt;p&gt;it was a quick turnaround for me to build our second portfolio project, a Sinatra app that uses a whole new slew of ruby web technologies for me, including Rack, Activerecord, Rake, and bcrypt.&lt;/p&gt;&#xA;&lt;p&gt;in brief, i built an application that behaves like a content management system in that it lets people have their own account to create a list of items to read in the future. a user can add a reading item and enter in an item&amp;rsquo;s title, url, and notes about the reading item. they can edit their items and delete their items. and that&amp;rsquo;s&amp;hellip;pretty much it.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ruby project 001 &#43; updating nokogiri</title>
-      <link>https://kimpham54.github.io/post/002/</link>
+      <link>http://localhost:1313/post/002/</link>
       <pubDate>Wed, 15 May 2019 22:42:28 -0600</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/002/</guid>
-      <description>&lt;p&gt;former title: flatiron school portfolio project 001&lt;/p&gt;
-&lt;p&gt;our cohort is is working on our first portfolio project two months into the flatiron school software engineering part time program. we were asked to create a ruby gem that provides a command line interface to interact with the application that uses an external data source (either by API or web scraping). we were able to use any external data source we wanted, so i made the obvious choice for myself and decided to scrape &lt;a href=&#34;https://mountainproject.com&#34;&gt;mountain project&lt;/a&gt;, a site that describes climbing routes and locations in north america.&lt;/p&gt;
-&lt;p&gt;i put the &lt;a href=&#34;https://github.com/kimpham54/classic_climbs_cli_gem&#34;&gt;classic climbs code repository&lt;/a&gt; up on github with details on how to install and run the application. it&amp;rsquo;s a little object oriented application that scrapes &lt;a href=&#34;https://www.mountainproject.com/area/classics?type=sport&#34;&gt;classic sport climbs&lt;/a&gt;, prints out a list of those climbs, and the user can then select one of those climbs to get more details about it, scraped from a specific climb&amp;rsquo;s page, such as &lt;a href=&#34;https://www.mountainproject.com/route/106183204/space-boyz&#34;&gt;space boyz&lt;/a&gt; (point of pride note: i climbed this route in march!)&lt;/p&gt;
-&lt;p&gt;it was a fun exercise to create this application, and it helps that you get to work on content that you enjoy working with. getting to build an object oriented ruby application hardened some of the concepts for me, and helped me think through some of the ways to optimize the program by thinking hard about separation of concerns, improving performance, and trying to be DRY (don&amp;rsquo;t repeat yourself).&lt;/p&gt;
-&lt;p&gt;i wanted to note one thing, which makes me think about what it means to work in tech or to be a software developer.&lt;/p&gt;
-&lt;p&gt;the tl;dr: software development is not just about programming and getting your code to work for you, there&amp;rsquo;s many considerations to take into account to say that you have a working application. it&amp;rsquo;s the planning, setting up environment, testing, deployment, security, everything to make your code not only work but continuously operational.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/post/002/</guid>
+      <description>&lt;p&gt;former title: flatiron school portfolio project 001&lt;/p&gt;&#xA;&lt;p&gt;our cohort is is working on our first portfolio project two months into the flatiron school software engineering part time program. we were asked to create a ruby gem that provides a command line interface to interact with the application that uses an external data source (either by API or web scraping). we were able to use any external data source we wanted, so i made the obvious choice for myself and decided to scrape &lt;a href=&#34;https://mountainproject.com&#34;&gt;mountain project&lt;/a&gt;, a site that describes climbing routes and locations in north america.&lt;/p&gt;&#xA;&lt;p&gt;i put the &lt;a href=&#34;https://github.com/kimpham54/classic_climbs_cli_gem&#34;&gt;classic climbs code repository&lt;/a&gt; up on github with details on how to install and run the application. it&amp;rsquo;s a little object oriented application that scrapes &lt;a href=&#34;https://www.mountainproject.com/area/classics?type=sport&#34;&gt;classic sport climbs&lt;/a&gt;, prints out a list of those climbs, and the user can then select one of those climbs to get more details about it, scraped from a specific climb&amp;rsquo;s page, such as &lt;a href=&#34;https://www.mountainproject.com/route/106183204/space-boyz&#34;&gt;space boyz&lt;/a&gt; (point of pride note: i climbed this route in march!)&lt;/p&gt;&#xA;&lt;p&gt;it was a fun exercise to create this application, and it helps that you get to work on content that you enjoy working with. getting to build an object oriented ruby application hardened some of the concepts for me, and helped me think through some of the ways to optimize the program by thinking hard about separation of concerns, improving performance, and trying to be DRY (don&amp;rsquo;t repeat yourself).&lt;/p&gt;&#xA;&lt;p&gt;i wanted to note one thing, which makes me think about what it means to work in tech or to be a software developer.&lt;/p&gt;&#xA;&lt;p&gt;the tl;dr: software development is not just about programming and getting your code to work for you, there&amp;rsquo;s many considerations to take into account to say that you have a working application. it&amp;rsquo;s the planning, setting up environment, testing, deployment, security, everything to make your code not only work but continuously operational.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>i&#39;m in the software engineering program at the flatiron school</title>
-      <link>https://kimpham54.github.io/post/001/</link>
+      <link>http://localhost:1313/post/001/</link>
       <pubDate>Wed, 15 May 2019 22:42:25 -0600</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/001/</guid>
-      <description>&lt;p&gt;hello, just introducing myself here on this very website that is my own. i’m currently in the Software Engineering 10-month part-time program &amp;ndash; part-time because i am also working full-time as a librarian! yes I like books, no I do not get to read them for my job. librarians are information professionals, so that means often times our role is to help with the organization and access of information. this can take on many forms, depending on the type of librarian you are. there are subject librarians, such as a science librarian, who might work directly with students and faculty to find the most appropriate resources for their research. there are metadata librarians, who help create, clean, structure, and organize records that are indexed and made searchable in databases. then there are technology librarians (such as myself), who helps to design the software for users to interact with databases/datastores.&lt;/p&gt;
-&lt;p&gt;in my role, i primarily do project management and am a product manager for our digital repository, a custom application to search through our collections of digitized or born digital archival materials, such as scanned photos, audio and video clips, archived websites, documents, etc.&lt;/p&gt;
-&lt;p&gt;my own tips to myself, the hopeful learner:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;keep notes. copy and paste sections that are useful, even if you don&amp;rsquo;t ever go back to it (which i actually do), it helps to just go over it again to help with learning the concept. i also keep a list of methods, short code examples that i refer to when i&amp;rsquo;m coding as just a reminder of what&amp;rsquo;s available to use if i can&amp;rsquo;t remember the name or the exact functionality&lt;/li&gt;
-&lt;li&gt;look for other tools to help with learning. i use jupyter notebooks an easier way to manipulate and test code&lt;/li&gt;
-&lt;li&gt;look for other cheatsheets to help with learning. i&amp;rsquo;ve found some good xpath and regex cheatsheets out there that i just do a quick skim of if i have to create a query, cause i find the syntax is really hard to remember offhand&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <guid>http://localhost:1313/post/001/</guid>
+      <description>&lt;p&gt;hello, just introducing myself here on this very website that is my own. i’m currently in the Software Engineering 10-month part-time program &amp;ndash; part-time because i am also working full-time as a librarian! yes I like books, no I do not get to read them for my job. librarians are information professionals, so that means often times our role is to help with the organization and access of information. this can take on many forms, depending on the type of librarian you are. there are subject librarians, such as a science librarian, who might work directly with students and faculty to find the most appropriate resources for their research. there are metadata librarians, who help create, clean, structure, and organize records that are indexed and made searchable in databases. then there are technology librarians (such as myself), who helps to design the software for users to interact with databases/datastores.&lt;/p&gt;&#xA;&lt;p&gt;in my role, i primarily do project management and am a product manager for our digital repository, a custom application to search through our collections of digitized or born digital archival materials, such as scanned photos, audio and video clips, archived websites, documents, etc.&lt;/p&gt;&#xA;&lt;p&gt;my own tips to myself, the hopeful learner:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;keep notes. copy and paste sections that are useful, even if you don&amp;rsquo;t ever go back to it (which i actually do), it helps to just go over it again to help with learning the concept. i also keep a list of methods, short code examples that i refer to when i&amp;rsquo;m coding as just a reminder of what&amp;rsquo;s available to use if i can&amp;rsquo;t remember the name or the exact functionality&lt;/li&gt;&#xA;&lt;li&gt;look for other tools to help with learning. i use jupyter notebooks an easier way to manipulate and test code&lt;/li&gt;&#xA;&lt;li&gt;look for other cheatsheets to help with learning. i&amp;rsquo;ve found some good xpath and regex cheatsheets out there that i just do a quick skim of if i have to create a query, cause i find the syntax is really hard to remember offhand&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>welcome</title>
-      <link>https://kimpham54.github.io/post/welcome/</link>
+      <link>http://localhost:1313/post/welcome/</link>
       <pubDate>Mon, 15 May 2017 18:43:05 -0400</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/welcome/</guid>
-      <description>hey. welcome</description>
+      <guid>http://localhost:1313/post/welcome/</guid>
+      <description>&lt;p&gt;hey. welcome&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

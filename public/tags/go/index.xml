@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>go on Kim Pham</title>
-    <link>https://kimpham54.github.io/tags/go/</link>
-    <description>Recent content in go on Kim Pham</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Go on Kim Pham</title>
+    <link>http://localhost:1313/tags/go/</link>
+    <description>Recent content in Go on Kim Pham</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kimpham54.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>site built with hugo and github actions</title>
-      <link>https://kimpham54.github.io/post/008/</link>
+      <link>http://localhost:1313/post/008/</link>
       <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/008/</guid>
-      <description>i wanted to rebuild my site, just a little lift to streamline the workflow again. i also was inpsired by https://maxammann.org/ and the open transparent work of https://ashleyblewer.com/. previously my site was built with jekyll, then hugo. then i started to dig into nextjs and gatsby. i want to go with a static site generator so that it&amp;rsquo;s easy to maintain and has a lot of nice features out of the box.</description>
+      <guid>http://localhost:1313/post/008/</guid>
+      <description>&lt;p&gt;i wanted to rebuild my site, just a little lift to streamline the workflow again. i also was inpsired by &lt;a href=&#34;https://maxammann.org/&#34;&gt;https://maxammann.org/&lt;/a&gt; and the open transparent work of &lt;a href=&#34;https://ashleyblewer.com/&#34;&gt;https://ashleyblewer.com/&lt;/a&gt;. previously my site was built with jekyll, then hugo. then i started to dig into nextjs and gatsby. i want to go with a static site generator so that it&amp;rsquo;s easy to maintain and has a lot of nice features out of the box.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

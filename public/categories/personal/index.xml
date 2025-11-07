@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>personal on Kim Pham</title>
-    <link>https://kimpham54.github.io/categories/personal/</link>
-    <description>Recent content in personal on Kim Pham</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Personal on Kim Pham</title>
+    <link>http://localhost:1313/categories/personal/</link>
+    <description>Recent content in Personal on Kim Pham</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://kimpham54.github.io/categories/personal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/personal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>climbing in the western alps of switzerland</title>
-      <link>https://kimpham54.github.io/post/009/</link>
+      <link>http://localhost:1313/post/009/</link>
       <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://kimpham54.github.io/post/009/</guid>
-      <description>i just came back from a hut and climbing trip in west switzerland. i have a six year relationship with climbing, and we&amp;rsquo;re pretty comfortable with each other, but in many ways we are still figuring things out. it&amp;rsquo;s hard to overcome my fear of a bad fall, but i do love the challenge of managing that fear. i take it easy, i&amp;rsquo;m not in a rush to be the best.</description>
+      <guid>http://localhost:1313/post/009/</guid>
+      <description>&lt;p&gt;i just came back from a hut and climbing trip in west switzerland. i have a six year relationship with climbing, and we&amp;rsquo;re pretty comfortable with each other, but in many ways we are still figuring things out. it&amp;rsquo;s hard to overcome my fear of a bad fall, but i do love the challenge of managing that fear. i take it easy, i&amp;rsquo;m not in a rush to be the best. it&amp;rsquo;s something i want to do for a long time. it was partially my decision and knowing what i want out of climbing, and partially coming to terms with the limits of myself and the time i want to devote to climbing vs other things i care about. and i am satisfied.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
