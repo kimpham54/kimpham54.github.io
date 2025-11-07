@@ -1,0 +1,175 @@
+:root {
+    /* --maincolor: rgb(30, 64, 255);
+    --bordercl: #E2532F;
+    --calloutcolor: dodgerblue;
+    --hovercolor: #e4fb52;
+    /* previously beige, https://www.schemecolor.com/aesthetic-vintage-color-scheme.php */
+    /* --darkMaincolor: #f1afdd; */ 
+
+        /* Light theme colors */
+    --hovercolor: #e4fb52;
+    --maincolor: rgb(30, 64, 255);
+    --color-primary: rgb(30, 64, 255);
+    --color-primary-hover: rgb(30, 64, 255);
+    --color-border:  #8aacbc;
+    --color-callout: #1e90ff;
+    --color-text: #232333;
+    --color-text-muted: #949171;
+    --color-text-meta: #acabc8;
+    --color-background: #ffffff;
+    --color-background-code: #ffefdc;
+    --color-background-pre: #fff8e4;
+    --color-background-toc: #eaf8ff;
+    --color-background-draft: #f9f2f4;
+    
+    /* Dark theme colors */
+    --color-primary-dark: #deb9cd;
+    --color-primary-hover-dark: #d7b7c4;
+    --color-border-dark: #0066ff;
+    --color-text-dark: #ffffff;
+    --color-text-muted-dark: #dddddd;
+    --color-background-dark: #202124;
+    --color-background-code-dark: #3a3a3a;
+    --color-background-pre-dark: #272822;
+    --color-background-toc-dark: #272822;
+    --color-background-draft-dark: #0066ff;
+}
+ 
+a {
+    border-bottom: 3px solid var(--maincolor);
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: var(--hovercolor);
+    color: rgb(74, 73, 73);
+    outline: transparent;
+}
+
+a:focus {
+  background-color: transparent;
+  color: rgb(74, 73, 73);
+  outline: 2px solid var(--maincolor);
+  outline-offset: 2px;
+}
+
+.facekim {
+    border-radius: 50%;
+    border: 0px solid #4064f5
+}
+
+.facekim img:hover {
+    -webkit-transform: rotateZ(-200deg);
+    -ms-transform: rotateZ(-200deg);
+    transform: rotateZ(-200deg);
+    transition: 0.2s ease;
+}
+
+a.facelink:hover {
+    background-color: transparent;
+    border: none;
+}
+
+.facelink {
+    background-color: transparent;
+    color: transparent;
+    border: none;
+}
+
+.tagskim {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* margin-bottom: 4em; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    max-width: 300px;
+    padding: 0ch 0ch 0ch 1ch;
+    word-wrap: break-word;
+    /* display: inline-block; */
+    /* position: absolute; */
+    /* vertical-align: top; */
+    font-size: 0.7rem;
+}
+
+.content {
+    /* display: inline-block; */
+    margin-bottom: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1ch 0 1ch;
+    word-wrap: break-word;
+    max-width: var(--content-max-width, 1000px);
+
+}
+
+.megakim {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: left;
+    /* align-items: flex-start; */
+
+}
+
+.list {
+    padding: 0 1ch 0 7ch;
+    max-width: 600px;
+}
+
+/* -----------------------------------------------------------
+   CUSTOM: LIST BULLETS, TEXT SELECTION, HEADERS
+   ----------------------------------------------------------- */
+
+/* 1. Make Archie-style bullets but black */
+ul > li::before {
+    color: black !important;
+}
+
+/* 2. Highlight / text-selection color */
+::selection {
+    background: var(--maincolor);
+    color: white;
+}
+
+::-moz-selection {
+    background: var(--maincolor);
+    color: white;
+}
+
+/* -----------------------------------------------------------
+   SOCIAL ICON SPACING
+   ----------------------------------------------------------- */
+
+header .main div {
+    display: flex;
+    margin-top: 0.5rem;
+    gap: 0.6rem; /* This produces perfect equal spacing */
+}
+
+/* fallback if Feather replaces SVG differently */
+.soc {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* sidebar */
+
+*, *::before, *::after {
+    box-sizing: content-box;
+}
+
+header nav a {
+    line-height: 1.3em;
+}
+
+ul li a {
+    text-transform: lowercase;
+    line-height: 2.2em;
+}
+
+footer > div {
+  font-size: 0.75rem;
+}
