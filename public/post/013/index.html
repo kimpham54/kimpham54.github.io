@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>a hugo and archie upgrade - Kim Pham</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="documenting the process of upgrading a website framework, and the takeaway to make everything smooth" />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/post/013/">
+  <meta property="og:site_name" content="Kim Pham">
+  <meta property="og:title" content="a hugo and archie upgrade">
+  <meta property="og:description" content="documenting the process of upgrading a website framework, and the takeaway to make everything smooth">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-11-07T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-11-07T00:00:00+00:00">
+    <meta property="article:tag" content="Hugo">
+    <meta property="article:tag" content="Go">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="a hugo and archie upgrade">
+  <meta name="twitter:description" content="documenting the process of upgrading a website framework, and the takeaway to make everything smooth">
+
+        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.7a5c05040394322612a2d98397e9932aa81d9d7acc70199463e79f8180c8e0c0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.478e7f2b9cf8d87be42edfd9fe1810beab1331847df94b1b430478b309f28282.css"  disabled />
+		
+		
+		<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/first.df548228b907acbdb20017df8263f81ce932aafff70a6b448751a4bf998c0ed2.css">
+		
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">Kim Pham</a>
+		<div style="display:flex; margin-top: 0.5rem;"><a class="soc" href="https://docs.google.com/forms/d/e/1FAIpQLSemLz1deuIX0vN1mFtd0Bh6w_ouyo9bt8k8F4EI1bkf7Ppjnw/viewform" title="Email"><i data-feather="mail"></i></a>
+			<a class="soc" href="https://github.com/kimpham54" title="GitHub"><i data-feather="github"></i></a>
+			<a class="soc" href="https://twitter.com/tolloid/" title="Twitter"><i data-feather="twitter"></i></a>
+			<a class="soc" href="https://www.linkedin.com/in/kim-pham-a9ba8030/" title="Linkedin"><i data-feather="linkedin"></i></a>
+			<a class="soc" href="https://www.instagram.com/kimpham54/" title="Instagram"><i data-feather="instagram"></i></a>
+			</div>
+	</div>
+
+	<nav>
+		
+		<a href="/about">About</a>
+		
+		<a href="/talks">Talks</a>
+		
+		<a href="/cv">Work</a>
+		
+		| <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
+		<script src="http://localhost:1313/js/themetoggle.js"></script>
+		
+	</nav>
+
+</header>
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">a hugo and archie upgrade</h1>
+          
+          <div class="meta">Posted on Nov 7, 2025</div>
+          
+        </div>
+        
+        <section class="body">
+          <p>Yesterday I upgraded both Hugo and the Archie (it&rsquo;s still being updated!) theme for this site. It&rsquo;s been a couple of years since the last update, so this was a chance to tidy things up and modernize the structure. The first step was simply updating the theme submodule:</p>
+<p><code>git submodule update --init --remote --merge</code></p>
+<p>Then I cleared out old build artifacts so Hugo could rebuild everything cleanly. Some helpful warnings when I tried to compile hugo lead to fixing syntax on how to locate templates, conditionals, modifying some partials. Archie now compiles its own stylesheet, so my older first.css needed to be reorganized into a slimmer override layer. Social icons also changed, so I incorporated the updated Feather icon approach used by the theme.</p>
+<p>The theme update came with several helpful warnings: renamed partials, new template locations, and a reorganized CSS pipeline. Archie now compiles its own stylesheet, so my older first.css needed to be reworked into a smaller layer of overrides. The social icons were also updated upstream using Feather.</p>
+<p>My first pass was exploratory. I adapted partials, restored colors and spacing, and brought the layout back to its previous look. It worked—but it felt a bit stitched together.</p>
+<p>So I took what I had learned and started over. I pulled a clean copy of Archie, went through the steps to reapply only the minimal customizations I truly needed, and rebuilt my small CSS layer on top of the new structure. The second pass was far cleaner and much easier to maintain.</p>
+<p>In the end, doing the upgrade twice — once to learn, once to refine was the most efficient path to a solid upgrade.</p>
+<h2 id="deploying-with-github-actions">Deploying with GitHub Actions</h2>
+<p>As part of the refresh, I also updated my deployment setup. I now use a small GitHub Actions workflow that builds the site on every push to master and deploys the resulting public/ directory to the gh-pages branch, seen here <a href="https://github.com/kimpham54/kimpham54.github.io/blob/master/.github/workflows/gh-pages.yml">gh-pages.yml</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>name: Deploy Hugo to gh-pages
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>on:
+</span></span><span style="display:flex;"><span>  push:
+</span></span><span style="display:flex;"><span>    branches: [ master ]
+</span></span><span style="display:flex;"><span>  pull_request:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>permissions:
+</span></span><span style="display:flex;"><span>  contents: write
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>jobs:
+</span></span><span style="display:flex;"><span>  deploy:
+</span></span><span style="display:flex;"><span>    runs-on: ubuntu-latest
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    steps:
+</span></span><span style="display:flex;"><span>      - uses: actions/checkout@v4
+</span></span><span style="display:flex;"><span>        with:
+</span></span><span style="display:flex;"><span>          submodules: recursive
+</span></span><span style="display:flex;"><span>          fetch-depth: 0
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - uses: peaceiris/actions-hugo@v3
+</span></span><span style="display:flex;"><span>        with:
+</span></span><span style="display:flex;"><span>          hugo-version: &#39;0.152.2&#39;
+</span></span><span style="display:flex;"><span>          extended: true
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - name: Build
+</span></span><span style="display:flex;"><span>        run: hugo --minify
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - name: Deploy to gh-pages
+</span></span><span style="display:flex;"><span>        uses: peaceiris/actions-gh-pages@v3
+</span></span><span style="display:flex;"><span>        if: github.ref == &#39;refs/heads/master&#39;
+</span></span><span style="display:flex;"><span>        with:
+</span></span><span style="display:flex;"><span>          github_token: ${{ secrets.GITHUB_TOKEN }}
+</span></span><span style="display:flex;"><span>          publish_branch: gh-pages
+</span></span><span style="display:flex;"><span>          publish_dir: ./public
+</span></span></code></pre></div><p>This workflow keeps the source and theme on master while publishing only the generated site to gh-pages, which GitHub Pages then serves. It’s simple, stable, and removes the need to ever commit public/ manually.</p>
+<p>⸻</p>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          <nav class="nav tags">
+            <ul class="tags">
+              
+              <li><a href="/tags/hugo">hugo</a></li>
+              
+              <li><a href="/tags/go">go</a></li>
+              
+            </ul>
+          </nav>
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    </article>
+</main>
+<footer>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <div>This site is under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> license. Thanks for stopping by 🌻 </div>
+
+</footer>
+<script>
+  feather.replace()
+</script></div>
+    </body>
+</html>
