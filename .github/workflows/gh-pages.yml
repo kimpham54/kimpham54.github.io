@@ -1,32 +1,44 @@
-name: github pages
+name: Deploy Hugo to gh-pages
 
 on:
   push:
-    branches:
-      - master  # Set a branch to deploy
+    branches: [ master ]
+  # optional: run on PRs just to catch build errors
   pull_request:
+
+permissions:
+  contents: write   # required for actions-gh-pages to push
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: recursive   # fetch theme submodules
+          fetch-depth: 0          # needed for .GitInfo/.Lastmod
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
-          # extended: true
+          hugo-version: '0.152.2' # pin your current version
+          extended: true
 
+      # If you want drafts, use: run: hugo --minify -D
       - name: Build
         run: hugo --minify
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy to gh-pages
         if: github.ref == 'refs/heads/master'
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages    # explicit
           publish_dir: ./public
+          # cname: example.com        # uncomment if you use a custom domain
