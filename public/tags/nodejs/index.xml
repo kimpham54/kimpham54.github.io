@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nodejs on Kim Pham</title>
+    <link>http://localhost:1313/tags/nodejs/</link>
+    <description>Recent content in Nodejs on Kim Pham</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Nov 2025 01:15:41 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>an express and nodejs CSV importer service</title>
+      <link>http://localhost:1313/post/0016/</link>
+      <pubDate>Sat, 08 Nov 2025 01:15:41 -0400</pubDate>
+      <guid>http://localhost:1313/post/0016/</guid>
+      <description>&lt;p&gt;jp2 remediator&#xA;JCRS csv importer&#xA;At the beginning of the year I worked on a Python project for Harvard University, the library system has a mega digital repository, with some corrupted JPEG2000 images.&#xA;At the time of this writing and hopefully for ever and ever, all tests pass with 100% coverage.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../images/jp2tests.jpg&#34; alt=&#34;jp2_remediator tests&#34; title=&#34;jp2_remediator tests&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The module is a command line service, it reads the bytes of a jp2 file or directory of files or an input S3 bucket, then&#xA;looks for presence of an &amp;lsquo;ICC profile&amp;rsquo; in the jp2 bytestream,&#xA;maps and validates curv values according to the ISO/IEC 15444-1:2019 (E) and ICC.1:2022 Specifications&#xA;corrects values where the rTRC/gTRC/bTRC tag size in the Tag table structure (ICC.1:2022 Table 24 tag size) is not the same as the count value (gamma, where n == 1) in the curveType encoding (ICC.1:2022 Table 35, n value)&#xA;flag and (optionally) log values where the count value n != 1 for future review&#xA;later used in apache airflow workflow for all images in the repository&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

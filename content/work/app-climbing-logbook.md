@@ -3,9 +3,8 @@ title = "Software project: Climbing logbook"
 date = 2022-10-30
 description = ""
 draft = false
+hideDate = true
 +++
-
-Last updated: October 31, 2022
 
 Github: https://github.com/kimpham54/climbing_logbook_react_rails
 

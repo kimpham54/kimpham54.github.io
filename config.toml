@@ -54,10 +54,10 @@ weight = 1
 
 [[menu.main]]
 name = "Talks"
-url = "/talks"
+url = "/cv"
 weight = 2
 
 [[menu.main]]
 name = "Work"
-url = "/cv"
+url = "/work"
 weight = 3

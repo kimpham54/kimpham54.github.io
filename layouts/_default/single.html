@@ -5,7 +5,9 @@
       <!-- Main Content -->
       <div class="post-content">
         <div class="title">
+          {{ if .Params.showTitle | default true }}
           <h1 class="title">{{ .Title }}</h1>
+          {{ end }}
           {{ if not .Params.hideDate }}
           <div class="meta">Posted on {{ dateFormat ":date_medium" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
           {{ end }}

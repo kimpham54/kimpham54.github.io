@@ -2,10 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/post/013/</loc>
-    <lastmod>2025-11-07T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/post/0016/</loc>
+    <lastmod>2025-11-08T01:15:41-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-11-08T01:15:41-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/javascript/</loc>
+    <lastmod>2025-11-08T01:15:41-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-08T01:15:41-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/nodejs/</loc>
+    <lastmod>2025-11-08T01:15:41-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2025-11-08T01:15:41-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/rest-api/</loc>
+    <lastmod>2025-11-08T01:15:41-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-11-08T01:15:41-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/technology/</loc>
+    <lastmod>2025-11-08T01:15:41-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/0015/</loc>
+    <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/cv/</loc>
+    <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/docker/</loc>
+    <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/gis/</loc>
+    <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/0014/</loc>
+    <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/cv/presentations/</loc>
+    <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/python/</loc>
+    <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/0013/</loc>
     <lastmod>2025-11-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/go/</loc>
@@ -14,20 +59,29 @@
     <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2025-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/cv/publications/</loc>
     <lastmod>2025-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>http://localhost:1313/work/app-jcrs-service/</loc>
     <lastmod>2025-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/work/</loc>
     <lastmod>2025-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/technology/</loc>
-    <lastmod>2025-11-07T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/work/app-jp2remediator/</loc>
+    <lastmod>2025-11-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/cv/videos/</loc>
+    <lastmod>2025-11-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-11-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/cv/awards/</loc>
+    <lastmod>2025-11-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/work/app-drih-semantic-web/</loc>
+    <lastmod>2024-10-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/maplibre/</loc>
     <lastmod>2023-02-11T00:00:00+00:00</lastmod>
@@ -41,32 +95,20 @@
     <loc>http://localhost:1313/tags/rust/</loc>
     <lastmod>2023-02-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/012/</loc>
+    <loc>http://localhost:1313/post/0012/</loc>
     <lastmod>2023-02-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/talks/</loc>
+    <loc>http://localhost:1313/cv/selected/</loc>
     <lastmod>2022-10-31T01:15:41-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/talks/talks/</loc>
-    <lastmod>2022-10-31T01:15:41-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/cv/</loc>
+    <loc>http://localhost:1313/work/app-oral-histories/</loc>
     <lastmod>2022-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/cv/app-oral-histories/</loc>
+    <loc>http://localhost:1313/work/app-climbing-logbook/</loc>
     <lastmod>2022-10-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/cv/app-climbing-logbook/</loc>
+    <loc>http://localhost:1313/work/app-recipe-sharing/</loc>
     <lastmod>2022-10-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/cv/app-recipe-sharing/</loc>
-    <lastmod>2022-10-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/cv/app-semantic-web/</loc>
-    <lastmod>2022-10-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/javascript/</loc>
-    <lastmod>2022-10-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/reactjs/</loc>
     <lastmod>2022-10-20T00:00:00+00:00</lastmod>
@@ -89,7 +131,7 @@
     <loc>http://localhost:1313/vapour/</loc>
     <lastmod>2022-10-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/011/</loc>
+    <loc>http://localhost:1313/post/0011/</loc>
     <lastmod>2022-09-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/semantic-web/</loc>
@@ -101,7 +143,7 @@
     <loc>http://localhost:1313/tags/machine-learning/</loc>
     <lastmod>2022-09-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/010/</loc>
+    <loc>http://localhost:1313/post/0010/</loc>
     <lastmod>2022-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/stable-diffusion/</loc>
@@ -110,46 +152,43 @@
     <loc>http://localhost:1313/tags/climbing/</loc>
     <lastmod>2022-08-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/009/</loc>
+    <loc>http://localhost:1313/post/0009/</loc>
     <lastmod>2022-08-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/personal/</loc>
     <lastmod>2022-08-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/008/</loc>
+    <loc>http://localhost:1313/post/0008/</loc>
     <lastmod>2022-08-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/007/</loc>
+    <loc>http://localhost:1313/post/0007/</loc>
     <lastmod>2020-04-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/redux/</loc>
-    <lastmod>2020-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ruby/</loc>
     <lastmod>2020-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/006/</loc>
+    <loc>http://localhost:1313/post/0006/</loc>
     <lastmod>2020-04-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ruby-on-rails/</loc>
     <lastmod>2020-04-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/005/</loc>
+    <loc>http://localhost:1313/post/0005/</loc>
     <lastmod>2020-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/004/</loc>
+    <loc>http://localhost:1313/post/0004/</loc>
     <lastmod>2019-11-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/003/</loc>
+    <loc>http://localhost:1313/post/0003/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/002/</loc>
+    <loc>http://localhost:1313/post/0002/</loc>
     <lastmod>2019-05-15T22:42:28-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/flatiron/</loc>
     <lastmod>2019-05-15T22:42:25-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/001/</loc>
+    <loc>http://localhost:1313/post/0001/</loc>
     <lastmod>2019-05-15T22:42:25-06:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/welcome/</loc>

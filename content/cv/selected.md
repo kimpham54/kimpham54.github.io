@@ -1,13 +1,10 @@
 +++
-title = "Selected Talks and Publications"
-date = 2022-10-31T01:15:41-04:00
-description = ""
-draft = false
+title = "draft Selected Presentations"
+description = "la"
+draft = true
+date = "2022-10-31T01:15:41-04:00"
+hideDate = true
 +++
-
-Last updated: October 31, 2022
-
-## SELECTED TALKS AND PUBLICATIONS
 
 #### Selected Publications
 
@@ -26,9 +23,3 @@ Last updated: October 31, 2022
 * 2021 - Developing a Digital Research Infrastructure for the Digital Humanities. ENCODE conference. Leuven, Belgium.
 * 2020 - Vertical Collaboration in a Digital Collections Ecosystem. Lighting the Way Forum. Mountain View, USA.
 * 2019 -  In a third space: Building a horizontally connected digital collections ecosystem. Open Repositories. Hamburg, Germany.
-
-#### Awards
-
-* 2020 - Mellon Foundation for Collections as Data: Part to Whole
-* 2016 - University of Toronto Libraries STAR Award for Innovation
-* 2014 - University of Toronto Gordon Cressy Leadership Award

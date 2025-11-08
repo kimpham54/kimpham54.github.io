@@ -10,23 +10,23 @@
     <atom:link href="http://localhost:1313/tags/ruby-on-rails/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ruby &#43; rails &#43; react &#43; redux project 005 - climbing logbook </title>
-      <link>http://localhost:1313/post/006/</link>
+      <link>http://localhost:1313/post/0006/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/006/</guid>
+      <guid>http://localhost:1313/post/0006/</guid>
       <description>&lt;p&gt;former title: flatiron school portfolio project 005 + bringing it all together&lt;/p&gt;&#xA;&lt;p&gt;and&amp;hellip;that&amp;rsquo;s a wrap. what a year and a bit it&amp;rsquo;s been. finally, i accomplished something that i&amp;rsquo;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work. i had a hard time juggling everything, but i feel good about finishing the program.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ruby &#43; rails &#43; church wafer javascript project 004 - communal recipes</title>
-      <link>http://localhost:1313/post/005/</link>
+      <link>http://localhost:1313/post/0005/</link>
       <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/005/</guid>
+      <guid>http://localhost:1313/post/0005/</guid>
       <description>&lt;p&gt;former title: flatiron school portfolio project 004 + church wafer javascript&lt;/p&gt;&#xA;&lt;p&gt;i&amp;rsquo;ve been working on my fourth portfolio project for flatiron while doing a west coast tour of the United States. inspired by my friends, ardent lovers of good food made with care and consideration, i decided to make my application about &lt;a href=&#34;https://github.com/kimpham54/js_portfolio_project_recipes&#34;&gt;recipes&lt;/a&gt;. i find that the flatiron school has a solid, tight curriculum - everything i&amp;rsquo;ve learned in the program so far has built upon each other.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ruby &#43; rails project 003</title>
-      <link>http://localhost:1313/post/004/</link>
+      <link>http://localhost:1313/post/0004/</link>
       <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/004/</guid>
+      <guid>http://localhost:1313/post/0004/</guid>
       <description>&lt;p&gt;former title: flatiron school portfolio project 003 + ruby on magic&lt;/p&gt;&#xA;&lt;p&gt;i completed my first ever ruby on rails project - &lt;a href=&#34;https://github.com/kimpham54/climbing_gear&#34;&gt;climbing_gear&lt;/a&gt;. that, for me, is a pretty big deal! for a long time i&amp;rsquo;ve used programming languages for scripting, adding simple functionality and building some pretty simple applications where i worked on just the frontend/backend/server. i never worked on each level of an application. so making a full stack rails application is something i&amp;rsquo;m pretty glad i got to finally do.&lt;/p&gt;</description>
     </item>
   </channel>

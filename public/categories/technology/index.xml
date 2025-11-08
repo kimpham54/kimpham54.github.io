@@ -6,20 +6,41 @@
     <description>Recent content in Technology on Kim Pham</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Nov 2025 01:15:41 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/technology/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>an express and nodejs CSV importer service</title>
+      <link>http://localhost:1313/post/0016/</link>
+      <pubDate>Sat, 08 Nov 2025 01:15:41 -0400</pubDate>
+      <guid>http://localhost:1313/post/0016/</guid>
+      <description>&lt;p&gt;jp2 remediator&#xA;JCRS csv importer&#xA;At the beginning of the year I worked on a Python project for Harvard University, the library system has a mega digital repository, with some corrupted JPEG2000 images.&#xA;At the time of this writing and hopefully for ever and ever, all tests pass with 100% coverage.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../images/jp2tests.jpg&#34; alt=&#34;jp2_remediator tests&#34; title=&#34;jp2_remediator tests&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The module is a command line service, it reads the bytes of a jp2 file or directory of files or an input S3 bucket, then&#xA;looks for presence of an &amp;lsquo;ICC profile&amp;rsquo; in the jp2 bytestream,&#xA;maps and validates curv values according to the ISO/IEC 15444-1:2019 (E) and ICC.1:2022 Specifications&#xA;corrects values where the rTRC/gTRC/bTRC tag size in the Tag table structure (ICC.1:2022 Table 24 tag size) is not the same as the count value (gamma, where n == 1) in the curveType encoding (ICC.1:2022 Table 35, n value)&#xA;flag and (optionally) log values where the count value n != 1 for future review&#xA;later used in apache airflow workflow for all images in the repository&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>a young conference poster</title>
+      <link>http://localhost:1313/post/0015/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/0015/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s the pretty poster for my first web map, made for the Scarborough Historical Society and started out as a project for Marcel Fortin at the University of Toronto iSchool which was then moved to the Map and Data Library.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ola-poster-information-use--reuse-community-collaboration-with-open-source-web-mapping&#34;&gt;OLA Poster: Information Use &amp;amp; Reuse: Community Collaboration with Open Source Web Mapping&lt;/h2&gt;&#xA;&lt;p&gt;Open-source technologies are creating new avenues for community engagement. Web developer tools are empowering librarians and users alike.  This project utilizes open-source GIS and JavaScript libraries to visualize data from the Scarborough Historical Society photo collection in an interactive app.  Ongoing developments will invite users to contribute their own stories, comments, and pictures that build community history.  The success of this project led to its adoption as a teaching and literacy tool in the Scarborough Archives.  Learn the challenges and considerations for integrating open-source tools for service use.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>JPEG2000 byte modifications with Python and Docker</title>
+      <link>http://localhost:1313/post/0014/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/0014/</guid>
+      <description>&lt;p&gt;At the beginning of the year I worked on a Python project for Harvard University: the library system runs a mega digital repository, and a subset of JPEG 2000 images had a very particular kind of ICC profile corruption detected by Kakadu but not by jpylyzer, two validation tools they use.&#xA;&lt;br&gt;&lt;br&gt;&#xA;I wrote &lt;strong&gt;jp2_remediator&lt;/strong&gt; to validate and (when safe) repair those files so downstream systems could read them. I made a command-line app in a Docker image that scans a single file, a directory, or an S3 bucket.&#xA;When it&amp;rsquo;s put in production, Apache Airflow pulls this image and runs the CLI inside the container for each image, giving us reproducible runs across environments and easy horizontal scaling.&#xA;&lt;br&gt;&lt;br&gt;&#xA;The specs I used and actually really enjoyed studying were:&#xA;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>a hugo and archie upgrade</title>
-      <link>http://localhost:1313/post/013/</link>
+      <link>http://localhost:1313/post/0013/</link>
       <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/013/</guid>
-      <description>&lt;p&gt;Upgrading Hugo and Archie: Notes From a Refresh&lt;/p&gt;&#xA;&lt;p&gt;Yesterday I upgraded both Hugo and the Archie (it&amp;rsquo;s still being updated!) theme for this site. It&amp;rsquo;s been a couple of years since the last update, so this was a chance to tidy things up and modernize the structure. The first step was simply updating the theme submodule:&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;git submodule update --init --remote --merge&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Then I cleared out old build artifacts so Hugo could rebuild everything cleanly. Some helpful warnings when I tried to compile hugo lead to fixing syntax on how to locate templates, conditionals, modifying some partials. Archie now compiles its own stylesheet, so my older first.css needed to be reorganized into a slimmer override layer. Social icons also changed, so I incorporated the updated Feather icon approach used by the theme.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/post/0013/</guid>
+      <description>&lt;p&gt;Yesterday I upgraded both Hugo and the Archie (it&amp;rsquo;s still being updated!) theme for this site. It&amp;rsquo;s been a couple of years since the last update, so this was a chance to tidy things up and modernize the structure. The first step was simply updating the theme submodule:&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;git submodule update --init --remote --merge&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Then I cleared out old build artifacts so Hugo could rebuild everything cleanly. Some helpful warnings when I tried to compile hugo lead to fixing syntax on how to locate templates, conditionals, modifying some partials. Archie now compiles its own stylesheet, so my older first.css needed to be reorganized into a slimmer override layer. Social icons also changed, so I incorporated the updated Feather icon approach used by the theme.&lt;/p&gt;</description>
     </item>
     <item>
       <title>rustling in the open source maplibre community</title>
-      <link>http://localhost:1313/post/012/</link>
+      <link>http://localhost:1313/post/0012/</link>
       <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/012/</guid>
+      <guid>http://localhost:1313/post/0012/</guid>
       <description>&lt;p&gt;starting in september i spent a few months learning rust. i had a few inchoate reasons:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;i&amp;rsquo;ve always wanted to learn systems programming&amp;hellip;i wanted to be exposed to deeper programming concepts. i do appreciate web development and working on web and business logic on the front and backend, but i&amp;rsquo;m also interested in coding that&amp;rsquo;s closer to computer science, or at least working with the ideas of computer science. and to better understand things at a lower level. rip off the hood of abstraction&lt;/li&gt;&#xA;&lt;li&gt;people talk about it a lot on hacker news and in the blockchain space, i know you know. but also&lt;/li&gt;&#xA;&lt;li&gt;linux is supporting rust. cool! so i guess it&amp;rsquo;s it&amp;rsquo;s here to stay&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;so then i learned it &lt;a href=&#34;https://github.com/kimpham54/rust-book-homework-kim&#34;&gt;https://github.com/kimpham54/rust-book-homework-kim&lt;/a&gt;. i was pretty motivated because i was trying to get into the january polkadot blockchain academy in buenos aires, and got through most of the rust book. unfotunately i didn&amp;rsquo;t get a chance to take the rust exam&amp;hellip; so now what? well i really enjoyed learning it, so might as well put those amateur skills to use.&lt;/p&gt;</description>
     </item>
     <item>
@@ -31,65 +52,65 @@
     </item>
     <item>
       <title>ontology coordination with sparql</title>
-      <link>http://localhost:1313/post/011/</link>
+      <link>http://localhost:1313/post/0011/</link>
       <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/011/</guid>
+      <guid>http://localhost:1313/post/0011/</guid>
       <description>&lt;p&gt;isn&amp;rsquo;t it beautiful? it&amp;rsquo;s web3.0!&#xA;&lt;img src=&#34;../../images/2022-10-01-001-sparql.png&#34; alt=&#34;ontology&#34; title=&#34;ontology&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;(extensive amounts of CIDOC CRM usage not included in photo)&lt;/p&gt;&#xA;&lt;p&gt;my colleagues and i are working on building up the semantic web, that is, web 3.0, or linked data. you may be familiar with its blingy $$$$ counterpart web3, but web3.0 had the catchy name first point O!&lt;/p&gt;&#xA;&lt;p&gt;but wait, what&amp;rsquo;s the difference? everything darling, web3.0 and web3 has some inklings of a shared decentralization mission, but the ecosystem is entirely different. the web3 is blockchain based and cares about trust. web3.0 cares about interoperability and wants to operate with an open world assumption. says the w3c:&lt;/p&gt;</description>
     </item>
     <item>
       <title>machine learning &#43; stable diffusion</title>
-      <link>http://localhost:1313/post/010/</link>
+      <link>http://localhost:1313/post/0010/</link>
       <pubDate>Thu, 29 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/010/</guid>
+      <guid>http://localhost:1313/post/0010/</guid>
       <description>&lt;p&gt;on a sunday, some sundays ago, i took my quiet night as a cue to nerd up, so i downloaded stable diffusion and played around with it. i read &lt;a href=&#34;https://www.jonstokes.com/p/ai-content-generation-part-1-machine&#34;&gt;a beautifully written piece about machine learning by jon stokes&lt;/a&gt;, setting aside any political views, which was deeply moving and really made me want to play around with it.&lt;/p&gt;&#xA;&lt;p&gt;the setup is simple, you (my non-existent reader) can use the colab notebook i pasted below, or to install it on your local, you can follow my already going to be outdated in october 2022 steps that i followed from &lt;a href=&#34;https://twitter.com/levelsio&#34;&gt;@levelsio&lt;/a&gt; who followed that from someone else:&lt;/p&gt;</description>
     </item>
     <item>
       <title>site built with hugo and github actions</title>
-      <link>http://localhost:1313/post/008/</link>
+      <link>http://localhost:1313/post/0008/</link>
       <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/008/</guid>
+      <guid>http://localhost:1313/post/0008/</guid>
       <description>&lt;p&gt;i wanted to rebuild my site, just a little lift to streamline the workflow again. i also was inpsired by &lt;a href=&#34;https://maxammann.org/&#34;&gt;https://maxammann.org/&lt;/a&gt; and the open transparent work of &lt;a href=&#34;https://ashleyblewer.com/&#34;&gt;https://ashleyblewer.com/&lt;/a&gt;. previously my site was built with jekyll, then hugo. then i started to dig into nextjs and gatsby. i want to go with a static site generator so that it&amp;rsquo;s easy to maintain and has a lot of nice features out of the box.&lt;/p&gt;</description>
     </item>
     <item>
       <title>state vs props in react</title>
-      <link>http://localhost:1313/post/007/</link>
+      <link>http://localhost:1313/post/0007/</link>
       <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/007/</guid>
+      <guid>http://localhost:1313/post/0007/</guid>
       <description>&lt;p&gt;In React, components are used to translate raw data into rich HTML. Props and state constitute the raw data that gets transformed into HTML using the render() function of a component.&lt;/p&gt;&#xA;&lt;p&gt;State belongs to a particular component, is stored within the component, and is used only by the component itself. State can be updated within a component, for instance based on an action (such as user event or network response). By default a component will not have state, so to add an initial state to a component, you can add a class constructor to a class component. The following is an example of using a List Component and constructor method to set the initial state of a count key to a value of 0:&lt;/p&gt;</description>
     </item>
     <item>
       <title>ruby &#43; rails &#43; react &#43; redux project 005 - climbing logbook </title>
-      <link>http://localhost:1313/post/006/</link>
+      <link>http://localhost:1313/post/0006/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/006/</guid>
+      <guid>http://localhost:1313/post/0006/</guid>
       <description>&lt;p&gt;former title: flatiron school portfolio project 005 + bringing it all together&lt;/p&gt;&#xA;&lt;p&gt;and&amp;hellip;that&amp;rsquo;s a wrap. what a year and a bit it&amp;rsquo;s been. finally, i accomplished something that i&amp;rsquo;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work. i had a hard time juggling everything, but i feel good about finishing the program.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ruby &#43; rails &#43; church wafer javascript project 004 - communal recipes</title>
-      <link>http://localhost:1313/post/005/</link>
+      <link>http://localhost:1313/post/0005/</link>
       <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/005/</guid>
+      <guid>http://localhost:1313/post/0005/</guid>
       <description>&lt;p&gt;former title: flatiron school portfolio project 004 + church wafer javascript&lt;/p&gt;&#xA;&lt;p&gt;i&amp;rsquo;ve been working on my fourth portfolio project for flatiron while doing a west coast tour of the United States. inspired by my friends, ardent lovers of good food made with care and consideration, i decided to make my application about &lt;a href=&#34;https://github.com/kimpham54/js_portfolio_project_recipes&#34;&gt;recipes&lt;/a&gt;. i find that the flatiron school has a solid, tight curriculum - everything i&amp;rsquo;ve learned in the program so far has built upon each other.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ruby &#43; rails project 003</title>
-      <link>http://localhost:1313/post/004/</link>
+      <link>http://localhost:1313/post/0004/</link>
       <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/004/</guid>
+      <guid>http://localhost:1313/post/0004/</guid>
       <description>&lt;p&gt;former title: flatiron school portfolio project 003 + ruby on magic&lt;/p&gt;&#xA;&lt;p&gt;i completed my first ever ruby on rails project - &lt;a href=&#34;https://github.com/kimpham54/climbing_gear&#34;&gt;climbing_gear&lt;/a&gt;. that, for me, is a pretty big deal! for a long time i&amp;rsquo;ve used programming languages for scripting, adding simple functionality and building some pretty simple applications where i worked on just the frontend/backend/server. i never worked on each level of an application. so making a full stack rails application is something i&amp;rsquo;m pretty glad i got to finally do.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ruby project 002 &#43; making reading lists with sinatra</title>
-      <link>http://localhost:1313/post/003/</link>
+      <link>http://localhost:1313/post/0003/</link>
       <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/003/</guid>
+      <guid>http://localhost:1313/post/0003/</guid>
       <description>&lt;p&gt;former title: flatiron school portfolio project 002 + making reading lists with sinatra&lt;/p&gt;&#xA;&lt;p&gt;it was a quick turnaround for me to build our second portfolio project, a Sinatra app that uses a whole new slew of ruby web technologies for me, including Rack, Activerecord, Rake, and bcrypt.&lt;/p&gt;&#xA;&lt;p&gt;in brief, i built an application that behaves like a content management system in that it lets people have their own account to create a list of items to read in the future. a user can add a reading item and enter in an item&amp;rsquo;s title, url, and notes about the reading item. they can edit their items and delete their items. and that&amp;rsquo;s&amp;hellip;pretty much it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ruby project 001 &#43; updating nokogiri</title>
-      <link>http://localhost:1313/post/002/</link>
+      <link>http://localhost:1313/post/0002/</link>
       <pubDate>Wed, 15 May 2019 22:42:28 -0600</pubDate>
-      <guid>http://localhost:1313/post/002/</guid>
+      <guid>http://localhost:1313/post/0002/</guid>
       <description>&lt;p&gt;former title: flatiron school portfolio project 001&lt;/p&gt;&#xA;&lt;p&gt;our cohort is is working on our first portfolio project two months into the flatiron school software engineering part time program. we were asked to create a ruby gem that provides a command line interface to interact with the application that uses an external data source (either by API or web scraping). we were able to use any external data source we wanted, so i made the obvious choice for myself and decided to scrape &lt;a href=&#34;https://mountainproject.com&#34;&gt;mountain project&lt;/a&gt;, a site that describes climbing routes and locations in north america.&lt;/p&gt;&#xA;&lt;p&gt;i put the &lt;a href=&#34;https://github.com/kimpham54/classic_climbs_cli_gem&#34;&gt;classic climbs code repository&lt;/a&gt; up on github with details on how to install and run the application. it&amp;rsquo;s a little object oriented application that scrapes &lt;a href=&#34;https://www.mountainproject.com/area/classics?type=sport&#34;&gt;classic sport climbs&lt;/a&gt;, prints out a list of those climbs, and the user can then select one of those climbs to get more details about it, scraped from a specific climb&amp;rsquo;s page, such as &lt;a href=&#34;https://www.mountainproject.com/route/106183204/space-boyz&#34;&gt;space boyz&lt;/a&gt; (point of pride note: i climbed this route in march!)&lt;/p&gt;&#xA;&lt;p&gt;it was a fun exercise to create this application, and it helps that you get to work on content that you enjoy working with. getting to build an object oriented ruby application hardened some of the concepts for me, and helped me think through some of the ways to optimize the program by thinking hard about separation of concerns, improving performance, and trying to be DRY (don&amp;rsquo;t repeat yourself).&lt;/p&gt;&#xA;&lt;p&gt;i wanted to note one thing, which makes me think about what it means to work in tech or to be a software developer.&lt;/p&gt;&#xA;&lt;p&gt;the tl;dr: software development is not just about programming and getting your code to work for you, there&amp;rsquo;s many considerations to take into account to say that you have a working application. it&amp;rsquo;s the planning, setting up environment, testing, deployment, security, everything to make your code not only work but continuously operational.&lt;/p&gt;</description>
     </item>
   </channel>

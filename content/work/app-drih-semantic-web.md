@@ -1,11 +1,10 @@
 +++
-title = "Software project: Semantic web knowledge graph"
-date = 2022-10-30
+title = "Software project: DRIH - semantic web knowledge graph"
+date = 2024-10-30
 description = ""
 draft = false
+hideDate = true
 +++
-
-Last updated: October 31, 2022
 
 I was the primary designer and developer for this app. We used the open-source platform Researchspace where I worked on the additional customizations and templates and visualizations.
 

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>machine learning &#43; stable diffusion - Kim Pham</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="ai generative art and the beauty of latent space travel" />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/post/0010/">
+  <meta property="og:site_name" content="Kim Pham">
+  <meta property="og:title" content="machine learning &#43; stable diffusion">
+  <meta property="og:description" content="ai generative art and the beauty of latent space travel">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2022-09-29T00:00:00+00:00">
+    <meta property="article:modified_time" content="2022-09-29T00:00:00+00:00">
+    <meta property="article:tag" content="Machine Learning">
+    <meta property="article:tag" content="Open Source">
+    <meta property="article:tag" content="Stable Diffusion">
+    <meta property="og:image" content="https://source.unsplash.com/category/technology/1600x900">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://source.unsplash.com/category/technology/1600x900">
+  <meta name="twitter:title" content="machine learning &#43; stable diffusion">
+  <meta name="twitter:description" content="ai generative art and the beauty of latent space travel">
+
+        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.7a5c05040394322612a2d98397e9932aa81d9d7acc70199463e79f8180c8e0c0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.478e7f2b9cf8d87be42edfd9fe1810beab1331847df94b1b430478b309f28282.css"  disabled />
+		
+		
+		<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/first.df548228b907acbdb20017df8263f81ce932aafff70a6b448751a4bf998c0ed2.css">
+		
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">Kim Pham</a>
+		<div style="display:flex; margin-top: 0.5rem;"><a class="soc" href="https://docs.google.com/forms/d/e/1FAIpQLSemLz1deuIX0vN1mFtd0Bh6w_ouyo9bt8k8F4EI1bkf7Ppjnw/viewform" title="Email"><i data-feather="mail"></i></a>
+			<a class="soc" href="https://github.com/kimpham54" title="GitHub"><i data-feather="github"></i></a>
+			<a class="soc" href="https://twitter.com/tolloid/" title="Twitter"><i data-feather="twitter"></i></a>
+			<a class="soc" href="https://www.linkedin.com/in/kim-pham-a9ba8030/" title="Linkedin"><i data-feather="linkedin"></i></a>
+			<a class="soc" href="https://www.instagram.com/kimpham54/" title="Instagram"><i data-feather="instagram"></i></a>
+			</div>
+	</div>
+
+	<nav>
+		
+		<a href="/about">About</a>
+		
+		<a href="/cv">Talks</a>
+		
+		<a href="/work">Work</a>
+		
+		| <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
+		<script src="http://localhost:1313/js/themetoggle.js"></script>
+		
+	</nav>
+
+</header>
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          
+          <h1 class="title">machine learning &#43; stable diffusion</h1>
+          
+          
+          <div class="meta">Posted on Sep 29, 2022</div>
+          
+        </div>
+        
+        <section class="body">
+          <p>on a sunday, some sundays ago, i took my quiet night as a cue to nerd up, so i downloaded stable diffusion and played around with it. i read <a href="https://www.jonstokes.com/p/ai-content-generation-part-1-machine">a beautifully written piece about machine learning by jon stokes</a>, setting aside any political views, which was deeply moving and really made me want to play around with it.</p>
+<p>the setup is simple, you (my non-existent reader) can use the colab notebook i pasted below, or to install it on your local, you can follow my already going to be outdated in october 2022 steps that i followed from <a href="https://twitter.com/levelsio">@levelsio</a> who followed that from someone else:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#f92672">-</span> Upgrade MacOS to the latest version (top left <span style="color:#960050;background-color:#1e0010">🍎</span> <span style="color:#f92672">-&gt;</span> About This Mac <span style="color:#f92672">-&gt;</span> Software Update
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> Open Terminal app
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> Install Homebrew from http:<span style="color:#f92672">//</span>brew<span style="color:#f92672">.</span>sh
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">⌨️</span> Type the commands below <span style="color:#f92672">in</span> terminal <span style="color:#f92672">and</span> press Enter:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>brew update
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>brew install python
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git clone <span style="color:#f92672">-</span>b apple<span style="color:#f92672">-</span>silicon<span style="color:#f92672">-</span>mps<span style="color:#f92672">-</span>support https:<span style="color:#f92672">//</span>github<span style="color:#f92672">.</span>com<span style="color:#f92672">/</span>bfirsh<span style="color:#f92672">/</span>stable<span style="color:#f92672">-</span>diffusion<span style="color:#f92672">.</span>git (remove the linebreak before the URL here)
+</span></span><span style="display:flex;"><span>cd stable<span style="color:#f92672">-</span>diffusion
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mkdir <span style="color:#f92672">-</span>p models<span style="color:#f92672">/</span>ldm<span style="color:#f92672">/</span>stable<span style="color:#f92672">-</span>diffusion<span style="color:#f92672">-</span>v1<span style="color:#f92672">/</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>python3 <span style="color:#f92672">-</span>m pip install virtualenv
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>python3 <span style="color:#f92672">-</span>m virtualenv venv
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>source venv<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>activate
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>brew install Cmake protobuf rust
+</span></span><span style="display:flex;"><span>pip install <span style="color:#f92672">-</span>r requirements<span style="color:#f92672">.</span>txt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">⬇️</span> Now go to https:<span style="color:#f92672">//</span>huggingface<span style="color:#f92672">.</span>co<span style="color:#f92672">/</span>CompVis<span style="color:#f92672">/</span>stable<span style="color:#f92672">-</span>diffusion<span style="color:#f92672">-</span>v<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">-</span><span style="color:#ae81ff">4</span><span style="color:#f92672">-</span>original, read <span style="color:#f92672">and</span> understand the license, then click <span style="color:#e6db74">&#34;Access repository&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Download sd<span style="color:#f92672">-</span>v1<span style="color:#f92672">-</span><span style="color:#ae81ff">4.</span>ckpt (<span style="color:#f92672">~</span><span style="color:#ae81ff">4</span> GB) <span style="color:#f92672">and</span> save it under stable<span style="color:#f92672">-</span>diffusion<span style="color:#f92672">/</span>models<span style="color:#f92672">/</span>ldm<span style="color:#f92672">/</span>stable<span style="color:#f92672">-</span>diffusion<span style="color:#f92672">-</span>v1<span style="color:#f92672">/</span>model<span style="color:#f92672">.</span>ckpt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>python scripts<span style="color:#f92672">/</span>txt2imgnsfw<span style="color:#f92672">.</span>py <span style="color:#f92672">--</span>n_samples <span style="color:#ae81ff">1</span> <span style="color:#f92672">--</span>n_iter <span style="color:#ae81ff">1</span> <span style="color:#f92672">--</span>plms <span style="color:#f92672">--</span>precision full <span style="color:#f92672">--</span>ddim_steps <span style="color:#ae81ff">50</span> <span style="color:#f92672">--</span>prompt <span style="color:#e6db74">&#34;a library with hexagonal rooms where one person is living in each room and in the library every conceivable book exists. illustration by Max Ernst, in the style of Jorge Luis Borges, 8K&#34;</span>
+</span></span></code></pre></div><p>the cosmos (or latent space) of stable diffusion is a set of 5.85 billion CLIP filtered image-text pairs (LAION 5B), it could stand in as an approximation of the intellectual and physical world, i actually think it&rsquo;s very likely it would given the sheer amount of data provided. we&rsquo;re giving the machine prompts, it&rsquo;s dissecting said prompt in this space, and retrieving an image approximation of said prompt. borges and calvino are always very casually in my mind, they&rsquo;re words, dreams, symbols are always there in my short and long term memory. reading jon stokes conjured up these images, and being a former librarian i felt like placing them as the protagonist, the precogs (minority report) that are your guide to navigate this new space. how cool that would be if librarians took the helm!</p>
+<blockquote>
+<p>playing with stable diffusion + imagining librarians living parallel lives as prompt generators searching + refining through the latent space where every possible digital combination already exists, you just have to find it. perhaps borges would be pleased. #stablediffusion</p>
+</blockquote>
+<blockquote>
+<p>dear latent space traveller, explorer of internal memory, seeker into infinity. the stalker that knows how to tease out the perfect configuration of bits. it was never databases it was always concepts, edges, features</p>
+</blockquote>
+<blockquote>
+<p>&lsquo;what we observe is not nature in itself but nature exposed to our method of questioning&rsquo; quote werner heisenberg. the librarian, questioning its faith that our texts model the world. brave your new domain, the visions of our experience of models of reality.</p>
+</blockquote>
+<blockquote>
+<p>O brave new world, that has such people in it!</p>
+</blockquote>
+<p>i made some borges library like photos. him and calvino would be fascinated by the technology! calvino even tried to collaborate with an ibm technologist William Skyvington, but Skyvington wrote in a letter accusing Calvino of</p>
+<blockquote>
+<p>&ldquo;seeing computers as mere tools and not as the complex technologies they were.&rdquo;</p>
+</blockquote>
+<blockquote>
+<p>&ldquo;computers should be treated like “real women” and not “prostitute”&rdquo; (ok comment for the time i suppose?)</p>
+</blockquote>
+<p>art is the lifeblood and livelihood of the lucky few, and for them to lose that is sad, it&rsquo;s quite lucky to have your passion be your income stream and if someone has that opportunity i&rsquo;d hope that it wouldn&rsquo;t be taken away. but the argument that it devalues or debases art i don&rsquo;t think rings true. i remain hopeful, my twitter-rage inducing comment here is that on a macro level humans are incredibly resilient and adaptive (see COVID-19). if you read enough historical documents and about peoples lives throughout history dating back to the classical greek period, people are still struggling with the same problems, same moral values, same virtues. it almost feels like life isn&rsquo;t any different, not any better or worse, the world finds an equilibrium despite tragedy chaos, it doesn&rsquo;t last forever.</p>
+<p>here is a more thoughftul comment, and why i also think art can never die:</p>
+<blockquote>
+<p>There&rsquo;s no algorithm that generates artistic meaning. These neural nets allow you to employ arbitrary styles and techniques, but no AI can&rsquo;t come up with meaningful messages on its own&hellip;yet</p>
+</blockquote>
+<blockquote>
+<p>I think of meaning in terms of Saussure&rsquo;s sign and signified. &ldquo;The Earth orbits around the sun&rdquo; for example, is literally a string of characters. As a sign, however, its correspondent signifier could be a diagram of the solar system or something like that.
+In general meaning is the parts of an experience that are salient to its representation as a sign. It&rsquo;s a sign&rsquo;s signified.</p>
+</blockquote>
+<blockquote>
+<p>Robots lack an embodied experience that would be necessary for them to understand human meanings. They don&rsquo;t know what it feels like to step on a Lego, so a whole class of memes and meanings are unavailable to them as a result.</p>
+</blockquote>
+<blockquote>
+<p>There are probably things that we, as humans, don&rsquo;t know that we feel but still impart meaning. It would be very hard to get a robot to say something like &ldquo;as the blood rushed to my ears&rdquo; in a truly meaningful way. Most who end up using that phrase in a sentence don&rsquo;t use its full meaning when thinking about it (so there&rsquo;s higher than normal pressure in the head, etc) but if pressed can expound on it in a way that would be obviously different than a robot&rsquo;s (GPT3 would say, the meaning of this sentence is [0.5435, 24.2352, 1.3245], nearby sentences I&rsquo;ve seen have embeddings [1.5532, 0.3552, 4.2442])</p>
+</blockquote>
+<p><img src="../../images/2022-09-30-001-stablediffusion.png" alt="borges" title="borges">
+<img src="../../images/2022-09-30-002-stablediffusion.png" alt="borges" title="borges">
+<img src="../../images/2022-09-30-003-stablediffusion.png" alt="borges" title="borges">
+<img src="../../images/2022-09-30-004-stablediffusion.png" alt="borges" title="borges"></p>
+<p>References</p>
+<ul>
+<li><a href="https://colab.research.google.com/drive/12l_Wq4km2nLXHZDo3RyzeFTnTnXq0aiu">https://colab.research.google.com/drive/12l_Wq4km2nLXHZDo3RyzeFTnTnXq0aiu</a></li>
+<li><a href="https://twitter.com/levelsio/status/1565731907664478209">https://twitter.com/levelsio/status/1565731907664478209</a></li>
+<li><a href="https://laion.ai/projects/">https://laion.ai/projects/</a></li>
+<li><a href="https://narratingcomputing.com/microhistories/constellation-italo-calvino/">https://narratingcomputing.com/microhistories/constellation-italo-calvino/</a></li>
+<li><a href="https://news.ycombinator.com/item?id=32486133">https://news.ycombinator.com/item?id=32486133</a></li>
+<li><a href="https://www.jonstokes.com/p/ai-content-generation-part-1-machine">https://www.jonstokes.com/p/ai-content-generation-part-1-machine</a></li>
+<li><a href="https://simonwillison.net/2022/Sep/5/laion-aesthetics-weeknotes/">https://simonwillison.net/2022/Sep/5/laion-aesthetics-weeknotes/</a></li>
+</ul>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          <nav class="nav tags">
+            <ul class="tags">
+              
+              <li><a href="/tags/machine-learning">machine learning</a></li>
+              
+              <li><a href="/tags/open-source">open source</a></li>
+              
+              <li><a href="/tags/stable-diffusion">stable diffusion</a></li>
+              
+            </ul>
+          </nav>
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    </article>
+</main>
+<footer>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <div>This site is under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> license. Thanks for stopping by 🌻 </div>
+
+</footer>
+<script>
+  feather.replace()
+</script></div>
+    </body>
+</html>

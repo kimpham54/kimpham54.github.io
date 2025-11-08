@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>ontology coordination with sparql - Kim Pham</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="have you heard of web3.0? it&#39;s been here since 2004!" />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/post/0011/">
+  <meta property="og:site_name" content="Kim Pham">
+  <meta property="og:title" content="ontology coordination with sparql">
+  <meta property="og:description" content="have you heard of web3.0? it&#39;s been here since 2004!">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2022-09-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2022-09-30T00:00:00+00:00">
+    <meta property="article:tag" content="Sparql">
+    <meta property="article:tag" content="Semantic Web">
+    <meta property="article:tag" content="Javascript">
+    <meta property="article:tag" content="Reactjs">
+    <meta property="article:tag" content="Open Source">
+    <meta property="og:image" content="https://freight.cargo.site/t/original/i/3fa2878864ee88e60ba954c94415119cefe999c2655e84e10ee555ccabc896b2/whibley_3_o.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://freight.cargo.site/t/original/i/3fa2878864ee88e60ba954c94415119cefe999c2655e84e10ee555ccabc896b2/whibley_3_o.jpg">
+  <meta name="twitter:title" content="ontology coordination with sparql">
+  <meta name="twitter:description" content="have you heard of web3.0? it&#39;s been here since 2004!">
+
+        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.7a5c05040394322612a2d98397e9932aa81d9d7acc70199463e79f8180c8e0c0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.478e7f2b9cf8d87be42edfd9fe1810beab1331847df94b1b430478b309f28282.css"  disabled />
+		
+		
+		<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/first.df548228b907acbdb20017df8263f81ce932aafff70a6b448751a4bf998c0ed2.css">
+		
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">Kim Pham</a>
+		<div style="display:flex; margin-top: 0.5rem;"><a class="soc" href="https://docs.google.com/forms/d/e/1FAIpQLSemLz1deuIX0vN1mFtd0Bh6w_ouyo9bt8k8F4EI1bkf7Ppjnw/viewform" title="Email"><i data-feather="mail"></i></a>
+			<a class="soc" href="https://github.com/kimpham54" title="GitHub"><i data-feather="github"></i></a>
+			<a class="soc" href="https://twitter.com/tolloid/" title="Twitter"><i data-feather="twitter"></i></a>
+			<a class="soc" href="https://www.linkedin.com/in/kim-pham-a9ba8030/" title="Linkedin"><i data-feather="linkedin"></i></a>
+			<a class="soc" href="https://www.instagram.com/kimpham54/" title="Instagram"><i data-feather="instagram"></i></a>
+			</div>
+	</div>
+
+	<nav>
+		
+		<a href="/about">About</a>
+		
+		<a href="/cv">Talks</a>
+		
+		<a href="/work">Work</a>
+		
+		| <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
+		<script src="http://localhost:1313/js/themetoggle.js"></script>
+		
+	</nav>
+
+</header>
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          
+          <h1 class="title">ontology coordination with sparql</h1>
+          
+          
+          <div class="meta">Posted on Sep 30, 2022</div>
+          
+        </div>
+        
+        <section class="body">
+          <p>isn&rsquo;t it beautiful? it&rsquo;s web3.0!
+<img src="../../images/2022-10-01-001-sparql.png" alt="ontology" title="ontology"></p>
+<p>(extensive amounts of CIDOC CRM usage not included in photo)</p>
+<p>my colleagues and i are working on building up the semantic web, that is, web 3.0, or linked data. you may be familiar with its blingy $$$$ counterpart web3, but web3.0 had the catchy name first point O!</p>
+<p>but wait, what&rsquo;s the difference? everything darling, web3.0 and web3 has some inklings of a shared decentralization mission, but the ecosystem is entirely different. the web3 is blockchain based and cares about trust. web3.0 cares about interoperability and wants to operate with an open world assumption. says the w3c:</p>
+<blockquote>
+<p>the Semantic Web provides a common framework that allows data to be shared and reused across application, enterprise, and community boundaries</p>
+</blockquote>
+<p>super vague i know. but just know that a lot of the tooling and standards are designed to faciliate sharing, reuse, and access to data. it&rsquo;s a standard that provides for standard tooling, and shared understanding of how to use data across (and in spite of) built systems. it&rsquo;s graph shaped, a little web or network of data, rather than grid or table shaped, like most database structures.</p>
+<p>the interest in the semantic web still largely resides in academia. i can&rsquo;t tell if it&rsquo;s growing or shrinking. in north america it felt like it was fading, in europe/germany it&rsquo;s still fun and cool!</p>
+<p>i&rsquo;m trying to make my posts brief, i really just want to keep a record of my technical activities, so in short, linked data powers our system, and SPARQL replaces the SQL crown to retrieve data. i&rsquo;ve been working on the design and coding of our system, which uses the open-source ResearchSpace/Metaphacts Open Platform, making frontend teampltes and react components to interact with our wild data structure (we are combining data from different projects using CIDOC CRM, this even more wildly esoteric ontology model that describes cultural heritage information (describing its intellectural and physical forms) then trying to link some shared data together and then slapping on a layer of metadata over that).</p>
+<p>sometimes i wonder, i really, really wonder, how i will be able to apply what i&rsquo;ve learned outside of an academic context. but it feels good, working with SPARQL. CIDOC CRM maybe not, the modelling complexity is a bit too much, but i see the value in the semantic web, wikidata + wikipedia being a prime example of this. sharing your knowledge, making it accessible and reference-able in whatever form, it doesn&rsquo;t have to be strict w3c standards, but to have the semantic web mentality is probably the most important takeaway. maybe ai will create so much of everything that all tihs data will get lost in the noise. or maybe it&rsquo;s playing the long game, could be it&rsquo;s here to stay, all of these technologies that change and break and move on, and linked data will remain strong, data imbued with semantics and meaning and we&rsquo;ll all sitting around making SPARQL queries to get at this precious, precious, trustworthy data. LONG LIVE SPARQL</p>
+<p>btw here&rsquo;s CIDOC CRM. ok it&rsquo;s not so ba&mdash;&ndash;</p>
+<p>oh wait, that&rsquo;s just the higher level.</p>
+<p><img src="../../images/2022-10-01-002-sparql.png" alt="ontology" title="ontology"></p>
+<p>i see.</p>
+<p><img src="../../images/2022-10-01-003-sparql.jpg" alt="ontology" title="ontology"></p>
+<p>i see.</p>
+<p><img src="../../images/2022-10-01-004-sparql.jpg" alt="ontology" title="ontology"></p>
+<p>i see.</p>
+<p><img src="../../images/2022-10-01-005-sparql.jpg" alt="ontology" title="ontology"></p>
+<p>&hellip;and it goes on. but here&rsquo;s a nice simple depiction of it. i gotta say, it&rsquo;s kind of cool the data linkings and connections you can make if everyone&rsquo;s using it!</p>
+<p><img src="../../images/2022-10-01-006-sparql.png" alt="ontology" title="ontology"></p>
+<p>post-scripts</p>
+<p>the solid project is something else different from web3 and web3.0 but still is similar to both. you are in control of your data, you don&rsquo;t have to trust anyone else with it. all slightly different paradigms or areas of concern.</p>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          <nav class="nav tags">
+            <ul class="tags">
+              
+              <li><a href="/tags/sparql">sparql</a></li>
+              
+              <li><a href="/tags/semantic-web">semantic web</a></li>
+              
+              <li><a href="/tags/javascript">javascript</a></li>
+              
+              <li><a href="/tags/reactjs">reactjs</a></li>
+              
+              <li><a href="/tags/open-source">open source</a></li>
+              
+            </ul>
+          </nav>
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    </article>
+</main>
+<footer>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <div>This site is under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> license. Thanks for stopping by 🌻 </div>
+
+</footer>
+<script>
+  feather.replace()
+</script></div>
+    </body>
+</html>
