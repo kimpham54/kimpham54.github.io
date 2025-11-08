@@ -17,8 +17,8 @@
     --color-text-muted: #949171;
     --color-text-meta: #acabc8;
     --color-background: #ffffff;
-    --color-background-code: #ffefdc;
-    --color-background-pre: #fff8e4;
+    --color-background-code: #fffcdc;
+    --color-background-pre: #fffee4;
     --color-background-toc: #eaf8ff;
     --color-background-draft: #f9f2f4;
     
@@ -168,8 +168,4 @@ header nav a {
 ul li a {
     text-transform: lowercase;
     line-height: 2.2em;
-}
-
-footer > div {
-  font-size: 0.75rem;
 }
