@@ -1,46 +1,185 @@
-<!doctype html><html><head lang=en><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>rustling in the open source maplibre community - Kim Pham</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="notes on contributing to the rust based maplibre project"><meta property="og:image" content><meta property="og:url" content="https://kimpham54.github.io/post/012/"><meta property="og:site_name" content="Kim Pham"><meta property="og:title" content="rustling in the open source maplibre community"><meta property="og:description" content="notes on contributing to the rust based maplibre project"><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="post"><meta property="article:published_time" content="2023-02-11T00:00:00+00:00"><meta property="article:modified_time" content="2023-02-11T00:00:00+00:00"><meta property="article:tag" content="Rust"><meta property="article:tag" content="Maplibre"><meta property="article:tag" content="Open Source"><meta property="article:tag" content="Maps"><meta name=twitter:card content="summary"><meta name=twitter:title content="rustling in the open source maplibre community"><meta name=twitter:description content="notes on contributing to the rust based maplibre project"><link href=https://kimpham54.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css rel=stylesheet><link rel=stylesheet type=text/css media=screen href=https://kimpham54.github.io/css/main.7a5c05040394322612a2d98397e9932aa81d9d7acc70199463e79f8180c8e0c0.css><link id=darkModeStyle rel=stylesheet type=text/css href=https://kimpham54.github.io/css/dark.478e7f2b9cf8d87be42edfd9fe1810beab1331847df94b1b430478b309f28282.css disabled><link rel=stylesheet type=text/css href=https://kimpham54.github.io/css/first.df548228b907acbdb20017df8263f81ce932aafff70a6b448751a4bf998c0ed2.css></head><body><div class=content><header><div class=main><a href=https://kimpham54.github.io/>Kim Pham</a><div style=display:flex;margin-top:.5rem><a class=soc href=https://docs.google.com/forms/d/e/1FAIpQLSemLz1deuIX0vN1mFtd0Bh6w_ouyo9bt8k8F4EI1bkf7Ppjnw/viewform title=Email><i data-feather=mail></i></a>
-<a class=soc href=https://github.com/kimpham54 title=GitHub><i data-feather=github></i></a>
-<a class=soc href=https://twitter.com/tolloid/ title=Twitter><i data-feather=twitter></i></a>
-<a class=soc href=https://www.linkedin.com/in/kim-pham-a9ba8030/ title=Linkedin><i data-feather=linkedin></i></a>
-<a class=soc href=https://www.instagram.com/kimpham54/ title=Instagram><i data-feather=instagram></i></a></div></div><nav><a href=/about>About</a>
-<a href=/talks>Talks</a>
-<a href=/cv>Work</a>
-| <a id=dark-mode-toggle onclick=toggleTheme() href></a><script src=https://kimpham54.github.io/js/themetoggle.js></script></nav></header><main><article><div class=post-container><div class=post-content><div class=title><h1 class=title>rustling in the open source maplibre community</h1><div class=meta>Posted on Feb 11, 2023</div></div><section class=body><p>starting in september i spent a few months learning rust. i had a few inchoate reasons:</p><ul><li>i&rsquo;ve always wanted to learn systems programming&mldr;i wanted to be exposed to deeper programming concepts. i do appreciate web development and working on web and business logic on the front and backend, but i&rsquo;m also interested in coding that&rsquo;s closer to computer science, or at least working with the ideas of computer science. and to better understand things at a lower level. rip off the hood of abstraction</li><li>people talk about it a lot on hacker news and in the blockchain space, i know you know. but also</li><li>linux is supporting rust. cool! so i guess it&rsquo;s it&rsquo;s here to stay</li></ul><p>so then i learned it <a href=https://github.com/kimpham54/rust-book-homework-kim>https://github.com/kimpham54/rust-book-homework-kim</a>. i was pretty motivated because i was trying to get into the january polkadot blockchain academy in buenos aires, and got through most of the rust book. unfotunately i didn&rsquo;t get a chance to take the rust exam&mldr; so now what? well i really enjoyed learning it, so might as well put those amateur skills to use.</p><p>to me, contributing to open-source is a beautiful and brutal mechanism for self-reflection for both personal professional growth. the transparency, the feedback, the meritocratic initiative, it&rsquo;s a chance to discover your intrinsic/extrinsic motivations and to know who you are, who you should be, and who you want to be as a worker. i don&rsquo;t know of a better way to know what you truly know/don&rsquo;t know about coding. you have to apply your skills in front of a surveying audience and do it without any obvious incentive. teaching comes close to this naked vulnerability feeling, but even then it masks a bit of the truth. it&rsquo;s humbling, empowering. ok i&rsquo;m waxing poetic a bit here, but i&rsquo;m sentimental because in the past my most rewarding and idealized professional experiences were when I got to work in open source. I do miss being part of that more in libraryland world - much love forever goes to Islandora.</p><p>so i looked for some open source rust projects, and found one that hits close to my passion for maps - maplibre-rs. i reached out to max, who&rsquo;s heading development on maplibre-rs. i&rsquo;ve lurked in the community for a bit and let him know i was interested in a beginner task. so finally when one came up i volunteered.</p><p>i was working on parsing some style specs over the christmas break. took a break, then came back to it in february, which means i forgot everything. but it&rsquo;s also cool because i look at my code and go whoa, how did i know how to do this?</p><p>henceforth i shall keep notes, and you&rsquo;re welcome to peruse them too (cw: may not make sense)!</p><h2 id=maplibre-rs-style-parser>maplibre-rs style parser</h2><p>i&rsquo;m only concerned with the style module in maplibre-rs. here&rsquo;s how the project is organized</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>maplibre-rs/maplibre/src/style
-</span></span><span style=display:flex><span>├── layer.rs
-</span></span><span style=display:flex><span>├── mod.rs
-</span></span><span style=display:flex><span>├── original
-</span></span><span style=display:flex><span>│   ├── layer.rs
-</span></span><span style=display:flex><span>│   ├── source.rs
-</span></span><span style=display:flex><span>│   └── style.rs
-</span></span><span style=display:flex><span>├── source.rs
-</span></span><span style=display:flex><span>├── style.rs
-</span></span><span style=display:flex><span>└── tests
-</span></span><span style=display:flex><span>    ├── map-styles
-</span></span><span style=display:flex><span>    │   ├── test-cl4whef.json
-</span></span><span style=display:flex><span>    │   ├── test-cl4whev.json
-</span></span><span style=display:flex><span>    │   ├── test-cl4wxue.json
-</span></span><span style=display:flex><span>    │   ├── test-dark-v10.json
-</span></span><span style=display:flex><span>    │   ├── test-light-v10.json
-</span></span><span style=display:flex><span>    │   ├── test-navigation-guidan.json
-</span></span><span style=display:flex><span>    │   ├── test-navigation-guidance.json
-</span></span><span style=display:flex><span>    │   ├── test-outdoors-v11.json
-</span></span><span style=display:flex><span>    │   ├── test-satellite-st.json
-</span></span><span style=display:flex><span>    │   ├── test-satellite-v9.json
-</span></span><span style=display:flex><span>    │   └── test-streets-v11.json
-</span></span><span style=display:flex><span>    ├── test-data
-</span></span><span style=display:flex><span>    │   ├── cl4.json
-</span></span><span style=display:flex><span>    │   └── sample1.json
-</span></span><span style=display:flex><span>    ├── testresult-20220211.json
-</span></span><span style=display:flex><span>    └── testresult-20220211b.json
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>5 directories, 70 files
-</span></span></code></pre></div><p>maplibre-rs has the maplibre module which contains styles. here we&rsquo;re trying to parse an input style in json and deserialize it into a rust object.</p><ul><li>source.rs, style.rs, layer.rs - parsers</li><li>original directory: original style files</li><li>tests directory: test data, test results from parser rust tests</li><li>mod.rs - module layout</li></ul><h3 id=serialize>serialize</h3><p>rust object -> json</p><h3 id=deserialize>deserialize</h3><p>json -> rust object</p><p>i&rsquo;m using the serde library to do this. we made some rust parsers, right now styles, sources, and layers. style includes the layer and source parsers. in the style parser we have a Style and Metadata rust structs. in the source we have a VectorSource struct, in layer we have some funky BackgroundPaint, FillPaint, LinePaint structs part of the enum LayerPaint, and a StyleLayer struct. i think the re-organization will grow organically, and eventually should mirror the style spec: <a href=https://maplibre.org/maplibre-gl-js-docs/style-spec/>https://maplibre.org/maplibre-gl-js-docs/style-spec/</a>.</p><p>wrote some parts of the parser, wrote some tests that input test data max gave me of style exports, good way to flag any attributes/parts of the style spec that weren&rsquo;t accounted for and iterate on writing the parser that way.</p><p>to run tests, in style.rs</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-gdscript3 data-lang=gdscript3><span style=display:flex><span>cargo test <span style=color:#f92672>--</span>package maplibre <span style=color:#f92672>--</span>lib <span style=color:#f92672>--</span> style::style::tests
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>can also add <span style=color:#f92672>--</span>nocapture <span style=color:#f92672>or</span> <span style=color:#f92672>--</span>show<span style=color:#f92672>-</span>output <span style=color:#66d9ef>for</span> verbose flags
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>cargo test <span style=color:#f92672>--</span>package maplibre <span style=color:#f92672>--</span>lib <span style=color:#f92672>--</span> style::style::tests::load_sample_data_two <span style=color:#f92672>--</span>show<span style=color:#f92672>-</span>output
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>cargo test <span style=color:#f92672>--</span>package maplibre <span style=color:#f92672>--</span>lib <span style=color:#f92672>--</span> style::style::tests::load_sample_data_two <span style=color:#f92672>--</span>show<span style=color:#f92672>-</span>output <span style=color:#f92672>&gt;</span> <span style=color:#f92672>./</span>maplibre<span style=color:#f92672>/</span>src<span style=color:#f92672>/</span>style<span style=color:#f92672>/</span>tests<span style=color:#f92672>/</span>testresult<span style=color:#f92672>-</span>yyymmdd<span style=color:#f92672>.</span>json
-</span></span></code></pre></div><p>i created a pub extra trait</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>    #[serde(flatten)]
-</span></span><span style=display:flex><span>    pub extra: Map&lt;String, Value&gt;
-</span></span></code></pre></div><p>which uses serde_json::Value parsing any json data using serde_json::from_str function. you don&rsquo;t have to be explicit, in this case. it grabs everything and dumps it in an object. it&rsquo;ll be good to pick these apart later and properly deserialize them later, if needed or if they are useful or require some additional computation.</p><p>serde has a Map struct which I used <a href=https://docs.rs/serde_json/latest/serde_json/struct.Map.html>https://docs.rs/serde_json/latest/serde_json/struct.Map.html</a>, but maybe we can just use HashMap.</p><p>resources</p><ul><li>i think i learned how to make tests here <a href=https://youtu.be/A38SoLTB1Y4>https://youtu.be/A38SoLTB1Y4</a></li></ul></section><div class=post-tags><nav class="nav tags"><ul class=tags><li><a href=/tags/rust>rust</a></li><li><a href=/tags/maplibre>maplibre</a></li><li><a href=/tags/open-source>open source</a></li><li><a href=/tags/maps>maps</a></li></ul></nav></div></div></div></article></main><footer><script src=https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js></script><div>This site is under the <a href=https://creativecommons.org/licenses/by/4.0/>CC BY 4.0</a> license. Thanks for stopping by 🌻</div></footer><script>feather.replace()</script></div></body></html>
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>rustling in the open source maplibre community - Kim Pham</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="notes on contributing to the rust based maplibre project" />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/post/012/">
+  <meta property="og:site_name" content="Kim Pham">
+  <meta property="og:title" content="rustling in the open source maplibre community">
+  <meta property="og:description" content="notes on contributing to the rust based maplibre project">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2023-02-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-02-11T00:00:00+00:00">
+    <meta property="article:tag" content="Rust">
+    <meta property="article:tag" content="Maplibre">
+    <meta property="article:tag" content="Open Source">
+    <meta property="article:tag" content="Maps">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="rustling in the open source maplibre community">
+  <meta name="twitter:description" content="notes on contributing to the rust based maplibre project">
+
+        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.7a5c05040394322612a2d98397e9932aa81d9d7acc70199463e79f8180c8e0c0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.478e7f2b9cf8d87be42edfd9fe1810beab1331847df94b1b430478b309f28282.css"  disabled />
+		
+		
+		<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/first.df548228b907acbdb20017df8263f81ce932aafff70a6b448751a4bf998c0ed2.css">
+		
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">Kim Pham</a>
+		<div style="display:flex; margin-top: 0.5rem;"><a class="soc" href="https://docs.google.com/forms/d/e/1FAIpQLSemLz1deuIX0vN1mFtd0Bh6w_ouyo9bt8k8F4EI1bkf7Ppjnw/viewform" title="Email"><i data-feather="mail"></i></a>
+			<a class="soc" href="https://github.com/kimpham54" title="GitHub"><i data-feather="github"></i></a>
+			<a class="soc" href="https://twitter.com/tolloid/" title="Twitter"><i data-feather="twitter"></i></a>
+			<a class="soc" href="https://www.linkedin.com/in/kim-pham-a9ba8030/" title="Linkedin"><i data-feather="linkedin"></i></a>
+			<a class="soc" href="https://www.instagram.com/kimpham54/" title="Instagram"><i data-feather="instagram"></i></a>
+			</div>
+	</div>
+
+	<nav>
+		
+		<a href="/about">About</a>
+		
+		<a href="/talks">Talks</a>
+		
+		<a href="/cv">Work</a>
+		
+		| <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
+		<script src="http://localhost:1313/js/themetoggle.js"></script>
+		
+	</nav>
+
+</header>
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">rustling in the open source maplibre community</h1>
+          
+          <div class="meta">Posted on Feb 11, 2023</div>
+          
+        </div>
+        
+        <section class="body">
+          <p>starting in september i spent a few months learning rust. i had a few inchoate reasons:</p>
+<ul>
+<li>i&rsquo;ve always wanted to learn systems programming&hellip;i wanted to be exposed to deeper programming concepts. i do appreciate web development and working on web and business logic on the front and backend, but i&rsquo;m also interested in coding that&rsquo;s closer to computer science, or at least working with the ideas of computer science. and to better understand things at a lower level. rip off the hood of abstraction</li>
+<li>people talk about it a lot on hacker news and in the blockchain space, i know you know. but also</li>
+<li>linux is supporting rust. cool! so i guess it&rsquo;s it&rsquo;s here to stay</li>
+</ul>
+<p>so then i learned it <a href="https://github.com/kimpham54/rust-book-homework-kim">https://github.com/kimpham54/rust-book-homework-kim</a>. i was pretty motivated because i was trying to get into the january polkadot blockchain academy in buenos aires, and got through most of the rust book. unfotunately i didn&rsquo;t get a chance to take the rust exam&hellip; so now what? well i really enjoyed learning it, so might as well put those amateur skills to use.</p>
+<p>to me, contributing to open-source is a beautiful and brutal mechanism for self-reflection for both personal professional growth. the transparency, the feedback, the meritocratic initiative, it&rsquo;s a chance to discover your intrinsic/extrinsic motivations and to know who you are, who you should be, and who you want to be as a worker. i don&rsquo;t know of a better way to know what you truly know/don&rsquo;t know about coding. you have to apply your skills in front of a surveying audience and do it without any obvious incentive. teaching comes close to this naked vulnerability feeling, but even then it masks a bit of the truth. it&rsquo;s humbling, empowering. ok i&rsquo;m waxing poetic a bit here, but i&rsquo;m sentimental because in the past my most rewarding and idealized professional experiences were when I got to work in open source. I do miss being part of that more in libraryland world - much love forever goes to Islandora.</p>
+<p>so i looked for some open source rust projects, and found one that hits close to my passion for maps - maplibre-rs. i reached out to max, who&rsquo;s heading development on maplibre-rs. i&rsquo;ve lurked in the community for a bit and let him know i was interested in a beginner task. so finally when one came up i volunteered.</p>
+<p>i was working on parsing some style specs over the christmas break. took a break, then came back to it in february, which means i forgot everything. but it&rsquo;s also cool because i look at my code and go whoa, how did i know how to do this?</p>
+<p>henceforth i shall keep notes, and you&rsquo;re welcome to peruse them too (cw: may not make sense)!</p>
+<h2 id="maplibre-rs-style-parser">maplibre-rs style parser</h2>
+<p>i&rsquo;m only concerned with the style module in maplibre-rs. here&rsquo;s how the project is organized</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>maplibre-rs/maplibre/src/style
+</span></span><span style="display:flex;"><span>├── layer.rs
+</span></span><span style="display:flex;"><span>├── mod.rs
+</span></span><span style="display:flex;"><span>├── original
+</span></span><span style="display:flex;"><span>│   ├── layer.rs
+</span></span><span style="display:flex;"><span>│   ├── source.rs
+</span></span><span style="display:flex;"><span>│   └── style.rs
+</span></span><span style="display:flex;"><span>├── source.rs
+</span></span><span style="display:flex;"><span>├── style.rs
+</span></span><span style="display:flex;"><span>└── tests
+</span></span><span style="display:flex;"><span>    ├── map-styles
+</span></span><span style="display:flex;"><span>    │   ├── test-cl4whef.json
+</span></span><span style="display:flex;"><span>    │   ├── test-cl4whev.json
+</span></span><span style="display:flex;"><span>    │   ├── test-cl4wxue.json
+</span></span><span style="display:flex;"><span>    │   ├── test-dark-v10.json
+</span></span><span style="display:flex;"><span>    │   ├── test-light-v10.json
+</span></span><span style="display:flex;"><span>    │   ├── test-navigation-guidan.json
+</span></span><span style="display:flex;"><span>    │   ├── test-navigation-guidance.json
+</span></span><span style="display:flex;"><span>    │   ├── test-outdoors-v11.json
+</span></span><span style="display:flex;"><span>    │   ├── test-satellite-st.json
+</span></span><span style="display:flex;"><span>    │   ├── test-satellite-v9.json
+</span></span><span style="display:flex;"><span>    │   └── test-streets-v11.json
+</span></span><span style="display:flex;"><span>    ├── test-data
+</span></span><span style="display:flex;"><span>    │   ├── cl4.json
+</span></span><span style="display:flex;"><span>    │   └── sample1.json
+</span></span><span style="display:flex;"><span>    ├── testresult-20220211.json
+</span></span><span style="display:flex;"><span>    └── testresult-20220211b.json
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>5 directories, 70 files
+</span></span></code></pre></div><p>maplibre-rs has the maplibre module which contains styles. here we&rsquo;re trying to parse an input style in json and deserialize it into a rust object.</p>
+<ul>
+<li>source.rs, style.rs, layer.rs - parsers</li>
+<li>original directory: original style files</li>
+<li>tests directory: test data, test results from parser rust tests</li>
+<li>mod.rs - module layout</li>
+</ul>
+<h3 id="serialize">serialize</h3>
+<p>rust object -&gt; json</p>
+<h3 id="deserialize">deserialize</h3>
+<p>json -&gt; rust object</p>
+<p>i&rsquo;m using the serde library to do this. we made some rust parsers, right now styles, sources, and layers. style includes the layer and source parsers. in the style parser we have a Style and Metadata rust structs. in the source  we have a VectorSource struct, in layer we have some funky BackgroundPaint, FillPaint, LinePaint structs part of the enum LayerPaint, and a StyleLayer struct. i think the re-organization will grow organically, and eventually should mirror the style spec: <a href="https://maplibre.org/maplibre-gl-js-docs/style-spec/">https://maplibre.org/maplibre-gl-js-docs/style-spec/</a>.</p>
+<p>wrote some parts of the parser, wrote some tests that input test data max gave me of style exports, good way to flag any attributes/parts of the style spec that weren&rsquo;t accounted for and iterate on writing the parser that way.</p>
+<p>to run tests, in style.rs</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>cargo test <span style="color:#f92672">--</span>package maplibre <span style="color:#f92672">--</span>lib <span style="color:#f92672">--</span> style::style::tests
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>can also add <span style="color:#f92672">--</span>nocapture <span style="color:#f92672">or</span> <span style="color:#f92672">--</span>show<span style="color:#f92672">-</span>output <span style="color:#66d9ef">for</span> verbose flags
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cargo test <span style="color:#f92672">--</span>package maplibre <span style="color:#f92672">--</span>lib <span style="color:#f92672">--</span> style::style::tests::load_sample_data_two <span style="color:#f92672">--</span>show<span style="color:#f92672">-</span>output
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cargo test <span style="color:#f92672">--</span>package maplibre <span style="color:#f92672">--</span>lib <span style="color:#f92672">--</span> style::style::tests::load_sample_data_two <span style="color:#f92672">--</span>show<span style="color:#f92672">-</span>output <span style="color:#f92672">&gt;</span> <span style="color:#f92672">./</span>maplibre<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>style<span style="color:#f92672">/</span>tests<span style="color:#f92672">/</span>testresult<span style="color:#f92672">-</span>yyymmdd<span style="color:#f92672">.</span>json
+</span></span></code></pre></div><p>i created a pub extra trait</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>    #[serde(flatten)]
+</span></span><span style="display:flex;"><span>    pub extra: Map&lt;String, Value&gt;
+</span></span></code></pre></div><p>which uses serde_json::Value parsing any json data using serde_json::from_str function. you don&rsquo;t have to be explicit, in this case. it grabs everything and dumps it in an object. it&rsquo;ll be good to pick these apart later and properly deserialize them later, if needed or if they are useful or require some additional computation.</p>
+<p>serde has a Map struct which I used <a href="https://docs.rs/serde_json/latest/serde_json/struct.Map.html">https://docs.rs/serde_json/latest/serde_json/struct.Map.html</a>, but maybe we can just use HashMap.</p>
+<p>resources</p>
+<ul>
+<li>i think i learned how to make tests here <a href="https://youtu.be/A38SoLTB1Y4">https://youtu.be/A38SoLTB1Y4</a></li>
+</ul>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          <nav class="nav tags">
+            <ul class="tags">
+              
+              <li><a href="/tags/rust">rust</a></li>
+              
+              <li><a href="/tags/maplibre">maplibre</a></li>
+              
+              <li><a href="/tags/open-source">open source</a></li>
+              
+              <li><a href="/tags/maps">maps</a></li>
+              
+            </ul>
+          </nav>
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    </article>
+</main>
+<footer>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <div>This site is under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> license. Thanks for stopping by 🌻 </div>
+
+</footer>
+<script>
+  feather.replace()
+</script></div>
+    </body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>JPEG2000 byte modifications with Python and Docker - Kim Pham</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="At the beginning of the year I worked on project to rectify a subset of JPEG 2000 images" />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/post/0014/">
+  <meta property="og:site_name" content="Kim Pham">
+  <meta property="og:title" content="JPEG2000 byte modifications with Python and Docker">
+  <meta property="og:description" content="At the beginning of the year I worked on project to rectify a subset of JPEG 2000 images">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-11-08T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-11-08T00:00:00+00:00">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Docker">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="JPEG2000 byte modifications with Python and Docker">
+  <meta name="twitter:description" content="At the beginning of the year I worked on project to rectify a subset of JPEG 2000 images">
+
+        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.7a5c05040394322612a2d98397e9932aa81d9d7acc70199463e79f8180c8e0c0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.478e7f2b9cf8d87be42edfd9fe1810beab1331847df94b1b430478b309f28282.css"  disabled />
+		
+		
+		<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/first.df548228b907acbdb20017df8263f81ce932aafff70a6b448751a4bf998c0ed2.css">
+		
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">Kim Pham</a>
+		<div style="display:flex; margin-top: 0.5rem;"><a class="soc" href="https://docs.google.com/forms/d/e/1FAIpQLSemLz1deuIX0vN1mFtd0Bh6w_ouyo9bt8k8F4EI1bkf7Ppjnw/viewform" title="Email"><i data-feather="mail"></i></a>
+			<a class="soc" href="https://github.com/kimpham54" title="GitHub"><i data-feather="github"></i></a>
+			<a class="soc" href="https://twitter.com/tolloid/" title="Twitter"><i data-feather="twitter"></i></a>
+			<a class="soc" href="https://www.linkedin.com/in/kim-pham-a9ba8030/" title="Linkedin"><i data-feather="linkedin"></i></a>
+			<a class="soc" href="https://www.instagram.com/kimpham54/" title="Instagram"><i data-feather="instagram"></i></a>
+			</div>
+	</div>
+
+	<nav>
+		
+		<a href="/about">About</a>
+		
+		<a href="/cv">Talks</a>
+		
+		<a href="/work">Work</a>
+		
+		| <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
+		<script src="http://localhost:1313/js/themetoggle.js"></script>
+		
+	</nav>
+
+</header>
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          
+          <h1 class="title">JPEG2000 byte modifications with Python and Docker</h1>
+          
+          
+          <div class="meta">Posted on Nov 8, 2025 <span class="draft-label">DRAFT</span> </div>
+          
+        </div>
+        
+        <section class="body">
+          <p>At the beginning of the year I worked on a Python project for Harvard University: the library system runs a mega digital repository, and a subset of JPEG 2000 images had a very particular kind of ICC profile corruption detected by Kakadu but not by jpylyzer, two validation tools they use.
+<br><br>
+I wrote <strong>jp2_remediator</strong> to validate and (when safe) repair those files so downstream systems could read them. I made a command-line app in a Docker image that scans a single file, a directory, or an S3 bucket.
+When it&rsquo;s put in production, Apache Airflow pulls this image and runs the CLI inside the container for each image, giving us reproducible runs across environments and easy horizontal scaling.
+<br><br>
+The specs I used and actually really enjoyed studying were:
+<br><br></p>
+<ul>
+<li>ISO/IEC 15444-1:2019 (E) — the JPEG 2000 Core Coding System spec, which defines how JP2 boxes are structured, including the colr box and how ICC profiles are embedded.
+<a href="https://www.iso.org/standard/78321.html">https://www.iso.org/standard/78321.html</a>￼</li>
+<li>ICC.1:2022 (Profile version 4.4.0.0) — the Specification ICC.1:2022-05 (Image technology colour management — Architecture, profile format, and data structure), which defines how ICC profiles are laid out, including the header, tag table, and curveType encoding used for tone-response curves (TRCs).
+<a href="https://www.color.org/specification/ICC1v44_2022-05.pdf">https://www.color.org/specification/ICC1v44_2022-05.pdf</a>￼</li>
+</ul>
+<p>At the time of this writing—and hopefully forever and ever—<strong>all tests pass with 100% coverage</strong>.
+<br><br>
+<img src="../../images/jp2tests.jpg" alt="jp2_remediator tests" title="jp2_remediator tests"></p>
+<hr>
+<h2 id="why-jp2">Why JP2?</h2>
+<p>JP2 (JPEG 2000) shows up a lot in cultural heritage and large repositories as a preservation format because it’s:</p>
+<ul>
+<li><strong>Visually flexible:</strong> supports both <em>lossless</em> (5/3 reversible) and <em>lossy</em> (9/7) wavelets, plus high bit depths.</li>
+<li><strong>Zoom-friendly:</strong> built-in multi-resolution pyramids and tiling make deep zoom and partial reads efficient.</li>
+<li><strong>Streamable &amp; robust:</strong> codestream is designed for region-of-interest delivery and error resilience.</li>
+<li><strong>Metadata-aware:</strong> clean hooks for color management (embedded ICC profiles) and other box-level metadata.</li>
+<li><strong>Ecosystem-ready:</strong> widely supported in IIIF servers and viewers, so it slots into modern delivery stacks.</li>
+</ul>
+<hr>
+<h2 id="what-problem-it-solves">What problem it solves</h2>
+<p>Some JPEG 2000 (JP2) images embed an <strong>ICC profile</strong> that defines tone-response curves (TRCs) for red, green, and blue—<code>rTRC</code>, <code>gTRC</code>, <code>bTRC</code>. Those TRCs are stored using the ICC <strong><code>curveType</code></strong> structure (aka <em>curv</em>). In a subset of files we saw, metadata in the ICC <strong>tag table</strong> didn’t match the actual curve payload: e.g., a tag claimed one size or “shape,” while the bytes encoded a different one. Imaging libraries would then error out or silently misinterpret the gamma. <strong>jp2_remediator</strong> walks the raw bytes, checks those invariants, fixes the mismatches, and optionally logs “needs-review” cases for humans.</p>
+<hr>
+<h2 id="how-it-works-at-a-glance">How it works (at a glance)</h2>
+<p>A minimal mental model of the ICC profile sections that <strong>jp2_remediator</strong> touches:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[ ICC Profile ]
+</span></span><span style="display:flex;"><span>  ├─ Header (128 bytes, ICC v4)
+</span></span><span style="display:flex;"><span>  ├─ Tag Count (uInt32)
+</span></span><span style="display:flex;"><span>  └─ Tag Table (TagCount × 12 bytes)
+</span></span><span style="display:flex;"><span>       ├─ Entry 0: [ signature(4) | offset(4) | size(4) ]
+</span></span><span style="display:flex;"><span>       ├─ Entry 1: [ signature(4) | offset(4) | size(4) ]
+</span></span><span style="display:flex;"><span>       └─ ...
+</span></span><span style="display:flex;"><span>          signatures of interest: &#39;rTRC&#39;, &#39;gTRC&#39;, &#39;bTRC&#39;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  ... Tag Data Blocks live elsewhere in the profile ...
+</span></span></code></pre></div><p>For each TRC tag (<code>rTRC</code>/<code>gTRC</code>/<code>bTRC</code>), the payload should be an ICC <strong><code>curveType</code></strong>. Here&rsquo;s the curveType &ldquo;curv&rdquo; layout:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Offset  Size   Field
+</span></span><span style="display:flex;"><span>+0      4      type signature = &#39;curv&#39;
+</span></span><span style="display:flex;"><span>+4      4      reserved (0)
+</span></span><span style="display:flex;"><span>+8      4      count = n  (uInt32)
+</span></span><span style="display:flex;"><span>+12     2*n    curve data (n × uInt16)
+</span></span><span style="display:flex;"><span>          └─ pad to 4-byte alignment
+</span></span></code></pre></div><ol>
+<li>
+<p><strong>Locate the ICC profile inside the JP2.</strong><br>
+<strong>jp2_remediator</strong> inspects the embedded ICC profile inside the JP2 until the <code>colr</code> box carrying an embedded ICC profile is found. Extract the ICC blob for analysis.</p>
+</li>
+<li>
+<p><strong>Parse the ICC header and tag table.</strong><br>
+ICC profiles have a header followed by a <strong>tag table</strong>: for each tag there’s a <em>signature</em> (like <code>rTRC</code>), an <em>offset</em> (where the tag’s data lives inside the profile), and a <em>size</em> (how many bytes to read). Index this table so you can jump straight to <code>rTRC</code>, <code>gTRC</code>, and <code>bTRC</code> (the specification provides a calculation for where it can be found).</p>
+</li>
+<li>
+<p><strong>Read each TRC tag’s <code>curveType</code> payload.</strong><br>
+Validates that each entry’s payload is a well‑formed ICC <code>curveType</code> (<code>curv</code>) that matches what the tag table claims.</p>
+</li>
+</ol>
+<p><strong>Semantics</strong></p>
+<ul>
+<li><code>n = 0</code> → linear TRC (no points)</li>
+<li><code>n = 1</code> → single gamma as u8.8 fixed‑point → <code>gamma = curve[0] / 256.0</code></li>
+<li><code>n &gt; 1</code> → LUT of <code>n</code> samples (non‑parametric curve)</li>
+</ul>
+<p><strong>Size check</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>expected_size = 12 + 2*n  (then round up to a multiple of 4 bytes)
+</span></span><span style="display:flex;"><span>Examples: n=0 → 12; n=1 → 16; n=257 → 528
+</span></span></code></pre></div><p><strong>What the tool fixes</strong></p>
+<ul>
+<li>recomputes <code>expected_size</code> and corrects the tag table <code>size</code> if it’s wrong (lossless metadata edit)</li>
+<li>for <code>n != 1</code>, flags/logs for review instead of guessing</li>
+<li>for <code>n = 1</code>, decodes/validates the gamma and continues</li>
+</ul>
+<ol start="4">
+<li>
+<p><strong>Cross-check what the tag table <em>claims</em> vs. what the payload <em>is</em>.</strong><br>
+Given <code>n</code>, the <strong>expected</strong> size of the <code>curveType</code> data is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>expected_size = 4 (type) + 4 (reserved) + 4 (count) + 2*n (data) + pad_to_4B
+</span></span></code></pre></div><ul>
+<li>For <code>n = 1</code>, that’s <code>12 + 2 + 2 bytes pad = 16</code>.</li>
+<li>For <code>n = 0</code>, that’s <code>12</code> (already 4-byte aligned).</li>
+<li>For larger <code>n</code>, it’s <code>12 + 2*n</code>, rounded up to the next multiple of 4.</li>
+</ul>
+<p>If the ICC tag table’s recorded <strong>size</strong> for <code>rTRC</code>, <code>gTRC</code>, or <code>bTRC</code> doesn’t match this computed <code>expected_size</code>, the tool <strong>corrects the size</strong> in the tag table so the profile is internally consistent.</p>
+</li>
+<li>
+<p><strong>Flag “not-one-gamma” curves for later review.</strong><br>
+When <code>n != 1</code>, the curve isn’t a simple gamma: it’s either linear (<code>n=0</code>) or a LUT (<code>n&gt;1</code>). The tool doesn’t guess; it <strong>flags and (optionally) logs</strong> these for a person to inspect later.</p>
+</li>
+<li>
+<p><strong>Write back a fixed profile (losslessly) when appropriate.</strong><br>
+If only the table metadata is off (a classic cause of failures in downstream pipelines), jp2_remediator rewrites the profile bytes in place with the corrected table values. The pixel data aren’t touched—only ICC metadata.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>TL;DR math:</strong> for <code>n = 1</code>, the gamma value is the single 16-bit curve entry interpreted as <strong>u8.8 fixed point</strong>, i.e., <code>gamma = entry / 256.0</code>. The tag’s size must then be <strong>16</strong> bytes (12 bytes header + 2 data + 2 pad). If it’s not, fix the size so it matches the payload.</p>
+</blockquote>
+<hr>
+<h2 id="why-this-matters-and-where-it-runs">Why this matters (and where it runs)</h2>
+<p>We invoked jp2_remediator inside an <strong>Apache Airflow</strong> workflow, sweeping entire buckets/folders so curv/ICC issues are caught before delivery and before they blow up consumer services. The tool can process:</p>
+<ul>
+<li>one file,</li>
+<li>a whole directory, or</li>
+<li>all <code>.jp2</code> objects in an <strong>S3 bucket</strong> (with optional prefix to scope to a “folder”).</li>
+</ul>
+<hr>
+<h2 id="notes-from-the-trenches">Notes from the trenches</h2>
+<ul>
+<li>I used <strong>Hex Fiend</strong> to investigate and sanity-check offsets and sizes.</li>
+<li>You really feel the spec here: calculating <code>expected_size</code> based on <code>n</code> and enforcing 4-byte alignment comes from <strong>ICC.1:2022</strong>; using TRC semantics coherently with the image pipeline keeps us aligned with <strong>ISO/IEC 15444-1:2019 (JPEG 2000)</strong>.</li>
+<li>Most failures we saw were “metadata lies”: the curve really was a single gamma, but the tag table used the wrong size. Fixing just that field stabilized a lot of assets without touching pixels.</li>
+</ul>
+<hr>
+<h2 id="project-link">Project link</h2>
+<ul>
+<li>GitHub: <a href="https://github.com/harvard-lts/jp2_remediator">https://github.com/harvard-lts/jp2_remediator</a></li>
+</ul>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          <nav class="nav tags">
+            <ul class="tags">
+              
+              <li><a href="/tags/python">python</a></li>
+              
+              <li><a href="/tags/docker">docker</a></li>
+              
+            </ul>
+          </nav>
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    </article>
+</main>
+<footer>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <div>This site is under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> license. Thanks for stopping by 🌻 </div>
+
+</footer>
+<script>
+  feather.replace()
+</script></div>
+    </body>
+</html>

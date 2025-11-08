@@ -1,68 +1,232 @@
-<!doctype html><html><head lang=en><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>ruby + rails + react + redux project 005 - climbing logbook - Kim Pham</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="and...that's a wrap. what a year and a bit it's been. finally, i accomplished something that i've been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work."><meta property="og:image" content><meta property="og:url" content="https://kimpham54.github.io/post/006/"><meta property="og:site_name" content="Kim Pham"><meta property="og:title" content="ruby + rails + react + redux project 005 - climbing logbook "><meta property="og:description" content="and...that's a wrap. what a year and a bit it's been. finally, i accomplished something that i've been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work."><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="post"><meta property="article:published_time" content="2020-04-16T00:00:00+00:00"><meta property="article:modified_time" content="2020-04-16T00:00:00+00:00"><meta property="article:tag" content="Ruby"><meta property="article:tag" content="Ruby on Rails"><meta property="article:tag" content="Reactjs"><meta property="article:tag" content="Redux"><meta property="og:image" content="https://source.unsplash.com/category/technology/1600x900"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://source.unsplash.com/category/technology/1600x900"><meta name=twitter:title content="ruby + rails + react + redux project 005 - climbing logbook "><meta name=twitter:description content="and...that's a wrap. what a year and a bit it's been. finally, i accomplished something that i've been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work."><link href=https://kimpham54.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css rel=stylesheet><link rel=stylesheet type=text/css media=screen href=https://kimpham54.github.io/css/main.7a5c05040394322612a2d98397e9932aa81d9d7acc70199463e79f8180c8e0c0.css><link id=darkModeStyle rel=stylesheet type=text/css href=https://kimpham54.github.io/css/dark.478e7f2b9cf8d87be42edfd9fe1810beab1331847df94b1b430478b309f28282.css disabled><link rel=stylesheet type=text/css href=https://kimpham54.github.io/css/first.df548228b907acbdb20017df8263f81ce932aafff70a6b448751a4bf998c0ed2.css></head><body><div class=content><header><div class=main><a href=https://kimpham54.github.io/>Kim Pham</a><div style=display:flex;margin-top:.5rem><a class=soc href=https://docs.google.com/forms/d/e/1FAIpQLSemLz1deuIX0vN1mFtd0Bh6w_ouyo9bt8k8F4EI1bkf7Ppjnw/viewform title=Email><i data-feather=mail></i></a>
-<a class=soc href=https://github.com/kimpham54 title=GitHub><i data-feather=github></i></a>
-<a class=soc href=https://twitter.com/tolloid/ title=Twitter><i data-feather=twitter></i></a>
-<a class=soc href=https://www.linkedin.com/in/kim-pham-a9ba8030/ title=Linkedin><i data-feather=linkedin></i></a>
-<a class=soc href=https://www.instagram.com/kimpham54/ title=Instagram><i data-feather=instagram></i></a></div></div><nav><a href=/about>About</a>
-<a href=/talks>Talks</a>
-<a href=/cv>Work</a>
-| <a id=dark-mode-toggle onclick=toggleTheme() href></a><script src=https://kimpham54.github.io/js/themetoggle.js></script></nav></header><main><article><div class=post-container><div class=post-content><div class=title><h1 class=title>ruby + rails + react + redux project 005 - climbing logbook</h1><div class=meta>Posted on Apr 16, 2020</div></div><section class=body><p>former title: flatiron school portfolio project 005 + bringing it all together</p><p>and&mldr;that&rsquo;s a wrap. what a year and a bit it&rsquo;s been. finally, i accomplished something that i&rsquo;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work. i had a hard time juggling everything, but i feel good about finishing the program.</p><h1 id=coding-notes-along-the-way>coding notes along the way</h1><p>How is the app organized? Here is the component hierarchy:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>App
-</span></span><span style=display:flex><span>---LocationsContainer
-</span></span><span style=display:flex><span>------Locations
-</span></span><span style=display:flex><span>---------Location
-</span></span><span style=display:flex><span>------------RoutesContainer
-</span></span><span style=display:flex><span>---------------Routes
-</span></span><span style=display:flex><span>------------------Route
-</span></span></code></pre></div><p>===================================================</p><p>What is the redux flow when an action gets initiated, for instance when you want to edit a route?</p><ol><li>Route.js - reusing the LocationInput component to handleEdit function, accesses store to the actionCreator using this.props.editRoute (we have access to this.props.editRoute because it is passed down from RoutesContainer down to Routes in the store)</li><li>actions/routes.js - editRoute gets called, data gets passed</li><li>reducers/locationsReducer.js - the EDIT_ROUTE case in the reducer gets called and using the original state from the route finds the location, finds the route in the location, then updates the route values to the new values from the new state (the action.payload)</li></ol><p>========================================</p><p>some quick notes about how to navigate around the structure of the app</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>rails new climbing-logbook-backend --api
-</span></span><span style=display:flex><span>	controllers
-</span></span><span style=display:flex><span>	db
-</span></span><span style=display:flex><span>	config/routes.rb
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>npx create-react-app climbing-logbook-frontend
-</span></span><span style=display:flex><span>Location has_many :climbs
-</span></span><span style=display:flex><span>:name - string, :coordinates - string
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>Route belongs_to :location
-</span></span><span style=display:flex><span>:location_id, :name - string, :grade - float, :type - string, :notes - string, :climb_date - timestamp
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>rails g resource Location
-</span></span><span style=display:flex><span>rails g resource Route --no-test-framework
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>models add relationships
-</span></span><span style=display:flex><span>models add validations
-</span></span><span style=display:flex><span>rake db:migrate
-</span></span><span style=display:flex><span>rake db:drop, delete schema
-</span></span><span style=display:flex><span>rake db:seed
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>rake db:drop | rake db:migrate | rake db:seed
-</span></span><span style=display:flex><span>rails c
-</span></span><span style=display:flex><span>Location.first, Location.All, Route.first
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>controllers /api/v1
-</span></span><span style=display:flex><span>routes.rb namespacing
-</span></span><span style=display:flex><span>controllers namespacing
-</span></span><span style=display:flex><span>rack-cors
-</span></span><span style=display:flex><span>initializers/cors.rb
-</span></span><span style=display:flex><span>routes fetch request cors accepts from a server frontend access to db
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>in db
-</span></span><span style=display:flex><span>Location.destroy_all
-</span></span><span style=display:flex><span>Route.destroy_all
-</span></span></code></pre></div><p>==================================</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback><span style=display:flex><span>rails c
-</span></span><span style=display:flex><span>Location.first.transactions
-</span></span><span style=display:flex><span>Route.first.location
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>rails g migration ChangeDefaultValuesToRoutes
-</span></span><span style=display:flex><span>rails g migration ChangeDefaultValuesToLocations 
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>route = Route.create
-</span></span><span style=display:flex><span>location = Location.first
-</span></span><span style=display:flex><span>location.update_climb_total(route)
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>see commits
-</span></span><span style=display:flex><span>rails s
-</span></span><span style=display:flex><span>npm start
-</span></span></code></pre></div><p>http://localhost:3000/api/v1/locations/2/routes</p><p>http://localhost:3000/api/v1/routes</p><p>http://localhost:3000/api/v1/locations</p><p>will check serializer before check models to send to frontend</p><p>==================================</p><p>index.js</p><ul><li>store createStore</li><li>Provider store > App store</li><li>root</li></ul><p>App.js</p><ul><li>App component</li><li>render div and rest of components</li></ul><p>reducers/managerestaurant.js</p><p>components/Restaurant.js</p><ul><li>Component, get props, state updates
-/RestaurantInput.js</li><li>form events handlers, connect, mapstatetoprops mapdispatchtoprops
-actions/action.js</li><li>action function switch</li></ul><p>We are provided with 4 lifecycle methods to help us handle updates:static getDerivedStateFromProps(), shouldComponentUpdate, getSnapshotBeforeUpdate and componentDidUpdate.</p><p>These methods always get called in the same order and the render() method which renders the React component into the DOM will be called just before componentDidUpdate, so the actual order of lifecycle methods being called is:</p><ul><li>static getDerivedStateFromProps(props, state)`</li><li>shouldComponentUpdate(nextProps, nextState)</li><li>render() (can access props and state via this.props and this.state - previous props are no longer available)</li><li>getSnapshotBeforeUpdate(prevProps, prevState)</li><li>componentDidUpdate(prevProps, prevState, snapshot) (can still access current props and state via this.props and this.state and this is the last time previous props and state will be available).</li></ul><h1 id=lifecycle-methods-to-know>lifecycle methods to know</h1><ul><li>mounting - constructor, getderivedstatefrompropops, render, reactDOM, componentdidmount</li><li>updating - getderivedstatefrompropops, shouldcomponentupdate, render, getsnapshotbeforeudpdate, reactDOM, componentdidmount</li><li>unmounting - componentwillunmount</li></ul><h1 id=props-vs-state>props vs state</h1><ul><li>props - &ldquo;props&rdquo; (short for &ldquo;properties&rdquo;) is an object of arbitrary inputs a React component accepts as the first argument. One limit to props is that you&rsquo;re not allowed to change them.</li><li>state - &ldquo;state&rdquo; is data that changes over the lifetime of a specific instance of a React component.</li></ul></section><div class=post-tags><nav class="nav tags"><ul class=tags><li><a href=/tags/ruby>ruby</a></li><li><a href=/tags/ruby-on-rails>ruby on rails</a></li><li><a href=/tags/reactjs>reactjs</a></li><li><a href=/tags/redux>redux</a></li></ul></nav></div></div></div></article></main><footer><script src=https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js></script><div>This site is under the <a href=https://creativecommons.org/licenses/by/4.0/>CC BY 4.0</a> license. Thanks for stopping by 🌻</div></footer><script>feather.replace()</script></div></body></html>
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>ruby &#43; rails &#43; react &#43; redux project 005 - climbing logbook  - Kim Pham</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="and...that&#39;s a wrap. what a year and a bit it&#39;s been. finally, i accomplished something that i&#39;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work." />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/post/006/">
+  <meta property="og:site_name" content="Kim Pham">
+  <meta property="og:title" content="ruby &#43; rails &#43; react &#43; redux project 005 - climbing logbook ">
+  <meta property="og:description" content="and...that&#39;s a wrap. what a year and a bit it&#39;s been. finally, i accomplished something that i&#39;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2020-04-16T00:00:00+00:00">
+    <meta property="article:modified_time" content="2020-04-16T00:00:00+00:00">
+    <meta property="article:tag" content="Ruby">
+    <meta property="article:tag" content="Ruby on Rails">
+    <meta property="article:tag" content="Reactjs">
+    <meta property="article:tag" content="Redux">
+    <meta property="og:image" content="https://source.unsplash.com/category/technology/1600x900">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://source.unsplash.com/category/technology/1600x900">
+  <meta name="twitter:title" content="ruby &#43; rails &#43; react &#43; redux project 005 - climbing logbook ">
+  <meta name="twitter:description" content="and...that&#39;s a wrap. what a year and a bit it&#39;s been. finally, i accomplished something that i&#39;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work.">
+
+        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.7a5c05040394322612a2d98397e9932aa81d9d7acc70199463e79f8180c8e0c0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.478e7f2b9cf8d87be42edfd9fe1810beab1331847df94b1b430478b309f28282.css"  disabled />
+		
+		
+		<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/first.df548228b907acbdb20017df8263f81ce932aafff70a6b448751a4bf998c0ed2.css">
+		
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">Kim Pham</a>
+		<div style="display:flex; margin-top: 0.5rem;"><a class="soc" href="https://docs.google.com/forms/d/e/1FAIpQLSemLz1deuIX0vN1mFtd0Bh6w_ouyo9bt8k8F4EI1bkf7Ppjnw/viewform" title="Email"><i data-feather="mail"></i></a>
+			<a class="soc" href="https://github.com/kimpham54" title="GitHub"><i data-feather="github"></i></a>
+			<a class="soc" href="https://twitter.com/tolloid/" title="Twitter"><i data-feather="twitter"></i></a>
+			<a class="soc" href="https://www.linkedin.com/in/kim-pham-a9ba8030/" title="Linkedin"><i data-feather="linkedin"></i></a>
+			<a class="soc" href="https://www.instagram.com/kimpham54/" title="Instagram"><i data-feather="instagram"></i></a>
+			</div>
+	</div>
+
+	<nav>
+		
+		<a href="/about">About</a>
+		
+		<a href="/talks">Talks</a>
+		
+		<a href="/cv">Work</a>
+		
+		| <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
+		<script src="http://localhost:1313/js/themetoggle.js"></script>
+		
+	</nav>
+
+</header>
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">ruby &#43; rails &#43; react &#43; redux project 005 - climbing logbook </h1>
+          
+          <div class="meta">Posted on Apr 16, 2020</div>
+          
+        </div>
+        
+        <section class="body">
+          <p>former title: flatiron school portfolio project 005 + bringing it all together</p>
+<p>and&hellip;that&rsquo;s a wrap. what a year and a bit it&rsquo;s been. finally, i accomplished something that i&rsquo;ve been thinking about doing for a long time (about 2 years?), jumped in, managing that with a full time job, life in a new country, precious life things outside of work. i had a hard time juggling everything, but i feel good about finishing the program.</p>
+<h1 id="coding-notes-along-the-way">coding notes along the way</h1>
+<p>How is the app organized? Here is the component hierarchy:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>App
+</span></span><span style="display:flex;"><span>---LocationsContainer
+</span></span><span style="display:flex;"><span>------Locations
+</span></span><span style="display:flex;"><span>---------Location
+</span></span><span style="display:flex;"><span>------------RoutesContainer
+</span></span><span style="display:flex;"><span>---------------Routes
+</span></span><span style="display:flex;"><span>------------------Route
+</span></span></code></pre></div><p>===================================================</p>
+<p>What is the redux flow when an action gets initiated, for instance when you want to edit a route?</p>
+<ol>
+<li>Route.js - reusing the LocationInput component to handleEdit function, accesses store to the actionCreator using this.props.editRoute (we have access to this.props.editRoute because it is passed down from RoutesContainer down to Routes in the store)</li>
+<li>actions/routes.js - editRoute gets called, data gets passed</li>
+<li>reducers/locationsReducer.js - the EDIT_ROUTE case in the reducer gets called and using the original state from the route finds the location, finds the route in the location, then updates the route values to the new values from the new state (the action.payload)</li>
+</ol>
+<p>========================================</p>
+<p>some quick notes about how to navigate around the structure of the app</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>rails new climbing-logbook-backend --api
+</span></span><span style="display:flex;"><span>	controllers
+</span></span><span style="display:flex;"><span>	db
+</span></span><span style="display:flex;"><span>	config/routes.rb
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>npx create-react-app climbing-logbook-frontend
+</span></span><span style="display:flex;"><span>Location has_many :climbs
+</span></span><span style="display:flex;"><span>:name - string, :coordinates - string
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Route belongs_to :location
+</span></span><span style="display:flex;"><span>:location_id, :name - string, :grade - float, :type - string, :notes - string, :climb_date - timestamp
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>rails g resource Location
+</span></span><span style="display:flex;"><span>rails g resource Route --no-test-framework
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>models add relationships
+</span></span><span style="display:flex;"><span>models add validations
+</span></span><span style="display:flex;"><span>rake db:migrate
+</span></span><span style="display:flex;"><span>rake db:drop, delete schema
+</span></span><span style="display:flex;"><span>rake db:seed
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>rake db:drop | rake db:migrate | rake db:seed
+</span></span><span style="display:flex;"><span>rails c
+</span></span><span style="display:flex;"><span>Location.first, Location.All, Route.first
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>controllers /api/v1
+</span></span><span style="display:flex;"><span>routes.rb namespacing
+</span></span><span style="display:flex;"><span>controllers namespacing
+</span></span><span style="display:flex;"><span>rack-cors
+</span></span><span style="display:flex;"><span>initializers/cors.rb
+</span></span><span style="display:flex;"><span>routes fetch request cors accepts from a server frontend access to db
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>in db
+</span></span><span style="display:flex;"><span>Location.destroy_all
+</span></span><span style="display:flex;"><span>Route.destroy_all
+</span></span></code></pre></div><p>==================================</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>rails c
+</span></span><span style="display:flex;"><span>Location.first.transactions
+</span></span><span style="display:flex;"><span>Route.first.location
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>rails g migration ChangeDefaultValuesToRoutes
+</span></span><span style="display:flex;"><span>rails g migration ChangeDefaultValuesToLocations 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>route = Route.create
+</span></span><span style="display:flex;"><span>location = Location.first
+</span></span><span style="display:flex;"><span>location.update_climb_total(route)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>see commits
+</span></span><span style="display:flex;"><span>rails s
+</span></span><span style="display:flex;"><span>npm start
+</span></span></code></pre></div><p>http://localhost:3000/api/v1/locations/2/routes</p>
+<p>http://localhost:3000/api/v1/routes</p>
+<p>http://localhost:3000/api/v1/locations</p>
+<p>will check serializer before check models to send to frontend</p>
+<p>==================================</p>
+<p>index.js</p>
+<ul>
+<li>store createStore</li>
+<li>Provider store &gt; App store</li>
+<li>root</li>
+</ul>
+<p>App.js</p>
+<ul>
+<li>App component</li>
+<li>render div and rest of components</li>
+</ul>
+<p>reducers/managerestaurant.js</p>
+<p>components/Restaurant.js</p>
+<ul>
+<li>Component, get props, state updates
+/RestaurantInput.js</li>
+<li>form events handlers, connect, mapstatetoprops mapdispatchtoprops
+actions/action.js</li>
+<li>action function switch</li>
+</ul>
+<p>We are provided with 4 lifecycle methods to help us handle updates:static getDerivedStateFromProps(), shouldComponentUpdate, getSnapshotBeforeUpdate and componentDidUpdate.</p>
+<p>These methods always get called in the same order and the render() method which renders the React component into the DOM will be called just before componentDidUpdate, so the actual order of lifecycle methods being called is:</p>
+<ul>
+<li>static getDerivedStateFromProps(props, state)`</li>
+<li>shouldComponentUpdate(nextProps, nextState)</li>
+<li>render() (can access props and state via this.props and this.state - previous props are no longer available)</li>
+<li>getSnapshotBeforeUpdate(prevProps, prevState)</li>
+<li>componentDidUpdate(prevProps, prevState, snapshot) (can still access current props and state via this.props and this.state and this is the last time previous props and state will be available).</li>
+</ul>
+<h1 id="lifecycle-methods-to-know">lifecycle methods to know</h1>
+<ul>
+<li>mounting - constructor, getderivedstatefrompropops, render, reactDOM, componentdidmount</li>
+<li>updating - getderivedstatefrompropops, shouldcomponentupdate, render, getsnapshotbeforeudpdate, reactDOM, componentdidmount</li>
+<li>unmounting - componentwillunmount</li>
+</ul>
+<h1 id="props-vs-state">props vs state</h1>
+<ul>
+<li>props - &ldquo;props&rdquo; (short for &ldquo;properties&rdquo;) is an object of arbitrary inputs a React  component accepts as the first argument. One limit to props is that you&rsquo;re not allowed to change them.</li>
+<li>state - &ldquo;state&rdquo; is data that changes over the lifetime of a specific instance of a React component.</li>
+</ul>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          <nav class="nav tags">
+            <ul class="tags">
+              
+              <li><a href="/tags/ruby">ruby</a></li>
+              
+              <li><a href="/tags/ruby-on-rails">ruby on rails</a></li>
+              
+              <li><a href="/tags/reactjs">reactjs</a></li>
+              
+              <li><a href="/tags/redux">redux</a></li>
+              
+            </ul>
+          </nav>
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    </article>
+</main>
+<footer>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <div>This site is under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> license. Thanks for stopping by 🌻 </div>
+
+</footer>
+<script>
+  feather.replace()
+</script></div>
+    </body>
+</html>
