@@ -12,11 +12,17 @@ hugo server -D --disableFastRender --ignoreCache
 4. `git add .`, commit -m 'new thang', push origin master
 5. github actions from .github/workflow/gh-pages.yml should deploy public/ in master automatically to gh-pages
 
+todos: 
+2025-11-08
+- finish uploading those images without network failure
+- upload video links
+- publish jp2 draft
+
 notes:
 - images need to go in /static not assets
 - tags and dates need to be properly formatted for pages to build
 - don't touch any content in themes, need to override
-- i've noticed an unidentified cause for an issue when i can't push, updates to hugo need to be done in this case incrementally. remove all in public and rebuild
+- i've noticed an unidentified cause related to uploading images for an issue when i can't push, updates to hugo need to be done in this case incrementally. remove all in public and rebuild.
 
 kimpham54.github.io is dead. Long live kimpham54.github.io!
 
