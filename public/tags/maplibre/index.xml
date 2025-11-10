@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Maplibre on Kim Pham</title>
-    <link>http://localhost:1313/tags/maplibre/</link>
+    <link>https://kimpham54.github.io/tags/maplibre/</link>
     <description>Recent content in Maplibre on Kim Pham</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 11 Feb 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/maplibre/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kimpham54.github.io/tags/maplibre/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>rustling in the open source maplibre community</title>
-      <link>http://localhost:1313/post/0012/</link>
+      <link>https://kimpham54.github.io/post/0012/</link>
       <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/0012/</guid>
+      <guid>https://kimpham54.github.io/post/0012/</guid>
       <description>&lt;p&gt;starting in september i spent a few months learning rust. i had a few inchoate reasons:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;i&amp;rsquo;ve always wanted to learn systems programming&amp;hellip;i wanted to be exposed to deeper programming concepts. i do appreciate web development and working on web and business logic on the front and backend, but i&amp;rsquo;m also interested in coding that&amp;rsquo;s closer to computer science, or at least working with the ideas of computer science. and to better understand things at a lower level. rip off the hood of abstraction&lt;/li&gt;&#xA;&lt;li&gt;people talk about it a lot on hacker news and in the blockchain space, i know you know. but also&lt;/li&gt;&#xA;&lt;li&gt;linux is supporting rust. cool! so i guess it&amp;rsquo;s it&amp;rsquo;s here to stay&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;so then i learned it &lt;a href=&#34;https://github.com/kimpham54/rust-book-homework-kim&#34;&gt;https://github.com/kimpham54/rust-book-homework-kim&lt;/a&gt;. i was pretty motivated because i was trying to get into the january polkadot blockchain academy in buenos aires, and got through most of the rust book. unfotunately i didn&amp;rsquo;t get a chance to take the rust exam&amp;hellip; so now what? well i really enjoyed learning it, so might as well put those amateur skills to use.&lt;/p&gt;</description>
     </item>
   </channel>

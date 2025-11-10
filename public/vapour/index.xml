@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vapours on Kim Pham</title>
-    <link>http://localhost:1313/vapour/</link>
+    <link>https://kimpham54.github.io/vapour/</link>
     <description>Recent content in Vapours on Kim Pham</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 02 Oct 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/vapour/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kimpham54.github.io/vapour/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/vapour/flexchart/</link>
+      <link>https://kimpham54.github.io/vapour/flexchart/</link>
       <pubDate>Sun, 02 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vapour/flexchart/</guid>
+      <guid>https://kimpham54.github.io/vapour/flexchart/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;../../images/flexchart.png&#34; alt=&#34;flex&#34; title=&#34;flex&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>

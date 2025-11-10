@@ -7,6 +7,7 @@ kimpham54.github.io
 3. localhost:1313, test with `hugo server -D`. add content, tweak away, test and build with `hugo -D` can remove public folder to rebuild cleanly,or
 ```
 rm -rf resources
+hugo
 hugo server -D --disableFastRender --ignoreCache
 ```
 4. `git add .`, commit -m 'new thang', push origin master
@@ -22,7 +23,6 @@ notes:
 - images need to go in /static not assets
 - tags and dates need to be properly formatted for pages to build
 - don't touch any content in themes, need to override
-- i've noticed an unidentified cause related to uploading images for an issue when i can't push, updates to hugo need to be done in this case incrementally. remove all in public and rebuild.
 
 kimpham54.github.io is dead. Long live kimpham54.github.io!
 
@@ -30,6 +30,7 @@ kimpham54.github.io is dead. Long live kimpham54.github.io!
 - hugo needed a big upgrade, as did archie
 - added a shortcode for more spaces, {{< space >}}
 - added hideDate and showTitle parameters for front matter
+- i've noticed an unidentified cause related to uploading images for an issue when i can't push, updates to hugo need to be done in this case incrementally. remove all in public and rebuild. NOW RESOLVED with git config --global http.postBuffer 524288000
 
 2022-08-17
 A fresh new look as of August 2022 inspired by https://maxammann.org/ and the open transparent work of https://ashleyblewer.com/. Using the more frequently updated Archie theme (https://github.com/athul/archie), wanted to keep it simple without netlify, want to use Github Actions to build and load rather than have two repositories for deployment. Migrated all my content over.

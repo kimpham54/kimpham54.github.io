@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on Kim Pham</title>
-    <link>http://localhost:1313/tags/docker/</link>
+    <link>https://kimpham54.github.io/tags/docker/</link>
     <description>Recent content in Docker on Kim Pham</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kimpham54.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JPEG2000 byte modifications with Python and Docker</title>
-      <link>http://localhost:1313/post/0014/</link>
-      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/0014/</guid>
+      <link>https://kimpham54.github.io/post/0014/</link>
+      <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://kimpham54.github.io/post/0014/</guid>
       <description>&lt;p&gt;At the beginning of the year I worked on a Python project for Harvard University: the library system runs a mega digital repository, and a subset of JPEG 2000 images had a very particular kind of ICC profile corruption detected by Kakadu but not by jpylyzer, two validation tools they use.&#xA;&lt;br&gt;&lt;br&gt;&#xA;I wrote &lt;strong&gt;jp2_remediator&lt;/strong&gt; to validate and (when safe) repair those files so downstream systems could read them. I made a command-line app in a Docker image that scans a single file, a directory, or an S3 bucket.&#xA;When it&amp;rsquo;s put in production, Apache Airflow pulls this image and runs the CLI inside the container for each image, giving us reproducible runs across environments and easy horizontal scaling.&#xA;&lt;br&gt;&lt;br&gt;&#xA;The specs I used and actually really enjoyed studying were:&#xA;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</description>
     </item>
   </channel>
