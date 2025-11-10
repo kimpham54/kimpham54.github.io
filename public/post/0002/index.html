@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html><head lang="en">
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>ruby project 001 &#43; updating nokogiri - Kim Pham</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="our cohort is is working on our first portfolio project two months into the flatiron school software engineering part time program. we were asked to create a ruby gem that provides a command line interface to interact with the application that uses an external data source (either by API or web scraping). " />
 	<meta property="og:image" content=""/>
-	<meta property="og:url" content="https://kimpham54.github.io/post/0002/">
+	<meta property="og:url" content="http://localhost:1313/post/0002/">
   <meta property="og:site_name" content="Kim Pham">
   <meta property="og:title" content="ruby project 001 &#43; updating nokogiri">
   <meta property="og:description" content="our cohort is is working on our first portfolio project two months into the flatiron school software engineering part time program. we were asked to create a ruby gem that provides a command line interface to interact with the application that uses an external data source (either by API or web scraping).">
@@ -21,21 +21,21 @@
   <meta name="twitter:title" content="ruby project 001 &#43; updating nokogiri">
   <meta name="twitter:description" content="our cohort is is working on our first portfolio project two months into the flatiron school software engineering part time program. we were asked to create a ruby gem that provides a command line interface to interact with the application that uses an external data source (either by API or web scraping).">
 
-        <link href="https://kimpham54.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
 	
 
 	
-	<link rel="stylesheet" type="text/css" media="screen" href="https://kimpham54.github.io/css/main.7a5c05040394322612a2d98397e9932aa81d9d7acc70199463e79f8180c8e0c0.css" />
-		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://kimpham54.github.io/css/dark.478e7f2b9cf8d87be42edfd9fe1810beab1331847df94b1b430478b309f28282.css"  disabled />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.7a5c05040394322612a2d98397e9932aa81d9d7acc70199463e79f8180c8e0c0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.478e7f2b9cf8d87be42edfd9fe1810beab1331847df94b1b430478b309f28282.css"  disabled />
 		
 		
-		<link rel="stylesheet" type="text/css" href="https://kimpham54.github.io/css/first.599e94335f726b8277a333fd3db5147c30bacf19e7b2680a162fecd8b7a68444.css">
+		<link rel="stylesheet" type="text/css" href="http://localhost:1313/css/first.599e94335f726b8277a333fd3db5147c30bacf19e7b2680a162fecd8b7a68444.css">
 		
 </head>
 <body>
         <div class="content"><header>
 	<div class="main">
-		<a href="https://kimpham54.github.io/">Kim Pham</a>
+		<a href="http://localhost:1313/">Kim Pham</a>
 		<div style="display:flex; margin-top: 0.5rem;"><a class="soc" href="https://docs.google.com/forms/d/e/1FAIpQLSemLz1deuIX0vN1mFtd0Bh6w_ouyo9bt8k8F4EI1bkf7Ppjnw/viewform" title="Email"><i data-feather="mail"></i></a>
 			<a class="soc" href="https://github.com/kimpham54" title="GitHub"><i data-feather="github"></i></a>
 			<a class="soc" href="https://twitter.com/tolloid/" title="Twitter"><i data-feather="twitter"></i></a>
@@ -53,7 +53,7 @@
 		<a href="/work">Work</a>
 		
 		| <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
-		<script src="https://kimpham54.github.io/js/themetoggle.js"></script>
+		<script src="http://localhost:1313/js/themetoggle.js"></script>
 		
 	</nav>
 
@@ -81,36 +81,39 @@
 <p>the tl;dr: software development is not just about programming and getting your code to work for you, there&rsquo;s many considerations to take into account to say that you have a working application. it&rsquo;s the planning, setting up environment, testing, deployment, security, everything to make your code not only work but continuously operational.</p>
 <p>the tl:</p>
 <p>when i finished the application and pushed it to github, i noticed a warning:</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><a href="../../images/portfolioproject1-01.png"><img src="../../images/portfolioproject1-01.png" alt="tag" width="800"></a></p>
 <p>looking into the security alert, it says there is a critical issue with the nokogiri dependency:</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><a href="../../images/portfolioproject1-02.png"><img src="../../images/portfolioproject1-02.png" alt="tag" width="800"></a></p>
 <p>the specific issue with nokogiri is that the version used to build the application is outdated, and it wants us to use a version 1.8.5 or later:</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><a href="../../images/portfolioproject1-03.png"><img src="../../images/portfolioproject1-03.png" alt="tag" width="800"></a></p>
 <p>github automatically tracks vulnerabilities in dependencies and provides security alerts to you. ruby is one of the supported languages, according to github it does the following</p>
 <blockquote>
 <p>GitHub tracks public vulnerabilities in packages from supported languages on MITRE&rsquo;s Common Vulnerabilities and Exposures (CVE) List. We also scan data in public commits on GitHub and use a combination of machine learning and human review to detect vulnerabilities that are not published in the CVE list.</p>
 </blockquote>
 <p>so, github looks at your code and sees if there are any potential security issues based on the maintained list of CVEs. the following CVE is what flagged my application:</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><a href="../../images/portfolioproject1-04.png"><img src="../../images/portfolioproject1-04.png" alt="tag" width="800"></a></p>
 <p>essentially an older version of nokogiri is using upstream libxml2 susceptible to a denial of service attack. any verson of nokogiri past 1.8.5 addresses this issue. i was using my macos built in ruby, which had an older version of nokogiri that it used to build my app:</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><a href="../../images/portfolioproject1-05.png"><img src="../../images/portfolioproject1-05.png" alt="tag" width="800"></a></p>
 <p>to fix this, i had to update my .gemspec file and specify the version of nokogiri to use (anything newer than 1.8.5):</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><a href="../../images/portfolioproject1-06.png"><img src="../../images/portfolioproject1-06.png" alt="tag" width="800"></a></p>
 <p>i deleted the gemfile.lock lockfile to rebuild, but couldn&rsquo;t get a version of nokogiri to build:</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<!-- <a href="../../images/portfolioproject1-07.png"><img src="../../images/portfolioproject1-07.png" alt="tag" width="800"></a> -->
+<p><a href="../../images/portfolioproject1-10.png"><img src="../../images/portfolioproject1-10.png" alt="tag" width="800"></a></p>
+<p><a href="../../images/portfolioproject1-11.png"><img src="../../images/portfolioproject1-11.png" alt="tag" width="800"></a></p>
+<p><a href="../../images/portfolioproject1-12.png"><img src="../../images/portfolioproject1-12.png" alt="tag" width="800"></a></p>
 <p>you get notices about version conflicts, incompatibilities galore messages such as libxml2 requires version x.x.x etc. to avoid messing with the the built in ruby environment (a specific package in a specific version might be used elsewhere in the system), i installed my own ruby environment via brew instead:</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><a href="../../images/portfolioproject1-09.png"><img src="../../images/portfolioproject1-09.png" alt="tag" width="800"></a></p>
 <p>ran <code>bundle install</code> again, and this time it worked:</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><a href="../../images/portfolioproject1-08.png"><img src="../../images/portfolioproject1-08.png" alt="tag" width="800"></a></p>
 <p>took a look at my lockfile, and you can see that the nokogiri version has been updated:</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p><a href="../../images/portfolioproject1-13.png"><img src="../../images/portfolioproject1-13.png" alt="tag" width="800"></a></p>
 <p>finally, i pushed my code up to github and the security notice went away. yaaaas! but then, nooooooooo:</p>
 <p><code>$ .bin//console</code></p>
 <p><code> You must use Bundler 2 or greater with this lockfile.</code></p>
 <p>upgrading made my ruby console break. so i&rsquo;m trying to figure that out!</p>
 <p>so. being a developer is not just coding, it&rsquo;s having an understanding of the environment you&rsquo;re working in and all of the moving pieces that are involved. thinking about the security of your app and the environment, its versions and dependencies, how to test and monitor your application and do this is in a consistent, sustainable way. having a sense of all of these processes i&rsquo;m assuming can only make you a better developer.</p>
+<!-- <a href="../../images/portfolioproject1-14.png"><img src="../../images/portfolioproject1-14.png" alt="tag" width="800"></a> -->
+<!-- ![alt text](../../images/portfolioproject1-03.png "Logo Title Text 1") -->
         </section>
         <div class="post-tags">
           
@@ -138,8 +141,6 @@
   <div>This site is under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> license. Thanks for stopping by 🌻 </div>
 
 </footer>
-
-
 <script>
   feather.replace()
 </script></div>

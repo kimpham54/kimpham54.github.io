@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on Kim Pham</title>
-    <link>https://kimpham54.github.io/tags/go/</link>
+    <link>http://localhost:1313/tags/go/</link>
     <description>Recent content in Go on Kim Pham</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 07 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://kimpham54.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>a hugo and archie upgrade</title>
-      <link>https://kimpham54.github.io/post/0013/</link>
+      <link>http://localhost:1313/post/0013/</link>
       <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://kimpham54.github.io/post/0013/</guid>
+      <guid>http://localhost:1313/post/0013/</guid>
       <description>&lt;p&gt;Yesterday I upgraded both Hugo and the Archie (it&amp;rsquo;s still being updated!) theme for this site. It&amp;rsquo;s been a couple of years since the last update, so this was a chance to tidy things up and modernize the structure. The first step was simply updating the theme submodule:&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;git submodule update --init --remote --merge&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Then I cleared out old build artifacts so Hugo could rebuild everything cleanly. Some helpful warnings when I tried to compile hugo lead to fixing syntax on how to locate templates, conditionals, modifying some partials. Archie now compiles its own stylesheet, so my older first.css needed to be reorganized into a slimmer override layer. Social icons also changed, so I incorporated the updated Feather icon approach used by the theme.&lt;/p&gt;</description>
     </item>
     <item>
       <title>site built with hugo and github actions</title>
-      <link>https://kimpham54.github.io/post/0008/</link>
+      <link>http://localhost:1313/post/0008/</link>
       <pubDate>Wed, 17 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://kimpham54.github.io/post/0008/</guid>
+      <guid>http://localhost:1313/post/0008/</guid>
       <description>&lt;p&gt;i wanted to rebuild my site, just a little lift to streamline the workflow again. i also was inpsired by &lt;a href=&#34;https://maxammann.org/&#34;&gt;https://maxammann.org/&lt;/a&gt; and the open transparent work of &lt;a href=&#34;https://ashleyblewer.com/&#34;&gt;https://ashleyblewer.com/&lt;/a&gt;. previously my site was built with jekyll, then hugo. then i started to dig into nextjs and gatsby. i want to go with a static site generator so that it&amp;rsquo;s easy to maintain and has a lot of nice features out of the box.&lt;/p&gt;</description>
     </item>
   </channel>

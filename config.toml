@@ -61,3 +61,8 @@ weight = 2
 name = "Work"
 url = "/work"
 weight = 3
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
