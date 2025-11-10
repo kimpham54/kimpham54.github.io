@@ -14,10 +14,8 @@ hugo server -D --disableFastRender --ignoreCache
 5. github actions from .github/workflow/gh-pages.yml should deploy public/ in master automatically to gh-pages
 
 todos: 
-2025-11-08
-- finish uploading those images without network failure
-- upload video links
-- publish jp2 draft
+- find more video presentations
+- add to 'work'
 
 notes:
 - images need to go in /static not assets

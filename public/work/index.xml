@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Works on Kim Pham</title>
-    <link>http://localhost:1313/work/</link>
+    <link>https://kimpham54.github.io/work/</link>
     <description>Recent content in Works on Kim Pham</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 07 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/work/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kimpham54.github.io/work/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>software project: jcrs csv importer</title>
-      <link>http://localhost:1313/work/app-jcrs-service/</link>
+      <link>https://kimpham54.github.io/work/app-jcrs-service/</link>
       <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work/app-jcrs-service/</guid>
+      <guid>https://kimpham54.github.io/work/app-jcrs-service/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;../../images/2025-11-08-csvapp1.png&#34; alt=&#34;csv&#34; title=&#34;csv&#34;&gt;&#xA;&lt;br&gt;&lt;br&gt;&#xA;&lt;img src=&#34;../../images/2025-11-08-csvapp2.png&#34; alt=&#34;csv&#34; title=&#34;csv&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>software project: jp2 remediator</title>
-      <link>http://localhost:1313/work/app-jp2remediator/</link>
+      <link>https://kimpham54.github.io/work/app-jp2remediator/</link>
       <pubDate>Thu, 06 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work/app-jp2remediator/</guid>
+      <guid>https://kimpham54.github.io/work/app-jp2remediator/</guid>
       <description></description>
     </item>
     <item>
       <title>Software project: DRIH - semantic web knowledge graph</title>
-      <link>http://localhost:1313/work/app-drih-semantic-web/</link>
+      <link>https://kimpham54.github.io/work/app-drih-semantic-web/</link>
       <pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work/app-drih-semantic-web/</guid>
+      <guid>https://kimpham54.github.io/work/app-drih-semantic-web/</guid>
       <description>&lt;p&gt;I was the primary designer and developer for this app. We used the open-source platform Researchspace where I worked on the additional customizations and templates and visualizations.&lt;/p&gt;&#xA;&lt;p&gt;The code is available in a private repository in Gitlab for the Max Planck Institute for the History of Science.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../images/app-semantic-web/gitlab-app.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/home.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/single-author.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/single-dept.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/single-project-ismi.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/single-project-sphere.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/single-team_member.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/single-team.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/usecases.pdf&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/view-books.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/view-projects.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/view-team_members.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/vis-map.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/vis-network.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-semantic-web/vis-timeline.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Software project: Biomedical oral histories aggregator</title>
-      <link>http://localhost:1313/work/app-oral-histories/</link>
+      <link>https://kimpham54.github.io/work/app-oral-histories/</link>
       <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work/app-oral-histories/</guid>
+      <guid>https://kimpham54.github.io/work/app-oral-histories/</guid>
       <description>&lt;p&gt;Used in production at the Max Planck Institute for the History of Science, an app that scrapes (with author permission) and aggregates oral histories in the field of biomedicine, used for historical research. I hired and consulted on the architecture and design on app and work on some parts of the front-end. The frontend uses VueJS set up with MongoDB and Elasticsearch.&lt;/p&gt;&#xA;&lt;p&gt;The code is available in a private repository in Gitlab for the Max Planck Institute for the History of Science.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Software project: Climbing logbook</title>
-      <link>http://localhost:1313/work/app-climbing-logbook/</link>
+      <link>https://kimpham54.github.io/work/app-climbing-logbook/</link>
       <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work/app-climbing-logbook/</guid>
+      <guid>https://kimpham54.github.io/work/app-climbing-logbook/</guid>
       <description>&lt;p&gt;Github: &lt;a href=&#34;https://github.com/kimpham54/climbing_logbook_react_rails&#34;&gt;https://github.com/kimpham54/climbing_logbook_react_rails&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;An experimental React app that I worked on as part of the Flatiron School bootcamp. The focus was on creating complex data routes with Redux and hierarchical data organization. You can create climbs, and within those climbs you can create routes, and tally your routes up per climb.&lt;/p&gt;&#xA;&lt;p&gt;Some of my coding notes: &lt;a href=&#34;https://kimpham54.github.io/post/006/&#34;&gt;https://kimpham54.github.io/post/006/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../images/app-climbing-logbook/home.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-climbing-logbook/routes.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-climbing-logbook/addroute.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-climbing-logbook/editclimb.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Software project: Recipe sharing</title>
-      <link>http://localhost:1313/work/app-recipe-sharing/</link>
+      <link>https://kimpham54.github.io/work/app-recipe-sharing/</link>
       <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work/app-recipe-sharing/</guid>
+      <guid>https://kimpham54.github.io/work/app-recipe-sharing/</guid>
       <description>&lt;p&gt;Github: &lt;a href=&#34;https://github.com/kimpham54/climbing_logbook_react_rails&#34;&gt;https://github.com/kimpham54/climbing_logbook_react_rails&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;An app I built to share recipes with my friends using Ruby, Rails, and plain Javascript. One of my Flatiron School projects.&lt;/p&gt;&#xA;&lt;p&gt;Some of my coding notes: &lt;a href=&#34;https://kimpham54.github.io/post/005/&#34;&gt;https://kimpham54.github.io/post/005/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../images/app-recipe-sharing/screen1.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-recipe-sharing/screen2.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-recipe-sharing/screen3.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&#xA;&lt;img src=&#34;../../images/app-recipe-sharing/screen4.png&#34; alt=&#34;text&#34; title=&#34;caption&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>

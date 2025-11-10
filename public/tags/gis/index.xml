@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gis on Kim Pham</title>
-    <link>http://localhost:1313/tags/gis/</link>
+    <link>https://kimpham54.github.io/tags/gis/</link>
     <description>Recent content in Gis on Kim Pham</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/gis/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kimpham54.github.io/tags/gis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>a young conference poster</title>
-      <link>http://localhost:1313/post/0015/</link>
+      <link>https://kimpham54.github.io/post/0015/</link>
       <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/0015/</guid>
+      <guid>https://kimpham54.github.io/post/0015/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s the pretty poster for my first web map, made for the Scarborough Historical Society and started out as a project for Marcel Fortin at the University of Toronto iSchool which was then moved to the Map and Data Library.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ola-poster-information-use--reuse-community-collaboration-with-open-source-web-mapping&#34;&gt;OLA Poster: Information Use &amp;amp; Reuse: Community Collaboration with Open Source Web Mapping&lt;/h2&gt;&#xA;&lt;p&gt;Open-source technologies are creating new avenues for community engagement. Web developer tools are empowering librarians and users alike.  This project utilizes open-source GIS and JavaScript libraries to visualize data from the Scarborough Historical Society photo collection in an interactive app.  Ongoing developments will invite users to contribute their own stories, comments, and pictures that build community history.  The success of this project led to its adoption as a teaching and literacy tool in the Scarborough Archives.  Learn the challenges and considerations for integrating open-source tools for service use.&lt;/p&gt;</description>
     </item>
   </channel>

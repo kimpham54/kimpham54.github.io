@@ -2,45 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Javascript on Kim Pham</title>
-    <link>http://localhost:1313/tags/javascript/</link>
+    <link>https://kimpham54.github.io/tags/javascript/</link>
     <description>Recent content in Javascript on Kim Pham</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Nov 2025 01:15:41 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>an express and nodejs CSV importer service</title>
-      <link>http://localhost:1313/post/0016/</link>
-      <pubDate>Sat, 08 Nov 2025 01:15:41 -0400</pubDate>
-      <guid>http://localhost:1313/post/0016/</guid>
-      <description>&lt;p&gt;jp2 remediator&#xA;JCRS csv importer&#xA;At the beginning of the year I worked on a Python project for Harvard University, the library system has a mega digital repository, with some corrupted JPEG2000 images.&#xA;At the time of this writing and hopefully for ever and ever, all tests pass with 100% coverage.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../images/2025-11-07-jp2tests.jpg&#34; alt=&#34;jp2_remediator tests&#34; title=&#34;jp2_remediator tests&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;The module is a command line service, it reads the bytes of a jp2 file or directory of files or an input S3 bucket, then&#xA;looks for presence of an &amp;lsquo;ICC profile&amp;rsquo; in the jp2 bytestream,&#xA;maps and validates curv values according to the ISO/IEC 15444-1:2019 (E) and ICC.1:2022 Specifications&#xA;corrects values where the rTRC/gTRC/bTRC tag size in the Tag table structure (ICC.1:2022 Table 24 tag size) is not the same as the count value (gamma, where n == 1) in the curveType encoding (ICC.1:2022 Table 35, n value)&#xA;flag and (optionally) log values where the count value n != 1 for future review&#xA;later used in apache airflow workflow for all images in the repository&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kimpham54.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>a young conference poster</title>
-      <link>http://localhost:1313/post/0015/</link>
+      <link>https://kimpham54.github.io/post/0015/</link>
       <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/0015/</guid>
+      <guid>https://kimpham54.github.io/post/0015/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s the pretty poster for my first web map, made for the Scarborough Historical Society and started out as a project for Marcel Fortin at the University of Toronto iSchool which was then moved to the Map and Data Library.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ola-poster-information-use--reuse-community-collaboration-with-open-source-web-mapping&#34;&gt;OLA Poster: Information Use &amp;amp; Reuse: Community Collaboration with Open Source Web Mapping&lt;/h2&gt;&#xA;&lt;p&gt;Open-source technologies are creating new avenues for community engagement. Web developer tools are empowering librarians and users alike.  This project utilizes open-source GIS and JavaScript libraries to visualize data from the Scarborough Historical Society photo collection in an interactive app.  Ongoing developments will invite users to contribute their own stories, comments, and pictures that build community history.  The success of this project led to its adoption as a teaching and literacy tool in the Scarborough Archives.  Learn the challenges and considerations for integrating open-source tools for service use.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>title</title>
-      <link>http://localhost:1313/post/template/</link>
-      <pubDate>Thu, 20 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/template/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;../../images/2022-10-01-001-sparql.png&#34; alt=&#34;caption&#34; title=&#34;caption&#34;&gt;&#xA;&lt;a href=&#34;https://www.url.com&#34;&gt;text&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>ontology coordination with sparql</title>
-      <link>http://localhost:1313/post/0011/</link>
+      <link>https://kimpham54.github.io/post/0011/</link>
       <pubDate>Fri, 30 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/0011/</guid>
+      <guid>https://kimpham54.github.io/post/0011/</guid>
       <description>&lt;p&gt;isn&amp;rsquo;t it beautiful? it&amp;rsquo;s web3.0!&#xA;&lt;img src=&#34;../../images/2022-10-01-001-sparql.png&#34; alt=&#34;ontology&#34; title=&#34;ontology&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;(extensive amounts of CIDOC CRM usage not included in photo)&lt;/p&gt;&#xA;&lt;p&gt;my colleagues and i are working on building up the semantic web, that is, web 3.0, or linked data. you may be familiar with its blingy $$$$ counterpart web3, but web3.0 had the catchy name first point O!&lt;/p&gt;&#xA;&lt;p&gt;but wait, what&amp;rsquo;s the difference? everything darling, web3.0 and web3 has some inklings of a shared decentralization mission, but the ecosystem is entirely different. the web3 is blockchain based and cares about trust. web3.0 cares about interoperability and wants to operate with an open world assumption. says the w3c:&lt;/p&gt;</description>
     </item>
     <item>
       <title>ruby &#43; rails &#43; church wafer javascript project 004 - communal recipes</title>
-      <link>http://localhost:1313/post/0005/</link>
+      <link>https://kimpham54.github.io/post/0005/</link>
       <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/0005/</guid>
+      <guid>https://kimpham54.github.io/post/0005/</guid>
       <description>&lt;p&gt;former title: flatiron school portfolio project 004 + church wafer javascript&lt;/p&gt;&#xA;&lt;p&gt;i&amp;rsquo;ve been working on my fourth portfolio project for flatiron while doing a west coast tour of the United States. inspired by my friends, ardent lovers of good food made with care and consideration, i decided to make my application about &lt;a href=&#34;https://github.com/kimpham54/js_portfolio_project_recipes&#34;&gt;recipes&lt;/a&gt;. i find that the flatiron school has a solid, tight curriculum - everything i&amp;rsquo;ve learned in the program so far has built upon each other.&lt;/p&gt;</description>
     </item>
   </channel>
