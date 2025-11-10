@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Draft on Kim Pham</title>
+    <link>http://localhost:1313/tags/draft/</link>
+    <description>Recent content in Draft on Kim Pham</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/draft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>topics</title>
+      <link>http://localhost:1313/post/drafts/</link>
+      <pubDate>Wed, 12 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/drafts/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;spiral dynamics eep&lt;/li&gt;&#xA;&lt;li&gt;rust, i can&amp;rsquo;t always work on things that no one understands or cares about. only sometimes, and when i do it&amp;rsquo;s pretty fun! but i also want to learn things that people care about! rust is one of them, and because i heard that it&amp;rsquo;s going to be a supported language in linux, i am now more than ever motivated to learn it!&lt;/li&gt;&#xA;&lt;li&gt;ai continued but hard to get into&lt;/li&gt;&#xA;&lt;li&gt;fartchitecture &lt;a href=&#34;https://twitter.com/JeffTobiasSPAC/status/1579149325451788289&#34;&gt;https://twitter.com/JeffTobiasSPAC/status/1579149325451788289&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;print my notes&lt;/li&gt;&#xA;&lt;li&gt;docker simplicity&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
