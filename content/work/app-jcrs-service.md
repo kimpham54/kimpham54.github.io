@@ -6,6 +6,4 @@ draft = false
 hideDate = true
 +++
 
-![csv](../../images/2025-11-08-csvapp1.png "csv")
-<br><br>
-![csv](../../images/2025-11-08-csvapp2.png "csv")
+see http://localhost:1313/post/0016/

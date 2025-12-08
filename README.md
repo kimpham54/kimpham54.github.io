@@ -1,6 +1,15 @@
 
 kimpham54.github.io
 
+can edit:
+content/ -> post content
+layouts/ -> templates, shortcodes
+static/images/ -> images and media
+themes/ -> pull down new version periodically
+
+do not edit:
+public/ -> remove periodically to clear junk and rebuild only
+
 1. pull down https://github.com/kimpham54/kimpham54.github.io
 2. cd themes, git clone https://github.com/athul/archie.git or
 `git submodule update --init --remote --merge`
