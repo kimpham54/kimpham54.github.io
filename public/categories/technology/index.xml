@@ -6,8 +6,15 @@
     <description>Recent content in Technology on Kim Pham</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Dec 2025 01:15:41 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 30 Dec 2025 01:15:41 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>three.js experiment</title>
+      <link>http://localhost:1313/post/0017/</link>
+      <pubDate>Tue, 30 Dec 2025 01:15:41 -0400</pubDate>
+      <guid>http://localhost:1313/post/0017/</guid>
+      <description>&lt;div style=&#34;width: 100%; max-width: 2000px; height: 720px; margin: 2rem auto;&#34;&gt;&#xA;  &lt;canvas class=&#34;webgl&#34; style=&#34;width: 100%; height: 100%; display: block;&#34;&gt;&lt;/canvas&gt;&#xA;&lt;/div&gt;&#xA;&lt;script type=&#34;module&#34; src=&#34;http://localhost:1313/three/script-hugo.js&#34;&gt;&lt;/script&gt;</description>
+    </item>
     <item>
       <title>an express and nodejs CSV importer service</title>
       <link>http://localhost:1313/post/0016/</link>
