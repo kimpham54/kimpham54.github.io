@@ -1,6 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Technology on Kim Pham</title><link>https://kimpham54.github.io/categories/technology/</link><description>Recent content in Technology on Kim Pham</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 30 Dec 2025 01:15:41 -0400</lastBuildDate><atom:link href="https://kimpham54.github.io/categories/technology/index.xml" rel="self" type="application/rss+xml"/><item><title>three.js experiment</title><link>https://kimpham54.github.io/post/0017/</link><pubDate>Tue, 30 Dec 2025 01:15:41 -0400</pubDate><guid>https://kimpham54.github.io/post/0017/</guid><description>&lt;div style="width: 100%; max-width: 2000px; height: 720px; margin: 2rem auto;"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Technology on Kim Pham</title><link>https://kimpham54.github.io/categories/technology/</link><description>Recent content in Technology on Kim Pham</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 30 Dec 2025 01:15:41 -0400</lastBuildDate><atom:link href="https://kimpham54.github.io/categories/technology/index.xml" rel="self" type="application/rss+xml"/><item><title>three.js experiment</title><link>https://kimpham54.github.io/post/0017/</link><pubDate>Tue, 30 Dec 2025 01:15:41 -0400</pubDate><guid>https://kimpham54.github.io/post/0017/</guid><description>&lt;div id="three-wrap" style="width: 100%; max-width: 1800px; height: 400px; margin: 2rem auto; position: relative;"&gt;
  &lt;canvas class="webgl" style="width: 100%; height: 100%; display: block;"&gt;&lt;/canvas&gt;
+ &lt;!-- Loading overlay --&gt;
+ &lt;div id="three-loading" style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.25); backdrop-filter: blur(2px);"&gt;
+ &lt;div style="display:flex; align-items:center; gap:12px; font: 14px/1.2 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color:#fff;"&gt;
+ &lt;div style="width:18px; height:18px; border: 2px solid rgba(255,255,255,0.35); border-top-color:#fff; border-radius:50%; animation: threeSpin 0.8s linear infinite;"&gt;&lt;/div&gt;
+ &lt;div&gt;Loading…&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;!-- Fullscreen button --&gt;
+ &lt;button id="three-fullscreen" type="button" style="position:absolute; right:12px; bottom:12px; padding:8px 10px; border-radius:10px; border:1px solid rgba(255,255,255,0.35); background: rgba(0,0,0,0.35); color:#fff; cursor:pointer; font: 13px/1 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;"&gt;
+ Fullscreen
+ &lt;/button&gt;
 &lt;/div&gt;
+&lt;style&gt;
+@keyframes threeSpin { to { transform: rotate(360deg); } }
+
+canvas.webgl:fullscreen {
+ width: 100vw !important;
+ height: 100vh !important;
+}
+&lt;/style&gt;
 &lt;script type="module" src="https://kimpham54.github.io/three/script-hugo.js"&gt;&lt;/script&gt;</description></item><item><title>JPEG2000 byte modifications with Python and Docker</title><link>https://kimpham54.github.io/post/0014/</link><pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate><guid>https://kimpham54.github.io/post/0014/</guid><description>&lt;p&gt;At the beginning of the year I worked on a Python project for Harvard University: the library system runs a mega digital repository, and a subset of JPEG 2000 images had a very particular kind of ICC profile corruption detected by Kakadu but not by jpylyzer, two validation tools they use.
 &lt;br&gt;&lt;br&gt;
 I wrote &lt;strong&gt;jp2_remediator&lt;/strong&gt; to validate and (when safe) repair those files so downstream systems could read them. I made a command-line app in a Docker image that scans a single file, a directory, or an S3 bucket.
