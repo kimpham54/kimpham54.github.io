@@ -12,6 +12,45 @@ const gui = new GUI()
 const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
+const wrap = document.getElementById('three-wrap')
+const loadingEl = document.getElementById('three-loading')
+const fullscreenBtn = document.getElementById('three-fullscreen')
+
+const READY = {
+    env: false,
+    font: false
+}
+
+const maybeHideLoading = () =>
+{
+    if(READY.env && READY.font && loadingEl)
+        loadingEl.style.display = 'none'
+}
+
+const toggleFullscreen = () =>
+{
+    // Enter fullscreen (canvas only)
+    if(!document.fullscreenElement)
+    {
+        if(canvas?.requestFullscreen)
+            canvas.requestFullscreen()
+        return
+    }
+
+    // Exit fullscreen
+    if(document.exitFullscreen)
+        document.exitFullscreen()
+}
+
+if(fullscreenBtn)
+    fullscreenBtn.addEventListener('click', toggleFullscreen)
+
+document.addEventListener('fullscreenchange', () =>
+{
+    if(!fullscreenBtn) return
+    fullscreenBtn.textContent = document.fullscreenElement ? 'Exit fullscreen' : 'Fullscreen'
+})
+
 /**
  * Environment map
  * - Start with 2k.hdr
@@ -42,6 +81,9 @@ rgbeLoader.load('/three/textures/environmentMap/2k.hdr', (m) =>
     envDefault = m
 
     if(!env.potsdamer) applyEnv()
+
+    READY.env = true
+    maybeHideLoading()
 })
 
 // GUI toggle (lazy-load Potsdamer on first check)
@@ -58,6 +100,9 @@ gui.add(env, 'potsdamer')
                 envPotsdamer = m
                 loadingPotsdamer = false
                 applyEnv()
+
+                READY.env = true
+                maybeHideLoading()
             }, undefined, () =>
             {
                 loadingPotsdamer = false
@@ -114,6 +159,8 @@ window.addEventListener('resize', () =>
 
     renderer.setSize(sizes.width, sizes.height)
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+
+    // If the wrapper changes size (e.g. fullscreen), keep sizes in sync
 })
 
 /**
@@ -177,6 +224,9 @@ fontLoader.load('/three/fonts/helvetiker_regular.typeface.json', (font) =>
 
     // Initial
     createText()
+
+    READY.font = true
+    maybeHideLoading()
 
     // GUI
     gui.add(params, 'text')
