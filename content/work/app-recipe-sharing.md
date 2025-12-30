@@ -12,7 +12,7 @@ An app I built to share recipes with my friends using Ruby, Rails, and plain Jav
 
 Some of my coding notes: https://kimpham54.github.io/post/005/
 
-![text](../../images/app-recipe-sharing/screen1.png "caption")
-![text](../../images/app-recipe-sharing/screen2.png "caption")
-![text](../../images/app-recipe-sharing/screen3.png "caption")
-![text](../../images/app-recipe-sharing/screen4.png "caption")
+![text](../../images/app-recipe-sharing/screen1.jpg "caption")
+![text](../../images/app-recipe-sharing/screen2.jpg "caption")
+![text](../../images/app-recipe-sharing/screen3.jpg "caption")
+![text](../../images/app-recipe-sharing/screen4.jpg "caption")

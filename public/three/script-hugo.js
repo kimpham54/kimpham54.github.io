@@ -27,6 +27,24 @@ const maybeHideLoading = () =>
         loadingEl.style.display = 'none'
 }
 
+const resizeToCanvas = () =>
+{
+    // Use the *displayed* size of the canvas
+    const w = canvas.clientWidth
+    const h = canvas.clientHeight
+    if(!w || !h) return
+
+    sizes.width = w
+    sizes.height = h
+
+    camera.aspect = w / h
+    camera.updateProjectionMatrix()
+
+    // Resize drawing buffer
+    renderer.setSize(w, h, false)
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+}
+
 const toggleFullscreen = () =>
 {
     // Enter fullscreen (canvas only)
@@ -47,8 +65,12 @@ if(fullscreenBtn)
 
 document.addEventListener('fullscreenchange', () =>
 {
-    if(!fullscreenBtn) return
-    fullscreenBtn.textContent = document.fullscreenElement ? 'Exit fullscreen' : 'Fullscreen'
+    if(fullscreenBtn)
+        fullscreenBtn.textContent = document.fullscreenElement ? 'Exit fullscreen' : 'Fullscreen'
+
+    // Fullscreen enter/exit doesn't always fire a window resize.
+    // Wait for layout reflow, then resize the renderer.
+    requestAnimationFrame(() => requestAnimationFrame(resizeToCanvas))
 })
 
 /**
@@ -143,25 +165,26 @@ controls.enableDamping = true
  * Renderer
  */
 const renderer = new THREE.WebGLRenderer({ canvas, antialias: true })
-renderer.setSize(sizes.width, sizes.height)
+renderer.setSize(sizes.width, sizes.height, false)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+resizeToCanvas()
 
 /**
  * Resize
  */
-window.addEventListener('resize', () =>
+window.addEventListener('resize', resizeToCanvas)
+
+if('ResizeObserver' in window)
 {
-    sizes.width = canvas.clientWidth
-    sizes.height = canvas.clientHeight
+    const ro = new ResizeObserver(() =>
+    {
+        // Defer to let CSS/layout settle
+        requestAnimationFrame(resizeToCanvas)
+    })
 
-    camera.aspect = sizes.width / sizes.height
-    camera.updateProjectionMatrix()
-
-    renderer.setSize(sizes.width, sizes.height)
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
-
-    // If the wrapper changes size (e.g. fullscreen), keep sizes in sync
-})
+    // Prefer observing the wrapper if present; otherwise observe the canvas
+    ro.observe(wrap || canvas)
+}
 
 /**
  * Fonts + Scene content

@@ -12,7 +12,7 @@ An experimental React app that I worked on as part of the Flatiron School bootca
 
 Some of my coding notes: https://kimpham54.github.io/post/006/
 
-![text](../../images/app-climbing-logbook/home.png "caption")
-![text](../../images/app-climbing-logbook/routes.png "caption")
-![text](../../images/app-climbing-logbook/addroute.png "caption")
-![text](../../images/app-climbing-logbook/editclimb.png "caption")
+![text](../../images/app-climbing-logbook/home.jpg "caption")
+![text](../../images/app-climbing-logbook/routes.jpg "caption")
+![text](../../images/app-climbing-logbook/addroute.jpg "caption")
+![text](../../images/app-climbing-logbook/editclimb.jpg "caption")
